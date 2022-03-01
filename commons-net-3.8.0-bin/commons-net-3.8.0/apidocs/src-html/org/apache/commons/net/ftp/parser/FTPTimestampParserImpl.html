@@ -1,0 +1,478 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>/*<a name="line.1"></a>
+<span class="sourceLineNo">002</span> * Licensed to the Apache Software Foundation (ASF) under one or more<a name="line.2"></a>
+<span class="sourceLineNo">003</span> * contributor license agreements.  See the NOTICE file distributed with<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * this work for additional information regarding copyright ownership.<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * The ASF licenses this file to You under the Apache License, Version 2.0<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * (the "License"); you may not use this file except in compliance with<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * the License.  You may obtain a copy of the License at<a name="line.7"></a>
+<span class="sourceLineNo">008</span> *<a name="line.8"></a>
+<span class="sourceLineNo">009</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.9"></a>
+<span class="sourceLineNo">010</span> *<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * Unless required by applicable law or agreed to in writing, software<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * See the License for the specific language governing permissions and<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * limitations under the License.<a name="line.15"></a>
+<span class="sourceLineNo">016</span> */<a name="line.16"></a>
+<span class="sourceLineNo">017</span><a name="line.17"></a>
+<span class="sourceLineNo">018</span>package org.apache.commons.net.ftp.parser;<a name="line.18"></a>
+<span class="sourceLineNo">019</span><a name="line.19"></a>
+<span class="sourceLineNo">020</span>import java.text.DateFormatSymbols;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>import java.text.ParseException;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>import java.text.ParsePosition;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import java.text.SimpleDateFormat;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import java.util.Calendar;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import java.util.Date;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import java.util.TimeZone;<a name="line.26"></a>
+<span class="sourceLineNo">027</span><a name="line.27"></a>
+<span class="sourceLineNo">028</span>import org.apache.commons.net.ftp.Configurable;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import org.apache.commons.net.ftp.FTPClientConfig;<a name="line.29"></a>
+<span class="sourceLineNo">030</span><a name="line.30"></a>
+<span class="sourceLineNo">031</span>/**<a name="line.31"></a>
+<span class="sourceLineNo">032</span> * Default implementation of the {@link  FTPTimestampParser  FTPTimestampParser}<a name="line.32"></a>
+<span class="sourceLineNo">033</span> * interface also implements the {@link  org.apache.commons.net.ftp.Configurable  Configurable}<a name="line.33"></a>
+<span class="sourceLineNo">034</span> * interface to allow the parsing to be configured from the outside.<a name="line.34"></a>
+<span class="sourceLineNo">035</span> *<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * @see ConfigurableFTPFileEntryParserImpl<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * @since 1.4<a name="line.37"></a>
+<span class="sourceLineNo">038</span> */<a name="line.38"></a>
+<span class="sourceLineNo">039</span>public class FTPTimestampParserImpl implements<a name="line.39"></a>
+<span class="sourceLineNo">040</span>        FTPTimestampParser, Configurable<a name="line.40"></a>
+<span class="sourceLineNo">041</span>{<a name="line.41"></a>
+<span class="sourceLineNo">042</span><a name="line.42"></a>
+<span class="sourceLineNo">043</span><a name="line.43"></a>
+<span class="sourceLineNo">044</span>    /** The date format for all dates, except possibly recent dates. Assumed to include the year. */<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    private SimpleDateFormat defaultDateFormat;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    /* The index in CALENDAR_UNITS of the smallest time unit in defaultDateFormat */<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    private int defaultDateSmallestUnitIndex;<a name="line.47"></a>
+<span class="sourceLineNo">048</span><a name="line.48"></a>
+<span class="sourceLineNo">049</span>    /** The format used for recent dates (which don't have the year). May be null. */<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    private SimpleDateFormat recentDateFormat;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>    /* The index in CALENDAR_UNITS of the smallest time unit in recentDateFormat */<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    private int recentDateSmallestUnitIndex;<a name="line.52"></a>
+<span class="sourceLineNo">053</span><a name="line.53"></a>
+<span class="sourceLineNo">054</span>    private boolean lenientFutureDates;<a name="line.54"></a>
+<span class="sourceLineNo">055</span><a name="line.55"></a>
+<span class="sourceLineNo">056</span>    /*<a name="line.56"></a>
+<span class="sourceLineNo">057</span>     * List of units in order of increasing significance.<a name="line.57"></a>
+<span class="sourceLineNo">058</span>     * This allows the code to clear all units in the Calendar until it<a name="line.58"></a>
+<span class="sourceLineNo">059</span>     * reaches the least significant unit in the parse string.<a name="line.59"></a>
+<span class="sourceLineNo">060</span>     * The date formats are analysed to find the least significant<a name="line.60"></a>
+<span class="sourceLineNo">061</span>     * unit (e.g. Minutes or Milliseconds) and the appropriate index to<a name="line.61"></a>
+<span class="sourceLineNo">062</span>     * the array is saved.<a name="line.62"></a>
+<span class="sourceLineNo">063</span>     * This is done by searching the array for the unit specifier,<a name="line.63"></a>
+<span class="sourceLineNo">064</span>     * and returning the index. When clearing the Calendar units,<a name="line.64"></a>
+<span class="sourceLineNo">065</span>     * the code loops through the array until the previous entry.<a name="line.65"></a>
+<span class="sourceLineNo">066</span>     * e.g. for MINUTE it would clear MILLISECOND and SECOND<a name="line.66"></a>
+<span class="sourceLineNo">067</span>     */<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    private static final int[] CALENDAR_UNITS = {<a name="line.68"></a>
+<span class="sourceLineNo">069</span>        Calendar.MILLISECOND,<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        Calendar.SECOND,<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        Calendar.MINUTE,<a name="line.71"></a>
+<span class="sourceLineNo">072</span>        Calendar.HOUR_OF_DAY,<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        Calendar.DAY_OF_MONTH,<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        Calendar.MONTH,<a name="line.74"></a>
+<span class="sourceLineNo">075</span>        Calendar.YEAR};<a name="line.75"></a>
+<span class="sourceLineNo">076</span><a name="line.76"></a>
+<span class="sourceLineNo">077</span>    /*<a name="line.77"></a>
+<span class="sourceLineNo">078</span>     * Return the index to the array representing the least significant<a name="line.78"></a>
+<span class="sourceLineNo">079</span>     * unit found in the date format.<a name="line.79"></a>
+<span class="sourceLineNo">080</span>     * Default is 0 (to avoid dropping precision)<a name="line.80"></a>
+<span class="sourceLineNo">081</span>     */<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    private static int getEntry(final SimpleDateFormat dateFormat) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        if (dateFormat == null) {<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            return 0;<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        }<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        final String FORMAT_CHARS="SsmHdM";<a name="line.86"></a>
+<span class="sourceLineNo">087</span>        final String pattern = dateFormat.toPattern();<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        for(final char ch : FORMAT_CHARS.toCharArray()) {<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            if (pattern.indexOf(ch) != -1){ // found the character<a name="line.89"></a>
+<span class="sourceLineNo">090</span>                switch(ch) {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                case 'S':<a name="line.91"></a>
+<span class="sourceLineNo">092</span>                    return indexOf(Calendar.MILLISECOND);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>                case 's':<a name="line.93"></a>
+<span class="sourceLineNo">094</span>                    return indexOf(Calendar.SECOND);<a name="line.94"></a>
+<span class="sourceLineNo">095</span>                case 'm':<a name="line.95"></a>
+<span class="sourceLineNo">096</span>                    return indexOf(Calendar.MINUTE);<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                case 'H':<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                    return indexOf(Calendar.HOUR_OF_DAY);<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                case 'd':<a name="line.99"></a>
+<span class="sourceLineNo">100</span>                    return indexOf(Calendar.DAY_OF_MONTH);<a name="line.100"></a>
+<span class="sourceLineNo">101</span>                case 'M':<a name="line.101"></a>
+<span class="sourceLineNo">102</span>                    return indexOf(Calendar.MONTH);<a name="line.102"></a>
+<span class="sourceLineNo">103</span>                }<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            }<a name="line.104"></a>
+<span class="sourceLineNo">105</span>        }<a name="line.105"></a>
+<span class="sourceLineNo">106</span>        return 0;<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
+<span class="sourceLineNo">108</span><a name="line.108"></a>
+<span class="sourceLineNo">109</span>    /*<a name="line.109"></a>
+<span class="sourceLineNo">110</span>     * Find the entry in the CALENDAR_UNITS array.<a name="line.110"></a>
+<span class="sourceLineNo">111</span>     */<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    private static int indexOf(final int calendarUnit) {<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        int i;<a name="line.113"></a>
+<span class="sourceLineNo">114</span>        for(i = 0; i &lt;CALENDAR_UNITS.length; i++) {<a name="line.114"></a>
+<span class="sourceLineNo">115</span>            if (calendarUnit == CALENDAR_UNITS[i]) {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>                return i;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>            }<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        }<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        return 0;<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
+<span class="sourceLineNo">121</span><a name="line.121"></a>
+<span class="sourceLineNo">122</span>    /*<a name="line.122"></a>
+<span class="sourceLineNo">123</span>     * Sets the Calendar precision (used by FTPFile#toFormattedDate) by clearing<a name="line.123"></a>
+<span class="sourceLineNo">124</span>     * the immediately preceeding unit (if any).<a name="line.124"></a>
+<span class="sourceLineNo">125</span>     * Unfortunately the clear(int) method results in setting all other units.<a name="line.125"></a>
+<span class="sourceLineNo">126</span>     */<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    private static void setPrecision(final int index, final Calendar working) {<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        if (index &lt;= 0) { // e.g. MILLISECONDS<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            return;<a name="line.129"></a>
+<span class="sourceLineNo">130</span>        }<a name="line.130"></a>
+<span class="sourceLineNo">131</span>        final int field = CALENDAR_UNITS[index-1];<a name="line.131"></a>
+<span class="sourceLineNo">132</span>        // Just in case the analysis is wrong, stop clearing if<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        // field value is not the default.<a name="line.133"></a>
+<span class="sourceLineNo">134</span>        final int value = working.get(field);<a name="line.134"></a>
+<span class="sourceLineNo">135</span>        if (value != 0) { // don't reset if it has a value<a name="line.135"></a>
+<span class="sourceLineNo">136</span>//            new Throwable("Unexpected value "+value).printStackTrace(); // DEBUG<a name="line.136"></a>
+<span class="sourceLineNo">137</span>        } else {<a name="line.137"></a>
+<span class="sourceLineNo">138</span>            working.clear(field); // reset just the required field<a name="line.138"></a>
+<span class="sourceLineNo">139</span>        }<a name="line.139"></a>
+<span class="sourceLineNo">140</span>    }<a name="line.140"></a>
+<span class="sourceLineNo">141</span><a name="line.141"></a>
+<span class="sourceLineNo">142</span>    /**<a name="line.142"></a>
+<span class="sourceLineNo">143</span>     * The only constructor for this class.<a name="line.143"></a>
+<span class="sourceLineNo">144</span>     */<a name="line.144"></a>
+<span class="sourceLineNo">145</span>    public FTPTimestampParserImpl() {<a name="line.145"></a>
+<span class="sourceLineNo">146</span>        setDefaultDateFormat(DEFAULT_SDF, null);<a name="line.146"></a>
+<span class="sourceLineNo">147</span>        setRecentDateFormat(DEFAULT_RECENT_SDF, null);<a name="line.147"></a>
+<span class="sourceLineNo">148</span>    }<a name="line.148"></a>
+<span class="sourceLineNo">149</span><a name="line.149"></a>
+<span class="sourceLineNo">150</span>    /**<a name="line.150"></a>
+<span class="sourceLineNo">151</span>     * Implements the one {@link  FTPTimestampParser#parseTimestamp(String)  method}<a name="line.151"></a>
+<span class="sourceLineNo">152</span>     * in the {@link  FTPTimestampParser  FTPTimestampParser} interface<a name="line.152"></a>
+<span class="sourceLineNo">153</span>     * according to this algorithm:<a name="line.153"></a>
+<span class="sourceLineNo">154</span>     *<a name="line.154"></a>
+<span class="sourceLineNo">155</span>     * If the recentDateFormat member has been defined, try to parse the<a name="line.155"></a>
+<span class="sourceLineNo">156</span>     * supplied string with that.  If that parse fails, or if the recentDateFormat<a name="line.156"></a>
+<span class="sourceLineNo">157</span>     * member has not been defined, attempt to parse with the defaultDateFormat<a name="line.157"></a>
+<span class="sourceLineNo">158</span>     * member.  If that fails, throw a ParseException.<a name="line.158"></a>
+<span class="sourceLineNo">159</span>     *<a name="line.159"></a>
+<span class="sourceLineNo">160</span>     * This method assumes that the server time is the same as the local time.<a name="line.160"></a>
+<span class="sourceLineNo">161</span>     *<a name="line.161"></a>
+<span class="sourceLineNo">162</span>     * @see FTPTimestampParserImpl#parseTimestamp(String, Calendar)<a name="line.162"></a>
+<span class="sourceLineNo">163</span>     *<a name="line.163"></a>
+<span class="sourceLineNo">164</span>     * @param timestampStr The timestamp to be parsed<a name="line.164"></a>
+<span class="sourceLineNo">165</span>     * @return a Calendar with the parsed timestamp<a name="line.165"></a>
+<span class="sourceLineNo">166</span>     */<a name="line.166"></a>
+<span class="sourceLineNo">167</span>    @Override<a name="line.167"></a>
+<span class="sourceLineNo">168</span>    public Calendar parseTimestamp(final String timestampStr) throws ParseException {<a name="line.168"></a>
+<span class="sourceLineNo">169</span>        final Calendar now = Calendar.getInstance();<a name="line.169"></a>
+<span class="sourceLineNo">170</span>        return parseTimestamp(timestampStr, now);<a name="line.170"></a>
+<span class="sourceLineNo">171</span>    }<a name="line.171"></a>
+<span class="sourceLineNo">172</span><a name="line.172"></a>
+<span class="sourceLineNo">173</span>    /**<a name="line.173"></a>
+<span class="sourceLineNo">174</span>     * If the recentDateFormat member has been defined, try to parse the<a name="line.174"></a>
+<span class="sourceLineNo">175</span>     * supplied string with that.  If that parse fails, or if the recentDateFormat<a name="line.175"></a>
+<span class="sourceLineNo">176</span>     * member has not been defined, attempt to parse with the defaultDateFormat<a name="line.176"></a>
+<span class="sourceLineNo">177</span>     * member.  If that fails, throw a ParseException.<a name="line.177"></a>
+<span class="sourceLineNo">178</span>     *<a name="line.178"></a>
+<span class="sourceLineNo">179</span>     * This method allows a {@link Calendar} instance to be passed in which represents the<a name="line.179"></a>
+<span class="sourceLineNo">180</span>     * current (system) time.<a name="line.180"></a>
+<span class="sourceLineNo">181</span>     *<a name="line.181"></a>
+<span class="sourceLineNo">182</span>     * @see FTPTimestampParser#parseTimestamp(String)<a name="line.182"></a>
+<span class="sourceLineNo">183</span>     * @param timestampStr The timestamp to be parsed<a name="line.183"></a>
+<span class="sourceLineNo">184</span>     * @param serverTime The current time for the server<a name="line.184"></a>
+<span class="sourceLineNo">185</span>     * @return the calendar<a name="line.185"></a>
+<span class="sourceLineNo">186</span>     * @throws ParseException if timestamp cannot be parsed<a name="line.186"></a>
+<span class="sourceLineNo">187</span>     * @since 1.5<a name="line.187"></a>
+<span class="sourceLineNo">188</span>     */<a name="line.188"></a>
+<span class="sourceLineNo">189</span>    public Calendar parseTimestamp(final String timestampStr, final Calendar serverTime) throws ParseException {<a name="line.189"></a>
+<span class="sourceLineNo">190</span>        final Calendar working = (Calendar) serverTime.clone();<a name="line.190"></a>
+<span class="sourceLineNo">191</span>        working.setTimeZone(getServerTimeZone()); // is this needed?<a name="line.191"></a>
+<span class="sourceLineNo">192</span><a name="line.192"></a>
+<span class="sourceLineNo">193</span>        Date parsed = null;<a name="line.193"></a>
+<span class="sourceLineNo">194</span><a name="line.194"></a>
+<span class="sourceLineNo">195</span>        if (recentDateFormat != null) {<a name="line.195"></a>
+<span class="sourceLineNo">196</span>            final Calendar now = (Calendar) serverTime.clone();// Copy this, because we may change it<a name="line.196"></a>
+<span class="sourceLineNo">197</span>            now.setTimeZone(this.getServerTimeZone());<a name="line.197"></a>
+<span class="sourceLineNo">198</span>            if (lenientFutureDates) {<a name="line.198"></a>
+<span class="sourceLineNo">199</span>                // add a day to "now" so that "slop" doesn't cause a date<a name="line.199"></a>
+<span class="sourceLineNo">200</span>                // slightly in the future to roll back a full year.  (Bug 35181 =&gt; NET-83)<a name="line.200"></a>
+<span class="sourceLineNo">201</span>                now.add(Calendar.DAY_OF_MONTH, 1);<a name="line.201"></a>
+<span class="sourceLineNo">202</span>            }<a name="line.202"></a>
+<span class="sourceLineNo">203</span>            // The Java SimpleDateFormat class uses the epoch year 1970 if not present in the input<a name="line.203"></a>
+<span class="sourceLineNo">204</span>            // As 1970 was not a leap year, it cannot parse "Feb 29" correctly.<a name="line.204"></a>
+<span class="sourceLineNo">205</span>            // Java 1.5+ returns Mar 1 1970<a name="line.205"></a>
+<span class="sourceLineNo">206</span>            // Temporarily add the current year to the short date time<a name="line.206"></a>
+<span class="sourceLineNo">207</span>            // to cope with short-date leap year strings.<a name="line.207"></a>
+<span class="sourceLineNo">208</span>            // Since Feb 29 is more that 6 months from the end of the year, this should be OK for<a name="line.208"></a>
+<span class="sourceLineNo">209</span>            // all instances of short dates which are +- 6 months from current date.<a name="line.209"></a>
+<span class="sourceLineNo">210</span>            // TODO this won't always work for systems that use short dates +0/-12months<a name="line.210"></a>
+<span class="sourceLineNo">211</span>            // e.g. if today is Jan 1 2001 and the short date is Feb 29<a name="line.211"></a>
+<span class="sourceLineNo">212</span>            final String year = Integer.toString(now.get(Calendar.YEAR));<a name="line.212"></a>
+<span class="sourceLineNo">213</span>            final String timeStampStrPlusYear = timestampStr + " " + year;<a name="line.213"></a>
+<span class="sourceLineNo">214</span>            final SimpleDateFormat hackFormatter = new SimpleDateFormat(recentDateFormat.toPattern() + " yyyy",<a name="line.214"></a>
+<span class="sourceLineNo">215</span>                    recentDateFormat.getDateFormatSymbols());<a name="line.215"></a>
+<span class="sourceLineNo">216</span>            hackFormatter.setLenient(false);<a name="line.216"></a>
+<span class="sourceLineNo">217</span>            hackFormatter.setTimeZone(recentDateFormat.getTimeZone());<a name="line.217"></a>
+<span class="sourceLineNo">218</span>            final ParsePosition pp = new ParsePosition(0);<a name="line.218"></a>
+<span class="sourceLineNo">219</span>            parsed = hackFormatter.parse(timeStampStrPlusYear, pp);<a name="line.219"></a>
+<span class="sourceLineNo">220</span>            // Check if we parsed the full string, if so it must have been a short date originally<a name="line.220"></a>
+<span class="sourceLineNo">221</span>            if (parsed != null &amp;&amp; pp.getIndex() == timeStampStrPlusYear.length()) {<a name="line.221"></a>
+<span class="sourceLineNo">222</span>                working.setTime(parsed);<a name="line.222"></a>
+<span class="sourceLineNo">223</span>                if (working.after(now)) { // must have been last year instead<a name="line.223"></a>
+<span class="sourceLineNo">224</span>                    working.add(Calendar.YEAR, -1);<a name="line.224"></a>
+<span class="sourceLineNo">225</span>                }<a name="line.225"></a>
+<span class="sourceLineNo">226</span>                setPrecision(recentDateSmallestUnitIndex, working);<a name="line.226"></a>
+<span class="sourceLineNo">227</span>                return working;<a name="line.227"></a>
+<span class="sourceLineNo">228</span>            }<a name="line.228"></a>
+<span class="sourceLineNo">229</span>        }<a name="line.229"></a>
+<span class="sourceLineNo">230</span><a name="line.230"></a>
+<span class="sourceLineNo">231</span>        final ParsePosition pp = new ParsePosition(0);<a name="line.231"></a>
+<span class="sourceLineNo">232</span>        parsed = defaultDateFormat.parse(timestampStr, pp);<a name="line.232"></a>
+<span class="sourceLineNo">233</span>        // note, length checks are mandatory for us since<a name="line.233"></a>
+<span class="sourceLineNo">234</span>        // SimpleDateFormat methods will succeed if less than<a name="line.234"></a>
+<span class="sourceLineNo">235</span>        // full string is matched.  They will also accept,<a name="line.235"></a>
+<span class="sourceLineNo">236</span>        // despite "leniency" setting, a two-digit number as<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        // a valid year (e.g. 22:04 will parse as 22 A.D.)<a name="line.237"></a>
+<span class="sourceLineNo">238</span>        // so could mistakenly confuse an hour with a year,<a name="line.238"></a>
+<span class="sourceLineNo">239</span>        // if we don't insist on full length parsing.<a name="line.239"></a>
+<span class="sourceLineNo">240</span>        if (parsed != null &amp;&amp; pp.getIndex() == timestampStr.length()) {<a name="line.240"></a>
+<span class="sourceLineNo">241</span>            working.setTime(parsed);<a name="line.241"></a>
+<span class="sourceLineNo">242</span>        } else {<a name="line.242"></a>
+<span class="sourceLineNo">243</span>            throw new ParseException(<a name="line.243"></a>
+<span class="sourceLineNo">244</span>                    "Timestamp '"+timestampStr+"' could not be parsed using a server time of "<a name="line.244"></a>
+<span class="sourceLineNo">245</span>                        +serverTime.getTime().toString(),<a name="line.245"></a>
+<span class="sourceLineNo">246</span>                    pp.getErrorIndex());<a name="line.246"></a>
+<span class="sourceLineNo">247</span>        }<a name="line.247"></a>
+<span class="sourceLineNo">248</span>        setPrecision(defaultDateSmallestUnitIndex, working);<a name="line.248"></a>
+<span class="sourceLineNo">249</span>        return working;<a name="line.249"></a>
+<span class="sourceLineNo">250</span>    }<a name="line.250"></a>
+<span class="sourceLineNo">251</span><a name="line.251"></a>
+<span class="sourceLineNo">252</span>    /**<a name="line.252"></a>
+<span class="sourceLineNo">253</span>     * @return Returns the defaultDateFormat.<a name="line.253"></a>
+<span class="sourceLineNo">254</span>     */<a name="line.254"></a>
+<span class="sourceLineNo">255</span>    public SimpleDateFormat getDefaultDateFormat() {<a name="line.255"></a>
+<span class="sourceLineNo">256</span>        return defaultDateFormat;<a name="line.256"></a>
+<span class="sourceLineNo">257</span>    }<a name="line.257"></a>
+<span class="sourceLineNo">258</span>    /**<a name="line.258"></a>
+<span class="sourceLineNo">259</span>     * @return Returns the defaultDateFormat pattern string.<a name="line.259"></a>
+<span class="sourceLineNo">260</span>     */<a name="line.260"></a>
+<span class="sourceLineNo">261</span>    public String getDefaultDateFormatString() {<a name="line.261"></a>
+<span class="sourceLineNo">262</span>        return defaultDateFormat.toPattern();<a name="line.262"></a>
+<span class="sourceLineNo">263</span>    }<a name="line.263"></a>
+<span class="sourceLineNo">264</span>    /**<a name="line.264"></a>
+<span class="sourceLineNo">265</span>     * @param format The defaultDateFormat to be set.<a name="line.265"></a>
+<span class="sourceLineNo">266</span>     * @param dfs the symbols to use (may be null)<a name="line.266"></a>
+<span class="sourceLineNo">267</span>     */<a name="line.267"></a>
+<span class="sourceLineNo">268</span>    private void setDefaultDateFormat(final String format, final DateFormatSymbols dfs) {<a name="line.268"></a>
+<span class="sourceLineNo">269</span>        if (format != null) {<a name="line.269"></a>
+<span class="sourceLineNo">270</span>            if (dfs != null) {<a name="line.270"></a>
+<span class="sourceLineNo">271</span>                this.defaultDateFormat = new SimpleDateFormat(format, dfs);<a name="line.271"></a>
+<span class="sourceLineNo">272</span>            } else {<a name="line.272"></a>
+<span class="sourceLineNo">273</span>                this.defaultDateFormat = new SimpleDateFormat(format);<a name="line.273"></a>
+<span class="sourceLineNo">274</span>            }<a name="line.274"></a>
+<span class="sourceLineNo">275</span>            this.defaultDateFormat.setLenient(false);<a name="line.275"></a>
+<span class="sourceLineNo">276</span>        } else {<a name="line.276"></a>
+<span class="sourceLineNo">277</span>            this.defaultDateFormat = null;<a name="line.277"></a>
+<span class="sourceLineNo">278</span>        }<a name="line.278"></a>
+<span class="sourceLineNo">279</span>        this.defaultDateSmallestUnitIndex = getEntry(this.defaultDateFormat);<a name="line.279"></a>
+<span class="sourceLineNo">280</span>    }<a name="line.280"></a>
+<span class="sourceLineNo">281</span>    /**<a name="line.281"></a>
+<span class="sourceLineNo">282</span>     * @return Returns the recentDateFormat.<a name="line.282"></a>
+<span class="sourceLineNo">283</span>     */<a name="line.283"></a>
+<span class="sourceLineNo">284</span>    public SimpleDateFormat getRecentDateFormat() {<a name="line.284"></a>
+<span class="sourceLineNo">285</span>        return recentDateFormat;<a name="line.285"></a>
+<span class="sourceLineNo">286</span>    }<a name="line.286"></a>
+<span class="sourceLineNo">287</span>    /**<a name="line.287"></a>
+<span class="sourceLineNo">288</span>     * @return Returns the recentDateFormat.<a name="line.288"></a>
+<span class="sourceLineNo">289</span>     */<a name="line.289"></a>
+<span class="sourceLineNo">290</span>    public String getRecentDateFormatString() {<a name="line.290"></a>
+<span class="sourceLineNo">291</span>        return recentDateFormat.toPattern();<a name="line.291"></a>
+<span class="sourceLineNo">292</span>    }<a name="line.292"></a>
+<span class="sourceLineNo">293</span>    /**<a name="line.293"></a>
+<span class="sourceLineNo">294</span>     * @param format The recentDateFormat to set.<a name="line.294"></a>
+<span class="sourceLineNo">295</span>     * @param dfs the symbols to use (may be null)<a name="line.295"></a>
+<span class="sourceLineNo">296</span>     */<a name="line.296"></a>
+<span class="sourceLineNo">297</span>    private void setRecentDateFormat(final String format, final DateFormatSymbols dfs) {<a name="line.297"></a>
+<span class="sourceLineNo">298</span>        if (format != null) {<a name="line.298"></a>
+<span class="sourceLineNo">299</span>            if (dfs != null) {<a name="line.299"></a>
+<span class="sourceLineNo">300</span>                this.recentDateFormat = new SimpleDateFormat(format, dfs);<a name="line.300"></a>
+<span class="sourceLineNo">301</span>            } else {<a name="line.301"></a>
+<span class="sourceLineNo">302</span>                this.recentDateFormat = new SimpleDateFormat(format);<a name="line.302"></a>
+<span class="sourceLineNo">303</span>            }<a name="line.303"></a>
+<span class="sourceLineNo">304</span>            this.recentDateFormat.setLenient(false);<a name="line.304"></a>
+<span class="sourceLineNo">305</span>        } else {<a name="line.305"></a>
+<span class="sourceLineNo">306</span>            this.recentDateFormat = null;<a name="line.306"></a>
+<span class="sourceLineNo">307</span>        }<a name="line.307"></a>
+<span class="sourceLineNo">308</span>        this.recentDateSmallestUnitIndex = getEntry(this.recentDateFormat);<a name="line.308"></a>
+<span class="sourceLineNo">309</span>    }<a name="line.309"></a>
+<span class="sourceLineNo">310</span><a name="line.310"></a>
+<span class="sourceLineNo">311</span>    /**<a name="line.311"></a>
+<span class="sourceLineNo">312</span>     * @return returns an array of 12 strings representing the short<a name="line.312"></a>
+<span class="sourceLineNo">313</span>     * month names used by this parse.<a name="line.313"></a>
+<span class="sourceLineNo">314</span>     */<a name="line.314"></a>
+<span class="sourceLineNo">315</span>    public String[] getShortMonths() {<a name="line.315"></a>
+<span class="sourceLineNo">316</span>        return defaultDateFormat.getDateFormatSymbols().getShortMonths();<a name="line.316"></a>
+<span class="sourceLineNo">317</span>    }<a name="line.317"></a>
+<span class="sourceLineNo">318</span><a name="line.318"></a>
+<span class="sourceLineNo">319</span><a name="line.319"></a>
+<span class="sourceLineNo">320</span>    /**<a name="line.320"></a>
+<span class="sourceLineNo">321</span>     * @return Returns the serverTimeZone used by this parser.<a name="line.321"></a>
+<span class="sourceLineNo">322</span>     */<a name="line.322"></a>
+<span class="sourceLineNo">323</span>    public TimeZone getServerTimeZone() {<a name="line.323"></a>
+<span class="sourceLineNo">324</span>        return this.defaultDateFormat.getTimeZone();<a name="line.324"></a>
+<span class="sourceLineNo">325</span>    }<a name="line.325"></a>
+<span class="sourceLineNo">326</span>    /**<a name="line.326"></a>
+<span class="sourceLineNo">327</span>     * sets a TimeZone represented by the supplied ID string into all<a name="line.327"></a>
+<span class="sourceLineNo">328</span>     * of the parsers used by this server.<a name="line.328"></a>
+<span class="sourceLineNo">329</span>     * @param serverTimeZoneId Time Id java.util.TimeZone id used by<a name="line.329"></a>
+<span class="sourceLineNo">330</span>     * the ftp server.  If null the client's local time zone is assumed.<a name="line.330"></a>
+<span class="sourceLineNo">331</span>     */<a name="line.331"></a>
+<span class="sourceLineNo">332</span>    private void setServerTimeZone(final String serverTimeZoneId) {<a name="line.332"></a>
+<span class="sourceLineNo">333</span>        TimeZone serverTimeZone = TimeZone.getDefault();<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        if (serverTimeZoneId != null) {<a name="line.334"></a>
+<span class="sourceLineNo">335</span>            serverTimeZone = TimeZone.getTimeZone(serverTimeZoneId);<a name="line.335"></a>
+<span class="sourceLineNo">336</span>        }<a name="line.336"></a>
+<span class="sourceLineNo">337</span>        this.defaultDateFormat.setTimeZone(serverTimeZone);<a name="line.337"></a>
+<span class="sourceLineNo">338</span>        if (this.recentDateFormat != null) {<a name="line.338"></a>
+<span class="sourceLineNo">339</span>            this.recentDateFormat.setTimeZone(serverTimeZone);<a name="line.339"></a>
+<span class="sourceLineNo">340</span>        }<a name="line.340"></a>
+<span class="sourceLineNo">341</span>    }<a name="line.341"></a>
+<span class="sourceLineNo">342</span><a name="line.342"></a>
+<span class="sourceLineNo">343</span>    /**<a name="line.343"></a>
+<span class="sourceLineNo">344</span>     * Implementation of the {@link  Configurable  Configurable}<a name="line.344"></a>
+<span class="sourceLineNo">345</span>     * interface. Configures this &lt;code&gt;FTPTimestampParser&lt;/code&gt; according<a name="line.345"></a>
+<span class="sourceLineNo">346</span>     * to the following logic:<a name="line.346"></a>
+<span class="sourceLineNo">347</span>     * &lt;p&gt;<a name="line.347"></a>
+<span class="sourceLineNo">348</span>     * Set up the {@link  FTPClientConfig#setDefaultDateFormatStr(java.lang.String) defaultDateFormat}<a name="line.348"></a>
+<span class="sourceLineNo">349</span>     * and optionally the {@link  FTPClientConfig#setRecentDateFormatStr(String) recentDateFormat}<a name="line.349"></a>
+<span class="sourceLineNo">350</span>     * to values supplied in the config based on month names configured as follows:<a name="line.350"></a>
+<span class="sourceLineNo">351</span>     * &lt;/p&gt;<a name="line.351"></a>
+<span class="sourceLineNo">352</span>     * &lt;ul&gt;<a name="line.352"></a>
+<span class="sourceLineNo">353</span>     * &lt;li&gt;If a {@link  FTPClientConfig#setShortMonthNames(String) shortMonthString}<a name="line.353"></a>
+<span class="sourceLineNo">354</span>     * has been supplied in the &lt;code&gt;config&lt;/code&gt;, use that to parse  parse timestamps.&lt;/li&gt;<a name="line.354"></a>
+<span class="sourceLineNo">355</span>     * &lt;li&gt;Otherwise, if a {@link  FTPClientConfig#setServerLanguageCode(String) serverLanguageCode}<a name="line.355"></a>
+<span class="sourceLineNo">356</span>     * has been supplied in the &lt;code&gt;config&lt;/code&gt;, use the month names represented<a name="line.356"></a>
+<span class="sourceLineNo">357</span>     * by that {@link  FTPClientConfig#lookupDateFormatSymbols(String) language}<a name="line.357"></a>
+<span class="sourceLineNo">358</span>     * to parse timestamps.&lt;/li&gt;<a name="line.358"></a>
+<span class="sourceLineNo">359</span>     * &lt;li&gt;otherwise use default English month names&lt;/li&gt;<a name="line.359"></a>
+<span class="sourceLineNo">360</span>     * &lt;/ul&gt;&lt;p&gt;<a name="line.360"></a>
+<span class="sourceLineNo">361</span>     * Finally if a {@link  org.apache.commons.net.ftp.FTPClientConfig#setServerTimeZoneId(String) serverTimeZoneId}<a name="line.361"></a>
+<span class="sourceLineNo">362</span>     * has been supplied via the config, set that into all date formats that have<a name="line.362"></a>
+<span class="sourceLineNo">363</span>     * been configured.<a name="line.363"></a>
+<span class="sourceLineNo">364</span>     * &lt;/p&gt;<a name="line.364"></a>
+<span class="sourceLineNo">365</span>     */<a name="line.365"></a>
+<span class="sourceLineNo">366</span>    @Override<a name="line.366"></a>
+<span class="sourceLineNo">367</span>    public void configure(final FTPClientConfig config) {<a name="line.367"></a>
+<span class="sourceLineNo">368</span>        DateFormatSymbols dfs = null;<a name="line.368"></a>
+<span class="sourceLineNo">369</span><a name="line.369"></a>
+<span class="sourceLineNo">370</span>        final String languageCode = config.getServerLanguageCode();<a name="line.370"></a>
+<span class="sourceLineNo">371</span>        final String shortmonths = config.getShortMonthNames();<a name="line.371"></a>
+<span class="sourceLineNo">372</span>        if (shortmonths != null) {<a name="line.372"></a>
+<span class="sourceLineNo">373</span>            dfs = FTPClientConfig.getDateFormatSymbols(shortmonths);<a name="line.373"></a>
+<span class="sourceLineNo">374</span>        } else if (languageCode != null) {<a name="line.374"></a>
+<span class="sourceLineNo">375</span>            dfs = FTPClientConfig.lookupDateFormatSymbols(languageCode);<a name="line.375"></a>
+<span class="sourceLineNo">376</span>        } else {<a name="line.376"></a>
+<span class="sourceLineNo">377</span>            dfs = FTPClientConfig.lookupDateFormatSymbols("en");<a name="line.377"></a>
+<span class="sourceLineNo">378</span>        }<a name="line.378"></a>
+<span class="sourceLineNo">379</span><a name="line.379"></a>
+<span class="sourceLineNo">380</span><a name="line.380"></a>
+<span class="sourceLineNo">381</span>        final String recentFormatString = config.getRecentDateFormatStr();<a name="line.381"></a>
+<span class="sourceLineNo">382</span>        setRecentDateFormat(recentFormatString, dfs);<a name="line.382"></a>
+<span class="sourceLineNo">383</span><a name="line.383"></a>
+<span class="sourceLineNo">384</span>        final String defaultFormatString = config.getDefaultDateFormatStr();<a name="line.384"></a>
+<span class="sourceLineNo">385</span>        if (defaultFormatString == null) {<a name="line.385"></a>
+<span class="sourceLineNo">386</span>            throw new IllegalArgumentException("defaultFormatString cannot be null");<a name="line.386"></a>
+<span class="sourceLineNo">387</span>        }<a name="line.387"></a>
+<span class="sourceLineNo">388</span>        setDefaultDateFormat(defaultFormatString, dfs);<a name="line.388"></a>
+<span class="sourceLineNo">389</span><a name="line.389"></a>
+<span class="sourceLineNo">390</span>        setServerTimeZone(config.getServerTimeZoneId());<a name="line.390"></a>
+<span class="sourceLineNo">391</span><a name="line.391"></a>
+<span class="sourceLineNo">392</span>        this.lenientFutureDates = config.isLenientFutureDates();<a name="line.392"></a>
+<span class="sourceLineNo">393</span>    }<a name="line.393"></a>
+<span class="sourceLineNo">394</span>    /**<a name="line.394"></a>
+<span class="sourceLineNo">395</span>     * @return Returns the lenientFutureDates.<a name="line.395"></a>
+<span class="sourceLineNo">396</span>     */<a name="line.396"></a>
+<span class="sourceLineNo">397</span>    boolean isLenientFutureDates() {<a name="line.397"></a>
+<span class="sourceLineNo">398</span>        return lenientFutureDates;<a name="line.398"></a>
+<span class="sourceLineNo">399</span>    }<a name="line.399"></a>
+<span class="sourceLineNo">400</span>    /**<a name="line.400"></a>
+<span class="sourceLineNo">401</span>     * @param lenientFutureDates The lenientFutureDates to set.<a name="line.401"></a>
+<span class="sourceLineNo">402</span>     */<a name="line.402"></a>
+<span class="sourceLineNo">403</span>    void setLenientFutureDates(final boolean lenientFutureDates) {<a name="line.403"></a>
+<span class="sourceLineNo">404</span>        this.lenientFutureDates = lenientFutureDates;<a name="line.404"></a>
+<span class="sourceLineNo">405</span>    }<a name="line.405"></a>
+<span class="sourceLineNo">406</span>}<a name="line.406"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

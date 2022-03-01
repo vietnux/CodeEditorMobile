@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/chooseSuitLayout"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_padding"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Name"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:text=""
+            android:textSize="16sp"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHost"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Host/IP Address"
+            android:textSize="16sp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPort"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="21"
+            android:hint="Port"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:text=""
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Password"
+        android:textSize="16sp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/ftp"
+            android:text="FTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/sftp"
+            android:text="sFTP"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remote directory"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/remoteDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

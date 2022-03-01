@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Save" android:id="@+id/action_save"/>
+    <item android:title="Save as" android:id="@+id/action_save_as"/>
+    <item android:title="Run" android:id="@+id/action_run"/>
+    <item android:title="Close" android:id="@+id/action_close"/>
+</menu>

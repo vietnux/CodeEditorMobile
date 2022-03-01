@@ -1,0 +1,236 @@
+/*
+ *   Copyright 2020-2021 Rosemoe
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ */
+package com.tglt.code.editor.utils;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.res.AssetManager;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+
+import com.blankj.utilcode.util.PathUtils;
+import com.blankj.utilcode.util.ThreadUtils;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.tglt.code.editor.R;
+import com.tglt.code.editor.app.ConsoleActivity;
+import com.tglt.code.editor.app.FragmentEditor;
+import com.tglt.code.editor.app.MainActivity;
+import com.tglt.code.editor.app.RunActivity;
+import com.tglt.code.editor.task.BackgroundTask;
+import com.tglt.code.editor.utils.cCompile.GccCompiler;
+import com.xiaoyv.ccompile.CCppEngine;
+import com.xiaoyv.ccompile.compiler.listener.CompileCallback;
+import com.xiaoyv.ccompile.utils.ResourceUtils;
+import com.xiaoyv.javaengine.JavaEngine;
+import com.xiaoyv.javaengine.JavaEngineSetting;
+import com.xiaoyv.javaengine.compile.listener.CompilerListener;
+import com.xiaoyv.javaengine.compile.listener.ExecuteListener;
+import com.xiaoyv.javaengine.console.JavaConsole;
+import com.xiaoyv.javaengine.utils.FileIOUtils;
+import com.xiaoyv.javaengine.utils.SPUtils;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class GccCompile {
+    /**
+     * Java Console object
+     */
+    private JavaConsole javaConsole;
+
+    private FragmentEditor fragmentSave;
+
+    public GccCompile() {
+//        CCppEngine.installGcc(MainActivity.getContext(),new File("/storage/emulated/0/Android/data/com.xiaoyv.ccompileengine/files/gcc.zip"),new CCppEngine.OnInstallListener(){
+        AssetManager assetManager = MainActivity.getContext().getAssets();
+//        String infoJavaFile = PathUtils.getExternalAppCachePath() + "/gcc.zip";
+
+//        assetManager.open("gcc.zip").use { inputStream ->
+//                inputStream.copyTo(cache)
+//        }
+//        File f = File(MainActivity.getContext().getCacheDir(), fileName);
+        ResourceUtils.copyFileFromAssets("gcc.zip", MainActivity.getContext().getCacheDir()+"/compiler/gcc.zip" );
+        CCppEngine.installGcc(MainActivity.getContext(), new File(MainActivity.getContext().getCacheDir()+"/compiler/gcc.zip"), new CCppEngine.OnInstallListener(){
+            @Override
+            public void onSuccess() {
+                Log.e("aaaa", "安装成功");
+                Toast.makeText(MainActivity.getActivity(), "安装成功", Toast.LENGTH_SHORT).show();
+                run();
+            }
+
+            @Override
+            public void onError(String error) {
+                Log.e("aaaa", "安装成功 == "+error);
+                Toast.makeText(MainActivity.getActivity(), error, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    public void run() {
+        fragmentSave = MainActivity.getActivity().getFragmentSave();
+        fragmentSave.showLog();
+        fragmentSave.showNormalInfo(MainActivity.getActivity().getString(R.string.editor_tips));
+
+
+        Task compileTask = new Task();
+        compileTask.setOnTaskStarted((o) -> compileTask() );
+//        compileTask.setOnPostTask( this::compileTaskResult );
+//        compileTask.setOnUpdateTask( this::compileProgress );
+        compileTask.execute();
+    }
+
+    public Object compileTask() {
+        if(fragmentSave.getLangId()==0) {
+            compileC();
+        } else {
+            compileGcc();
+        }
+        return new Object[]{};
+    }
+    /**
+     * 开始编译
+     */
+    public void compileC( ) {
+        // 创建Java文件，写入代码内容
+        String cFilePath = MainActivity.getContext().getExternalCacheDir() + "/Java/"+fragmentSave.getTabName();
+//        String javaFilePath = MainActivity.getContext().getExternalCacheDir() + "/Java/Main.java";
+        FileIOUtils.writeFileFromString(cFilePath, fragmentSave.getTabEditor().getText().toString() );
+
+        File cFile = new File(cFilePath );
+        List<File> files = new ArrayList<>();
+        files.add(cFile);
+
+        Log.e("==========", "======================================================================");
+        CCppEngine.getCCompiler().compile(files, new CompileCallback() {
+            @Override
+            public void onSuccess(String outPath) {
+                Log.e("==========", "编译完成：" + outPath);
+//                ThreadUtils.runOnUiThread(() ->
+//                        fragmentSave.showNormalInfo( MainActivity.getActivity().getString(R.string.editor_compilation_over  ,
+//                                fragmentSave.getTabName() )));
+
+                ThreadUtils.runOnUiThread(() -> {
+                    fragmentSave.showNormalInfo( MainActivity.getActivity().getString(R.string.editor_compilation_completed  ,
+                            outPath.replace(PathUtils.getExternalAppDataPath(), "")));
+                    fragmentSave.showLogDismissListener(outPath);
+                });
+                ThreadUtils.runOnUiThreadDelayed(() -> {
+                    Intent intent = new Intent(fragmentSave.getContext(), ConsoleActivity.class);
+                    intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_DEX_PATH, outPath);
+                    intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_TYPE, "c");
+                    //            intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_CLASS_NAME, null);
+                    fragmentSave.getContext().startActivity(intent);
+                }, 2000);
+            }
+
+            @Override
+            public void onError(String error) {
+                Log.e("==========", "编译失败:：" + error);
+                ThreadUtils.runOnUiThread(() -> fragmentSave.showErrorInfo(error));
+            }
+//            @Override
+//            public void onProgress(String task, int progress) {
+////                view.showProgress(task.replace(PathUtils.getExternalAppDataPath(), ""), progress);
+//                fragmentSave.showProgress(task.replace(PathUtils.getExternalAppDataPath(), ""), progress);
+//
+//            }
+        });
+
+    }
+
+    public void compileGcc( ) {
+        fragmentSave = MainActivity.getActivity().getFragmentSave();
+        fragmentSave.showLog();
+        fragmentSave.showNormalInfo(MainActivity.getActivity().getString(R.string.editor_tips));
+
+        // 创建Java文件，写入代码内容
+        String gccFilePath = MainActivity.getContext().getExternalCacheDir() + "/Java/"+fragmentSave.getTabName();
+//        String javaFilePath = MainActivity.getContext().getExternalCacheDir() + "/Java/Main.java";
+        FileIOUtils.writeFileFromString(gccFilePath, fragmentSave.getTabEditor().getText().toString() );
+
+        File cFile = new File(gccFilePath);
+        List<File> files = new ArrayList<>();
+        files.add(cFile);
+
+        Log.e("==========", "======================================================================");
+        CCppEngine.getCppCompiler().compile(files, new CompileCallback() {
+            @Override
+            public void onSuccess(String outPath) {
+                Log.e("==========", "编译完成：" + outPath);
+
+                ThreadUtils.runOnUiThread(() -> {
+                    fragmentSave.showNormalInfo( MainActivity.getActivity().getString(R.string.editor_compilation_completed  ,
+                            outPath.replace(PathUtils.getExternalAppDataPath(), "")));
+                    fragmentSave.showLogDismissListener(outPath);
+                });
+                ThreadUtils.runOnUiThreadDelayed(() -> {
+                    Intent intent = new Intent(fragmentSave.getContext(), ConsoleActivity.class);
+                    intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_DEX_PATH, outPath);
+                    intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_TYPE, "c");
+                    //            intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_CLASS_NAME, null);
+                    fragmentSave.getContext().startActivity(intent);
+                }, 2000);
+            }
+
+            @Override
+            public void onError(String error) {
+                Log.e("==========", "编译失败：" + error);
+                ThreadUtils.runOnUiThread(() -> fragmentSave.showErrorInfo(error));
+            }
+        });
+    }
+
+    public class Task extends BackgroundTask<Void, Object, Object> {
+
+        protected MaterialAlertDialogBuilder loadingDialog;
+
+        public Task() {
+        }
+
+        @Override
+        protected Object doInBackground(Void... voids) {
+            return super.doInBackground(voids);
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(Object str) {
+            super.onPostExecute(str);
+            fragmentSave.showLogDismissListener(null);
+//            if (compiled) {
+//                ThreadUtils.runOnUiThreadDelayed(() -> {
+//                    Intent runIntent = new Intent(fragmentSave.getContext(), RunActivity.class);
+//                    runIntent.putExtra("project", selectedProject);
+//                    fragmentSave.getContext().startActivity(runIntent);
+
+//
+//                    Intent intent = new Intent(fragmentSave.getContext(), ConsoleActivity.class);
+//                    intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_DEX_PATH, dexPath);
+//                    //            intent.putExtra(ConsoleActivity.CONSOLE_ACTIVITY_CLASS_NAME, null);
+//                    fragmentSave.getContext().startActivity(intent);
+//                }, 2000);
+//            } else {
+////                Toasty.error(this, this.getString(R.string.not_compiled_project), Toasty.LENGTH_LONG, true).show();
+//            }
+        }
+    }
+
+}

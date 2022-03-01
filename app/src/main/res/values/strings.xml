@@ -1,0 +1,138 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~   Copyright 2020-2021 Rosemoe
+  ~
+  ~   Licensed under the Apache License, Version 2.0 (the "License");
+  ~   you may not use this file except in compliance with the License.
+  ~   You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~   Unless required by applicable law or agreed to in writing, software
+  ~   distributed under the License is distributed on an "AS IS" BASIS,
+  ~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~   See the License for the specific language governing permissions and
+  ~   limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="app_name">CodeEditor</string>
+    <string name="open_debug_logs">Open Debug Logs</string>
+    <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+<!--        <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <string name="admob_id" translatable="false">ca-app-pub-1656614863517753~5582868397</string>
+
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="clear">Clear</string>
+    <string name="clear_all">Clear All</string>
+    <string name="layout_tv_last">Last</string>
+    <string name="layout_tv_next">Next</string>
+    <string name="layout_tv_replace">Replace</string>
+    <string name="layout_tv_replaceAll">Replace All</string>
+    <string name="text_to_search">Text to search</string>
+    <string name="replacement">Replacement</string>
+    <string name="cursor_actions">Cursor Actions</string>
+    <string name="go_to_end">Go To End</string>
+    <string name="move_up">Move Up</string>
+    <string name="move_down">Move Down</string>
+    <string name="move_left">Move Left</string>
+    <string name="move_right">Move Right</string>
+    <string name="home">Home</string>
+    <string name="end">End</string>
+    <string name="text_actions">Text Actions</string>
+    <string name="switch_color_scheme">Switch Color Scheme</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="search_text">Search Text</string>
+    <string name="action_mode">Action Mode</string>
+    <string name="search_panel">Search Panel</string>
+    <string name="code_navigation">Code Navigation</string>
+    <string name="switch_language">Switch Language</string>
+    <string name="format">Format</string>
+    <string name="code_navi">Code Navigation</string>
+    <string name="navi_err_msg">Code navigation not prepared or unsupported</string>
+    <string name="color_scheme">Color Scheme</string>
+    <string name="err_crash_loop">"Exception in a thread with looper. Crash log is saved to crash-journal.log in private files directory. "</string>
+    <string name="wordwrap">Wordwrap</string>
+    <string name="show_crash_log">Open crash log</string>
+    <string name="clear_crash_log">Clear crash log</string>
+    <string name="line_number_visibility">Show line number</string>
+    <string name="pin_line_number">Pin LineNumber</string>
+    <string name="newtab">New</string>
+    <string name="newsample">Exsample</string>
+    <string name="openfile">Open file</string>
+    <string name="run">Run</string>
+    <string name="save">Save</string>
+    <string name="save_as">Save as</string>
+    <string name="community">Community</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="add_client_account" translatable="false">Add FTP/sFTP client account</string>
+
+    <string name="settings_license" translatable="false">Open Source licenses</string>
+    <string name="settings_about" translatable="false">Have Fun</string>
+    <string name="settings_googleplay" translatable="false">Rate on Google Play</string>
+
+    <string name="about_description" translatable="false">
+        Code Editor is the free app to code the PHP, C, C++, CSS, JavaScript, Python and HTML Codes, .... and run HTML, HTML5, ... It is very faster and gives us accurate results. It has very clean User-Interface and can to change for a editor. User can work with this app even in night times if user choosed theme dark.
+\nIt is better than other code editors for android. It contains necessary features for coding, includes syntax highlighting, auto indention, code assist, auto completion, compilation and execution, etc.
+        \n\n
+        Features:\n
+    ⭐ Smooth syntax highlighting for multiple languages (C++, Java, JavaScript, HTML, Markdown, PHP, Perl, Python, Lua, Dart, etc)\n
+    ⭐ Preview HTML and Markdown files\n
+    ⭐ Auto completion\n
+    ⭐ Auto indent\n
+    ⭐ Code block lines\n
+    ⭐ Scale text\n
+    ⭐ Select text\n
+    ⭐ Scroll, Scrollbars, EdgeEffect, OverScroll\n
+    ⭐ Undo\/redo changes without limit\n
+    ⭐ Search and replace\n
+    ⭐ Shortcuts\n
+    ⭐ Auto wordwrap\n
+    ⭐ Show non-printable characters\n
+    ⭐ Incremental highlight Analysis\n
+    ⭐ Plugin System\n
+    ⭐ Access files from FTP, FTPS, SFTP and WebDAV.\n
+Language Supported\n
+    PHP, Java, JavaScript, C, C++, HTML, Python (Basic Support:highlight, code block line, identifier and keyword auto-completion). Code block line isn\'t available for HTML Language.
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
+    <string name="tap_exit">Tap again to close the app</string>
+
+    <string name="editor_log"> Compile output log </string>
+    <string name="editor_edit_log"> Log copy mode is on </string>
+    <string name="editor_tips"> Tips：The first compilation needs to load the environment\n\n>>> Compilation starts </string>
+    <string name="editor_compilation_over"> >>> Compilation is over\n>>> Output path: %s\n>>> Conversion begins  </string>
+    <string name="editor_compilation_completed"> >>> Conversion completed\n>>> Output path: %s\nTips: Please wait to run the program!</string>
+
+    <string name="invalid_project_file_selecting">Invalid project file selected</string>
+    <string name="compiler_setup_exception">Couldn\'t setup compiler, maybe not enough space left in device</string>
+    <string name="remove_project">Remove project\u0020</string>
+    <string name="invalid_project_name">Invalid project name</string>
+    <string name="start_gcc_title" translatable="false">C/C++ IDE</string>
+    <string name="project_create_error">Couldn\'t create project, maybe not enough space left in device</string>
+
+    <string name="invalid_source_file">Invalid source file\u0020</string>
+    <string name="project_name_show">Project name:\u0020</string>
+    <string name="project_description_show">Description:\u0020</string>
+    <string name="project_language_show">Language:\u0020</string>
+    <string name="project_files_show">Files:\u0020</string>
+    <string name="failed_build_status">Build state: Failed</string>
+    <string name="success_build_status">Build state: Success</string>
+    <string name="save_successful">Saved successfully</string>
+    <string name="save_failed">Couldn\'t save file</string>
+    <string name="not_compiled_project">Project is not compiled yet</string>
+    <string name="run_compiled_file_error">Couldn\'t run compiled file, maybe not enough space left in device</string>
+
+    <string name="exits_des">Are you sure you want to quit the game?\nPlease help us 5* so that we have a momentum for development.\nOr you can share to your friends with the same experience!\n\nThanks for supporting us!</string>
+    <string name="exits">Exits</string>
+    <string name="rating">Rate this</string>
+    <string name="apps">Applications</string>
+</resources>

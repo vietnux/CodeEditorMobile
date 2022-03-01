@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~   Copyright 2020-2021 Rosemoe
+  ~
+  ~   Licensed under the Apache License, Version 2.0 (the "License");
+  ~   you may not use this file except in compliance with the License.
+  ~   You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~   Unless required by applicable law or agreed to in writing, software
+  ~   distributed under the License is distributed on an "AS IS" BASIS,
+  ~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~   See the License for the specific language governing permissions and
+  ~   limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="app_name">CodeEditor</string>
+    <string name="license_mylicense_licenseName" translatable="false">Giấy phép tùy chỉnh</string>
+    <string name="add">Thêm</string>
+    <string name="edit">Sửa</string>
+    <string name="clear">Xóa</string>
+    <string name="clear_all">Xóa tất</string>
+    <string name="newtab">Mới</string>
+    <string name="newsample">Ví dụ</string>
+    <string name="openfile">Mở tệp</string>
+    <string name="run">Chạy</string>
+    <string name="save">Lưu lại</string>
+    <string name="save_as">Lưu dạng khác</string>
+    <string name="community">Cộng đồng</string>
+    <string name="action_send">Gửi</string>
+    <string name="save_successful">Đã lưu thành công</string>
+    <string name="save_failed">Không thể lưu tệp</string>
+    <string name="not_compiled_project">Dự án chưa được biên dịch</string>
+    <string name="run_compiled_file_error">Không thể chạy tệp đã biên dịch, có thể không còn đủ dung lượng của thiết bị</string>
+    <string name="exits_des">Bạn có chắc chắn muốn thoát chương trình? Xin hãy giúp chúng tôi 5 * để chúng tôi có động lực phát triển. Hoặc bạn có thể chia sẻ cho bạn bè cùng trải nghiệm!  Cảm ơn vì đã ủng hộ chúng tôi!</string>
+    <string name="editor_compilation_over">>>> Biên dịch kết thúc \n>>> Đường dẫn đầu ra:%s \n>>> Bắt đầu chuyển đổi</string>
+    <string name="editor_compilation_completed">>>> Biên dịch hoàn tất \n>>> Đường dẫn đầu ra:%s \nLời khuyên: Vui lòng đợi để chạy chương trình!</string>
+    <string name="editor_tips">Lời khuyên： Lần biên dịch đầu tiên cần tải môi trường  \n>>> Bắt đầu biên dịch</string>
+    <string name="layout_tv_last">Sau</string>
+    <string name="move_up">Đi lên</string>
+    <string name="layout_tv_next">Tiếp</string>
+    <string name="move_down">Đi xuống</string>
+    <string name="code_navigation">Mã điều hướng</string>
+    <string name="code_navi">Mã điều hướng</string>
+    <string name="layout_tv_replaceAll">Thay thế tất</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="format">Định dạng</string>
+    <string name="end">Kết thúc</string>
+    <string name="go_to_end">Đi đến cuối</string>
+    <string name="move_right">Sang phải</string>
+    <string name="exits">Thoát</string>
+    <string name="rating">Đánh giá</string>
+    <string name="apps">Các ứng dụng</string>
+    <string name="cursor_actions">Các thao tác con trỏ</string>
+    <string name="navi_err_msg">Điều hướng mã chưa chuẩn bị hoặc không được hỗ trợ</string>
+    <string name="tap_exit">Nhấn lại để đóng ứng dụng</string>
+    <string name="success_build_status">Trạng thái: Thành công</string>
+    <string name="failed_build_status">Trạng thái: Không thành công</string>
+    <string name="wordwrap">Wordwrap</string>
+    <string name="move_left">Sang trái</string>
+    <string name="search_text">Tìm kiếm văn bản</string>
+    <string name="search_panel">Bảng tìm kiếm</string>
+    <string name="action_mode">Chế độ hành động</string>
+    <string name="layout_tv_replace">Thay thế</string>
+    <string name="text_to_search">Văn bản tìm kiếm</string>
+    <string name="replacement">Sự thay thế</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="line_number_visibility">Hiển thị số dòng</string>
+    <string name="pin_line_number">Ghim cột số dòng</string>
+    <string name="settings_googleplay" translatable="false">"Xếp hạng trên Google Play "</string>
+</resources>

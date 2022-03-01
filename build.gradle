@@ -1,0 +1,93 @@
+/*******************************************************************************
+ *   Copyright 2020-2021 Rosemoe
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ ******************************************************************************/
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+//    ext["signing.keyId"] = ''
+//    ext["signing.password"] = ''
+//    ext["signing.secretKeyRingFile"] = ''
+//    ext["ossrhUsername"] = ''
+//    ext["ossrhPassword"] = ''
+//
+//    File secretPropsFile = project.rootProject.file('publish.properties')
+//    if (secretPropsFile.exists()) {
+//        println "Found secret props file, loading props"
+//        Properties p = new Properties()
+//        p.load(new FileInputStream(secretPropsFile))
+//        p.each { name, value ->
+//            ext[name] = value
+//        }
+//    } else {
+//        println "No props file, loading env vars"
+//    }
+    ext {
+        kotlin_version = '1.5.30'
+    }
+    repositories {
+        google()
+//        jcenter()
+        mavenCentral()
+        maven {  url "https://jitpack.io" }
+        maven { url "https://chaquo.com/maven" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "com.chaquo.python:gradle:10.0.1"
+    }
+}
+
+allprojects {
+    ext {
+        PUBLISH_VERSION = Versions.versionName
+        PUBLISH_GROUP_ID = 'io.github.Rosemoe.sora-editor'
+    }
+    repositories {
+        google()
+//        jcenter()
+        mavenCentral()
+        maven { url = "https://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url = 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//tasks.withType(JavaCompile) {
+//    options.encoding = "UTF-8"
+//}
+task bundleAll {
+    group = 'Rosemoe'
+    allprojects.forEach {
+        if (it.name.equals("editor") || it.name.startsWith("language-")) {
+            dependsOn it.getTasksByName("bundleReleaseAar", false)
+        }
+    }
+}
+
+task publishAll {
+    group = 'Rosemoe'
+    allprojects.forEach {
+        if (it.name.equals("editor") || it.name.startsWith("language-")) {
+            dependsOn it.getTasksByName("publish", false)
+        }
+    }
+}

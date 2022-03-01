@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/empty_note"
+            android:title="@string/newtab" />
+        <item
+            android:id="@+id/nav_sample"
+            android:icon="@drawable/empty_note"
+            android:title="@string/newsample" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@android:drawable/sym_contact_card"
+            android:title="@string/openfile" />
+        <item
+            android:id="@+id/nav_fpt"
+            android:icon="@drawable/client"
+            android:title="FPT/sFTP" />
+    </group>
+
+    <item android:title="@string/community">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="Đánh giá" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/action_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="@string/action_send"
+                android:visibility="gone"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/apps">
+<!--        <item-->
+<!--            android:id="@+id/nav_licenses"-->
+<!--            android:icon="@android:drawable/ic_menu_info_details"-->
+<!--            android:title="Open Source licenses" />-->
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_sort_alphabetically"
+            android:title="@string/action_about" />
+    </item>
+<!--    <item android:title="Ứng dụng">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_truyenxuatichcu"-->
+<!--                android:icon="@mipmap/ic_truyenxuatichcu"-->
+<!--                android:title="Truyện xưa tích cũ" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_vuimotchut"-->
+<!--                android:icon="@mipmap/ic_vuimotchut"-->
+<!--                android:title="Truyện cười" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_dicav"-->
+<!--                android:icon="@mipmap/ic_dicav"-->
+<!--                android:title="Từ điển DicAV" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>
