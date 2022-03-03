@@ -1,6 +1,6 @@
 # CodeEditor
 
-![ApplicationIcon](gui/logo.png)
+![ApplicationIcon](images/cove.jpg)
 
 **Available on [Galaxy Store](http://galaxystore.samsung.com/detail/com.tglt.code.editor) and [Google Play](https://play.google.com/store/apps/details?id=com.tglt.code.editor)**
 *(disponible sur [Galaxy Store](http://galaxystore.samsung.com/detail/com.tglt.code.editor) et [Google Play](https://play.google.com/store/apps/details?id=com.tglt.code.editor))*
