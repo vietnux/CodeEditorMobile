@@ -9,7 +9,7 @@ It is **not** recommended to use this project for production use.
 ***Note:***
 Any method or field can be changed, moved or even deleted at current period.     
 If you find any bug or require any enhancement, please send it to me by issues or other ways.
-Download newest sources from [Releases](https://github.com/Rosemoe/CodeEditor/releases) instead of cloning this repository directly.
+Download newest sources from [Releases](https://github.com/vietnux/CodeEditorMobile/releases) instead of cloning this repository directly.
 
 **Issues and pull requests are welcome.**   
 Note: Language issues may not be handled.   
@@ -31,8 +31,8 @@ Note: Language issues may not be handled.
 ## Language Supported  
 * Java, JavaScript, C, C++, HTML, Python (Basic Support:highlight, code block line,identifier and keyword auto-completion). Code block line isn't available for HTML Language
 ## Screenshots  
-![View Outline](/images/outline.png)
-![Auto Complete](/images/auto-completion.png)
+![View Outline](/images/Screenshot_20210905-163425.png)
+![Auto Complete](/images/Screenshot_20210905-164058.png)
 ![Select Text](/images/select-text.png)
 ![Search and Replace](/images/search-replace.png)
 ![Wordwrap](/images/wordwrap.png)
