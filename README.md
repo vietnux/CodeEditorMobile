@@ -30,9 +30,9 @@ Note: Language issues may not be handled.
   ⭐ Select text 
   ⭐ Scroll, Scrollbars, EdgeEffect, OverScroll 
   ⭐ Undo/redo changes without limit 
-  ⭐ Search and replace 
-  ⭐ Shortcuts 
-  ⭐ Auto wordwrap 
+  ⭐ Search and replace  
+  ⭐ Shortcuts  
+  ⭐ Auto wordwrap  
   ⭐ Show non-printable characters 
   ⭐ Incremental highlight Analysis 
   ⭐ Plugin System 
