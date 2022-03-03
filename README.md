@@ -1,7 +1,13 @@
 # CodeEditor
-[![JitPack](https://jitpack.io/v/Rosemoe/CodeEditor.svg)](https://jitpack.io/#Rosemoe/CodeEditor)
-[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/rosemoe_code_editor)
-[![QQ](https://img.shields.io/badge/Join-QQ_Group-ff69b4)](https://jq.qq.com/?_wv=1027&k=n68uxQws)   
+
+![ApplicationIcon](gui/logo.png)
+
+**Available on [Galaxy Store](http://galaxystore.samsung.com/detail/com.tglt.code.editor) and [Google Play](https://play.google.com/store/apps/details?id=com.tglt.code.editor)**
+*(disponible sur [Galaxy Store](http://galaxystore.samsung.com/detail/com.tglt.code.editor) et [Google Play](https://play.google.com/store/apps/details?id=com.tglt.code.editor))*
+
+[![](https://img.shields.io/github/v/release/vietnux/CodeEditorMobile?label=Latest%20release&style=plastic)](https://github.com/vietnux/CodeEditorMobile/releases)
+[<img src="https://d3unf4s5rp9dfh.cloudfront.net/SDP/GalaxyStore_English.png" height="18">](http://galaxystore.samsung.com/detail/com.tglt.code.editor)
+[![](https://img.shields.io/endpoint?style=plastic&color=blue&label=Google%20Play%20release&url=https://playshields.herokuapp.com/play?i=com.tglt.code.editor&m=$version)](https://play.google.com/store/apps/details?id=com.tglt.code.editor)  
 A cool and optimized code editor on Android platform with good performance and nice features.
 
 ***Work In Progress*** This project is still developing slowly. Bugs may be inside.
@@ -30,12 +36,12 @@ Note: Language issues may not be handled.
 - [ ] Plugin System
 ## Language Supported  
 * Java, JavaScript, C, C++, HTML, Python (Basic Support:highlight, code block line,identifier and keyword auto-completion). Code block line isn't available for HTML Language
-## Screenshots  
-![View Outline](/images/Screenshot_20210905-163425.png)
-![Auto Complete](/images/Screenshot_20210905-164058.png)
-![Select Text](/images/Screenshot_20210905-164403.png)
-![Search and Replace](/images/Screenshot_20210905-164432.png)
-![Wordwrap](/images/Screenshot_20210905-164459.png)
+## Screenshots
+<img src="images/Screenshot_20210905-163425.png" width="360" height="675"><img src="images/Screenshot_20210905-163425.png" width="360" height="675">
+<img src="images/Screenshot_20210905-164058.png" width="360" height="675"><img src="images/Screenshot_20210905-164058.png" width="360" height="675">
+<img src="images/Screenshot_20210905-164403.png" width="360" height="675"><img src="images/Screenshot_20210905-164403.png" width="360" height="675">
+<img src="images/Screenshot_20210905-164432.png" width="360" height="675"><img src="images/Screenshot_20210905-164432.png" width="360" height="675">
+<img src="images/Screenshot_20210905-164459.png" width="360" height="675"><img src="images/Screenshot_20210905-164459.png" width="360" height="675">
 ## How to use this editor  
 * Step 1.Add the JitPack repository to your build file   
 Add it in your root build.gradle at the end of repositories:
@@ -61,7 +67,5 @@ Available modules:
 * language-python
 * language-universal   
 ### Some more information
-Go to [Wiki](https://github.com/Rosemoe/CodeEditor/wiki)
-### Discuss
-* Official QQ Group:[216632648](https://jq.qq.com/?_wv=1027&k=n68uxQws)
-* [Official Telegram Group](https://t.me/rosemoe_code_editor)
+Go to [Wiki](https://github.com/vietnux/CodeEditorMobile/wiki)
+
