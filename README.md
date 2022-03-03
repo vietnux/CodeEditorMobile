@@ -33,9 +33,9 @@ Note: Language issues may not be handled.
 ## Screenshots  
 ![View Outline](/images/Screenshot_20210905-163425.png)
 ![Auto Complete](/images/Screenshot_20210905-164058.png)
-![Select Text](/images/select-text.png)
-![Search and Replace](/images/search-replace.png)
-![Wordwrap](/images/wordwrap.png)
+![Select Text](/images/Screenshot_20210905-164403.png)
+![Search and Replace](/images/Screenshot_20210905-164432.png)
+![Wordwrap](/images/Screenshot_20210905-164459.png)
 ## How to use this editor  
 * Step 1.Add the JitPack repository to your build file   
 Add it in your root build.gradle at the end of repositories:
