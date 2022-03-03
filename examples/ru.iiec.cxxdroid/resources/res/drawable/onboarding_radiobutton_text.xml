@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="@integer/custom_radiobutton_animation_time" android:exitFadeDuration="@integer/custom_radiobutton_animation_time">
+    <item android:state_checked="true" android:color="@color/onboarding_radiobutton_text_selected"/>
+    <item android:color="@color/onboarding_radiobutton_text"/>
+</selector>

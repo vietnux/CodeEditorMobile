@@ -1,0 +1,10 @@
+io/github/rosemoe/sora/langs/html/HTMLAnalyzer.java
+ io.github.rosemoe.sora.langs.html.HTMLAnalyzer
+io/github/rosemoe/sora/langs/html/HTMLAutoComplete.java
+ io.github.rosemoe.sora.langs.html.HTMLAutoComplete
+io/github/rosemoe/sora/langs/html/BuildConfig.java
+ io.github.rosemoe.sora.langs.html.BuildConfig
+io/github/rosemoe/sora/langs/html/HTMLLanguage.java
+ io.github.rosemoe.sora.langs.html.HTMLLanguage
+io/github/rosemoe/sora/langs/html/HTMLLexer.java
+ io.github.rosemoe.sora.langs.html.HTMLLexer

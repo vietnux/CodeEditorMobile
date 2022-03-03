@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:id="@+id/set_project" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open new project" android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <View android:background="@color/my_light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/status_bar"/>
+</RelativeLayout>

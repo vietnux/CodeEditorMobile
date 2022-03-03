@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Compiler-Debug-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+        "Compiler"
+      ],
+      "buildType": "debug",
+      "abi": "arm64-v8a",
+      "artifactName": "Compiler",
+      "output": "D:\\Android\\CodeEditor\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\Compiler",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

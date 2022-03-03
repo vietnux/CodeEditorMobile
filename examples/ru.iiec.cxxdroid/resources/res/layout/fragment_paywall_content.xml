@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/fragment_paywall_content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:text="@string/purchase_p4" style="@style/TextViewProsStyle"/>
+    <TextView android:id="@+id/code_analysis_reason" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="@string/purchase_p3" style="@style/TextViewProsStyle"/>
+    <TextView android:id="@+id/code_prediction_reason" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/paywall_libs_priority" android:text="@string/purchase_p2_1" style="@style/TextViewProsStyle"/>
+    <TextView android:id="@+id/libs_reason" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/paywall_graphics_advanced"/>
+    <TextView android:id="@+id/paywall_projects_priority" android:text="@string/purchase_p_proj" style="@style/TextViewProsStyle"/>
+    <TextView android:id="@+id/projects_reason" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="@string/purchase_p5" style="@style/TextViewProsStyle"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/paywall_ads"/>
+    <TextView android:id="@+id/paywall_libs_no_priority" android:visibility="gone" android:text="@string/purchase_p2_1" style="@style/TextViewProsStyle"/>
+    <TextView android:id="@+id/paywall_projects_no_priority" android:visibility="gone" android:text="@string/purchase_p_proj" style="@style/TextViewProsStyle"/>
+</LinearLayout>

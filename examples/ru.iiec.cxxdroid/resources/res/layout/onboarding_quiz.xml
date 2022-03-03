@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/OnBoardingTopLevelLayout">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/OnBoardingIconContainer">
+                    <ImageView android:id="@+id/logo" style="@style/OnBoardingIcon"/>
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" style="@style/OnBoardingTitle"/>
+                <RadioGroup android:id="@+id/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:tag="option_1" android:layout_marginBottom="10dp" style="@style/OnBoardingRadioButton"/>
+                    <RadioButton android:tag="option_2" android:layout_marginBottom="10dp" style="@style/OnBoardingRadioButton"/>
+                    <RadioButton android:tag="option_3" style="@style/OnBoardingRadioButton"/>
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+        <Button android:id="@+id/next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue" style="@style/OnBoardingButton"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/back" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:src="?attr/homeAsUpIndicator"/>
+    </LinearLayout>
+</FrameLayout>

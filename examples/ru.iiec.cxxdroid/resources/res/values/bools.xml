@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="pref_allow_prepend_path_default">true</bool>
+    <bool name="pref_alt_sends_esc_default">false</bool>
+    <bool name="pref_close_window_on_process_exit_default">true</bool>
+    <bool name="pref_do_path_extensions_default">true</bool>
+    <bool name="pref_mouse_tracking_default">false</bool>
+    <bool name="pref_use_keyboard_shortcuts_default">true</bool>
+    <bool name="pref_utf8_by_default_default">true</bool>
+    <bool name="pref_verify_path_default">true</bool>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_select_all_white_24px" android:id="@+id/copy_paste_mode_select_all" android:title="@string/copy_paste_mode_select_all" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_content_cut_white_24px" android:id="@+id/copy_paste_mode_cut" android:title="@string/copy_paste_mode_cut" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_content_copy_white_24px" android:id="@+id/copy_paste_mode_copy" android:title="@string/copy_paste_mode_copy" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_content_paste_white_24px" android:id="@+id/copy_paste_mode_paste" android:title="@string/copy_paste_mode_paste" app:showAsAction="always"/>
+</menu>

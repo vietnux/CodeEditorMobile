@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="18dp" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/category" android:layout_weight="1"/>
+            <Spinner android:layout_gravity="center" android:id="@+id/my_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:id="@+id/textDescr" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:name="qwe.qweqwe.texteditor.samples.SampleFragment" android:id="@+id/list" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/ll" app:layoutManager="LinearLayoutManager"/>
+    <ProgressBar android:id="@+id/p_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll" android:layout_centerInParent="true"/>
+</RelativeLayout>

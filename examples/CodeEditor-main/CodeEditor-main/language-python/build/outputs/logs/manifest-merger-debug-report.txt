@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml:25:1-28:12
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml:25:1-28:12
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml:25:1-28:12
+	package
+		ADDED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml:26:5-50
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml:25:11-69
+uses-sdk
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+		ADDED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+		ADDED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditor\examples\CodeEditor-main\CodeEditor-main\language-python\src\main\AndroidManifest.xml

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_keyboard_arrow_left_white_24px" android:id="@+id/action_search_jump_backward" android:orderInCategory="2" android:title="@string/action_search_jump_backward" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_keyboard_arrow_right_white_24px" android:id="@+id/action_search_jump_forward" android:orderInCategory="3" android:title="@string/action_search_jump_forward" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_replace_selected_white_24px" android:id="@+id/action_search_replace_selected" android:orderInCategory="1" android:title="@string/action_search_jump_forward" app:showAsAction="always"/>
+</menu>

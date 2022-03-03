@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <HorizontalScrollView android:id="@+id/scrollAnalysisBarHor" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/scrollAnalysisBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp" android:adjustViewBounds="true" android:divider="@drawable/buttons_vertical_separator" android:showDividers="middle" android:dividerPadding="6dp"/>
+    </HorizontalScrollView>
+    <TextView android:textColor="@color/default_white" android:id="@+id/server_status" android:background="@color/colorPrimary" android:paddingTop="3dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:text="Starting server..." android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/completion_recycler" android:background="@color/primary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <HorizontalScrollView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/scrollButtonBar" android:background="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0dp" android:adjustViewBounds="true" android:divider="@drawable/buttons_vertical_separator" android:showDividers="middle" android:dividerPadding="6dp"/>
+    </HorizontalScrollView>
+</LinearLayout>

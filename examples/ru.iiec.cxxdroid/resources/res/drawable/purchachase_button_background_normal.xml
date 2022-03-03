@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:startColor="@color/purch_green_start" android:endColor="@color/purch_green_end" android:angle="180" android:type="linear"/>
+    <corners android:topLeftRadius="@dimen/purchase_button_background_height" android:topRightRadius="@dimen/purchase_button_background_height" android:bottomLeftRadius="@dimen/purchase_button_background_height" android:bottomRightRadius="@dimen/purchase_button_background_height"/>
+</shape>

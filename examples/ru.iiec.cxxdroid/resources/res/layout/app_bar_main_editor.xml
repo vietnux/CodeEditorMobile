@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:contentInsetStart="0dp" android:contentInsetLeft="0dp" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_main_editor"/>
+    <com.dmitrymalkovich.android.ProgressFloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_media_play"/>
+        <ProgressBar android:id="@+id/fab_pg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar"/>
+    </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

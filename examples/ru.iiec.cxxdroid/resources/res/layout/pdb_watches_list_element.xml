@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="asdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasd"/>
+        <Button android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/watch_set_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_set_btn"/>
+    </FrameLayout>
+    <View android:background="@color/my_light_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="3dp"/>
+</LinearLayout>

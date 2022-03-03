@@ -1,0 +1,17 @@
+io/github/rosemoe/sora/langs/universal/BuildConfig.java
+ io.github.rosemoe.sora.langs.universal.BuildConfig
+io/github/rosemoe/sora/langs/universal/LanguageDescription.java
+ io.github.rosemoe.sora.langs.universal.LanguageDescription
+io/github/rosemoe/sora/langs/desc/JavaScriptDescription.java
+ io.github.rosemoe.sora.langs.desc.JavaScriptDescription
+io/github/rosemoe/sora/langs/desc/CppDescription.java
+ io.github.rosemoe.sora.langs.desc.CppDescription
+io/github/rosemoe/sora/langs/universal/UniversalTokenizer.java
+ io.github.rosemoe.sora.langs.universal.UniversalTokenizer
+io/github/rosemoe/sora/langs/universal/UniversalTokens.java
+ io.github.rosemoe.sora.langs.universal.UniversalTokens
+io/github/rosemoe/sora/langs/universal/UniversalLanguage.java
+ io.github.rosemoe.sora.langs.universal.UniversalLanguage
+ io.github.rosemoe.sora.langs.universal.UniversalLanguage$1
+io/github/rosemoe/sora/langs/desc/CDescription.java
+ io.github.rosemoe.sora.langs.desc.CDescription

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/pref_title_enable_autocomplete" android:key="enable_autocomplete" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_title_enable_code_analysis" android:key="enable_code_analysis" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_title_use_default_cpp" android:key="use_default_cpp" android:summary="@string/pref_summary_use_default_cpp" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_title_enable_pch" android:key="enable_pch" android:summary="@string/pref_summary_enable_pch" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/always_recompile_programs_title" android:key="always_recompile_programs" android:summary="@string/always_recompile_programs_summary" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_title_link_lib_static" android:key="link_lib_static" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_title_allow_void_main" android:key="allow_void_main" android:summary="@string/pref_summary_allow_void_main" android:defaultValue="true"/>
+    <EditTextPreference android:title="@string/clang_compiler_argument_title" android:key="clang_compiler_argument" android:defaultValue="@string/clang_compiler_argument_default_value"/>
+    <EditTextPreference android:title="@string/clangpp_compiler_argument_title" android:key="clangpp_compiler_argument" android:defaultValue="@string/clangpp_compiler_argument_default_value"/>
+    <EditTextPreference android:title="@string/linker_compiler_argument_title" android:key="linker_compiler_argument" android:defaultValue="@string/linker_compiler_argument_default_value"/>
+    <qwe.qweqwe.texteditor.MyPreferenceCategory android:title="@string/pref_category_gui_settings">
+        <SwitchPreference android:title="@string/pref_title_sdl2_backexit" android:key="sdl2_backexit" android:summary="@string/pref_summary_backexit" android:defaultValue="true"/>
+        <SwitchPreference android:title="@string/pref_title_sfml_backexit" android:key="sfml_backexit" android:summary="@string/pref_summary_backexit" android:defaultValue="true"/>
+        <SwitchPreference android:title="@string/pref_title_allegro_backexit" android:key="allegro_backexit" android:summary="@string/pref_summary_backexit" android:defaultValue="true"/>
+    </qwe.qweqwe.texteditor.MyPreferenceCategory>
+</PreferenceScreen>

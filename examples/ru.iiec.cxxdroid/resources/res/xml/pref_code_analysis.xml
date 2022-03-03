@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/pref_code_analysis_show_refactor" android:key="code_analysis_show_refactor" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_code_analysis_show_convention" android:key="code_analysis_show_convention" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_code_analysis_show_warning" android:key="code_analysis_show_warning" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_code_analysis_show_error" android:key="code_analysis_show_error" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_code_analysis_show_fatal" android:key="code_analysis_show_fatal" android:defaultValue="true"/>
+</PreferenceScreen>

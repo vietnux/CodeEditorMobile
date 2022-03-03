@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~    CodeEditor - the awesome code editor for Android
+  ~    Copyright (C) 2020-2021  Rosemoe
+  ~
+  ~     This library is free software; you can redistribute it and/or
+  ~     modify it under the terms of the GNU Lesser General Public
+  ~     License as published by the Free Software Foundation; either
+  ~     version 2.1 of the License, or (at your option) any later version.
+  ~
+  ~     This library is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  ~     Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public
+  ~     License along with this library; if not, write to the Free Software
+  ~     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+  ~     USA
+  ~
+  ~     Please contact Rosemoe by email 2073412493@qq.com if you need
+  ~     additional information or have any questions
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="open_debug_logs">打开调试日志</string>
+    <string name="layout_tv_last">上个</string>
+    <string name="layout_tv_next">下个</string>
+    <string name="layout_tv_replace">替换</string>
+    <string name="layout_tv_replaceAll">全部</string>
+    <string name="text_to_search">查找文本</string>
+    <string name="replacement">替换到的文本</string>
+    <string name="cursor_actions">光标操作</string>
+    <string name="go_to_end">到全文末尾</string>
+    <string name="move_up">上移</string>
+    <string name="move_down">下移</string>
+    <string name="move_left">左移</string>
+    <string name="move_right">右移</string>
+    <string name="home">行首</string>
+    <string name="end">行末</string>
+    <string name="text_actions">文本操作</string>
+    <string name="switch_color_scheme">颜色风格</string>
+    <string name="undo">撤销</string>
+    <string name="redo">重做</string>
+    <string name="search_text">搜索文本</string>
+    <string name="action_mode">标题栏模式</string>
+    <string name="search_panel">搜索面板</string>
+    <string name="code_navigation">代码导航</string>
+    <string name="switch_language">调节程序语言</string>
+    <string name="format">格式化</string>
+    <string name="app_name">CodeEditorSample</string>
+    <string name="code_navi">代码导航</string>
+    <string name="navi_err_msg">代码导航没有准备好或者该语言不支持</string>
+    <string name="color_scheme">颜色风格</string>
+    <string name="err_crash_loop">在一个具有Looper的线程中发生了错误，错误日志已保存至应用私有文件夹的crash-journal.log</string>
+    <string name="wordwrap">自动换行</string>
+    <string name="show_crash_log">打开崩溃日志</string>
+    <string name="clear_crash_log">清除崩溃日志</string>
+    <string name="line_number_visibility">显示行号</string>
+    <string name="pin_line_number">固定显示行号</string>
+</resources>

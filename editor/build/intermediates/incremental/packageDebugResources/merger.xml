@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res"/><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/build/generated/res/rs/debug"/><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res"><file name="ic_more_vert_black_20dp" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/ic_more_vert_black_20dp.xml" qualifiers="" type="drawable"/><file name="round_content_cut_20" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/round_content_cut_20.xml" qualifiers="" type="drawable"/><file name="round_content_copy_20" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/round_content_copy_20.xml" qualifiers="" type="drawable"/><file name="round_select_all_20" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/round_select_all_20.xml" qualifiers="" type="drawable"/><file name="round_content_paste_20" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/round_content_paste_20.xml" qualifiers="" type="drawable"/><file name="round_save_20" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/drawable/round_save_20.xml" qualifiers="" type="drawable"/><file name="default_completion_result_item" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/layout/default_completion_result_item.xml" qualifiers="" type="layout"/><file name="text_compose_panel" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/layout/text_compose_panel.xml" qualifiers="" type="layout"/><file name="text_compose_popup_window" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/layout/text_compose_popup_window.xml" qualifiers="" type="layout"/><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values/colors.xml" qualifiers=""><color name="textActionNameColor">@android:color/tertiary_text_light</color></file><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values/dimens.xml" qualifiers=""/><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values/strings.xml" qualifiers=""><item name="paste" type="string">Paste</item><item name="copy" type="string">Copy</item><item formatted="true" name="selectAll" type="string">Select All</item><item name="saveToProject" translatable="false" type="string">Project</item><item name="cut" type="string">Cut</item><item name="last" type="string">Last</item><item name="next" type="string">Next</item><item name="replace" type="string">Replace</item><item name="replaceAll" type="string">Replace All</item><item name="replacement" type="string">Replacement</item><item name="cancel" type="string">Cancel</item><item name="text_to_search" type="string">Text to search</item><item name="more" translatable="false" type="string">More</item><item name="close" translatable="false" type="string">Close</item></file><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="editor">
+        <attr format="string" name="text"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="dimension" name="dividerWidth"/>
+        <attr format="boolean" name="lineNumberVisible"/>
+        <attr format="boolean" name="autoCompleteEnabled"/>
+        <attr format="boolean" name="symbolCompletionEnabled"/>
+        <attr format="integer" name="cursorBlinkPeriod"/>
+        <attr format="boolean" name="scrollbarsEnabled"/>
+        <attr format="boolean" name="verticalScrollbarEnabled"/>
+        <attr format="boolean" name="horizontalScrollbarEnabled"/>
+    </declare-styleable></file><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values/style.xml" qualifiers=""><style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style><style name="VerticalDivider">
+        <item name="android:layout_width">0.8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style><style name="TextButton.IconOnly" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="iconPadding">0dp</item>
+        <item name="cornerFamily">cut</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style><style name="OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style><style name="RoundOutlinedButton.IconOnly" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style><style name="ButtonBar.IconOnly.Left" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style><style name="ButtonBar.IconOnly.Middle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+    </style><style name="ButtonBar.IconOnly.Right" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+    </style></file><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values-vi-rVN/strings.xml" qualifiers="vi-rVN"><string name="paste">Dán</string><string name="copy">Sao chép</string><string name="selectAll">Chọn tất</string><string name="cut">Cắt</string><string name="last">Sau</string><string name="next">Trước</string><string name="replace">Thay thế</string><string name="replaceAll">Thay thế tất</string><string name="replacement">"Sự thay thế "</string><string name="cancel">Hủy bỏ</string><string name="text_to_search">Văn bản tìm kiếm</string></file><file name="box_red" path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/mipmap/box_red.png" qualifiers="" type="mipmap"/><file path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/res/values-zh/strings.xml" qualifiers="zh"><string name="paste">粘贴</string><string name="copy">复制</string><string name="selectAll">全选</string><string name="cut">剪切</string><string name="last">上个</string><string name="next">下个</string><string name="replace">替换</string><string name="replaceAll">替换全部</string><string name="replacement">替换文本</string><string name="cancel">取消</string><string name="text_to_search">欲搜索文本</string></file></source><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/build/generated/res/rs/debug"/><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="editor">
+        <attr format="string" name="text"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="dimension" name="dividerWidth"/>
+        <attr format="boolean" name="lineNumberVisible"/>
+        <attr format="boolean" name="autoCompleteEnabled"/>
+        <attr format="boolean" name="symbolCompletionEnabled"/>
+        <attr format="integer" name="cursorBlinkPeriod"/>
+        <attr format="boolean" name="scrollbarsEnabled"/>
+        <attr format="boolean" name="verticalScrollbarEnabled"/>
+        <attr format="boolean" name="horizontalScrollbarEnabled"/>
+    </declare-styleable></configuration></mergedItems></merger>

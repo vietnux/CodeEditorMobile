@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center" android:paddingLeft="24dp" android:paddingTop="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_premium_dialog_title" style="@style/TextAppearance.AppCompat.Title"/>
+            <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="top" android:id="@+id/close_dialog" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clear_black_24dp"/>
+        </LinearLayout>
+        <include layout="@layout/pros_cons_table"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@+id/error_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/purchase_premium_forever" android:background="@drawable/purchachase_button_background" android:paddingLeft="@dimen/purchase_button_background_padding" android:paddingRight="@dimen/purchase_button_background_padding" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/purchase_button_background_height" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:elevation="5dp">
+            <TextView android:textColor="@color/default_white" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/forever_offer_text_1" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <View android:layout_gravity="center" android:background="@color/default_white" android:layout_width="1dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <TextView android:textColor="@color/default_white" android:gravity="center_vertical" android:id="@+id/purchase_premium_forever_text2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/forever_offer_text_2" android:layout_weight="2.5"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/purchase_premium_mounthly" android:background="@drawable/purchachase_button_background" android:paddingLeft="@dimen/purchase_button_background_padding" android:paddingRight="@dimen/purchase_button_background_padding" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/purchase_button_background_height" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:elevation="5dp">
+            <TextView android:textColor="@color/default_white" android:gravity="center" android:id="@+id/purchase_premium_mounthly_text1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <View android:layout_gravity="center" android:background="@color/default_white" android:layout_width="1dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <TextView android:textColor="@color/default_white" android:gravity="center_vertical" android:id="@+id/purchase_premium_mounthly_text2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sub_offer_text_2" android:layout_weight="2.5"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_premium_text_bottom"/>
+    </LinearLayout>
+</ScrollView>

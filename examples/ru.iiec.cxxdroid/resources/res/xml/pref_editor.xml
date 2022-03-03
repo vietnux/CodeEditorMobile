@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/editor_open_last_files" android:key="editor_open_last_files" android:summary="@string/editor_open_last_files_summary" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_editor_word_wrap" android:key="editor_word_wrap" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_editor_tab_insert_spaces" android:key="editor_tab_insert_spaces" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_editor_allow_suggestions" android:key="editor_allow_suggestions" android:defaultValue="false"/>
+    <SwitchPreference android:title="@string/pref_editor_autoinsert_braces" android:key="editor_autoinsert_braces" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_editor_volume_nav" android:key="editor_volume_nav" android:defaultValue="true"/>
+    <SwitchPreference android:title="@string/pref_editor_btn_bar" android:key="editor_btn_bar" android:defaultValue="true"/>
+    <EditTextPreference android:title="@string/editor_btn_bar_title" android:key="editor_btn_bar_btns" android:summary="@string/editor_btn_bar_summary" android:defaultValue="@string/editor_btn_bar_default_value"/>
+    <ListPreference android:entries="@array/pref_editor_tab_length_titles" android:title="@string/pref_editor_tab_length" android:key="editor_tab_length" android:defaultValue="4" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_editor_tab_length_values"/>
+    <Preference android:title="@string/editor_new_file_template_title" android:key="editor_new_file_template" android:summary="@string/editor_new_file_template_summary"/>
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_folder_open_white_24px" android:id="@+id/file_tools" android:orderInCategory="1" android:title="@string/file_tools" app:showAsAction="ifRoom">
+        <menu>
+            <item android:icon="@drawable/ic_add_circle_24dp" android:id="@+id/nav_new_file" android:title="@string/nav_new_file"/>
+            <item android:icon="@drawable/ic_folder_open_24dp" android:id="@+id/nav_open_file" android:title="@string/nav_open_file"/>
+            <item android:icon="@drawable/ic_save_24dp" android:id="@+id/nav_save_file" android:title="@string/nav_save_file"/>
+            <item android:icon="@drawable/ic_save_as_black_24px" android:id="@+id/nav_save_file_as" android:title="@string/nav_save_file_as"/>
+            <item android:icon="@drawable/ic_close_black_24px" android:id="@+id/nav_close_cur_tab" android:title="@string/nav_close_cur_tab"/>
+            <item android:icon="@drawable/ic_recent_file_black_24dp" android:id="@+id/nav_recent_files" android:title="@string/nav_recent_files"/>
+            <item android:icon="@drawable/ic_create_new_folder_black_24dp" android:id="@+id/action_update_to_project" android:title="@string/action_update_to_project" app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_overflow_24dp" android:id="@+id/editor_tools" android:orderInCategory="3" android:title="@string/editor_tools" app:showAsAction="ifRoom">
+        <menu>
+            <item android:icon="@drawable/ic_undo_24dp" android:id="@+id/action_undo" android:title="@string/action_undo" app:showAsAction="ifRoom"/>
+            <item android:icon="@drawable/ic_redo_24dp" android:id="@+id/action_redo" android:title="@string/action_redo" app:showAsAction="ifRoom"/>
+            <item android:icon="@drawable/ic_search_24dp" android:id="@+id/action_search" android:title="@string/action_search" app:showAsAction="ifRoom"/>
+            <item android:icon="@drawable/ic_gotoline_24dp" android:id="@+id/action_gotoline" android:title="@string/action_gotoline" app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

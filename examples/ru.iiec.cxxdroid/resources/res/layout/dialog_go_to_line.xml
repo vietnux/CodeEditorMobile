@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/go_to_line_dialog_line" android:layout_weight="0.3"/>
+        <EditText android:id="@+id/go_to_line_dialog_enter_line" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.7" android:inputType="number" android:imeOptions="actionDone"/>
+    </LinearLayout>
+</LinearLayout>

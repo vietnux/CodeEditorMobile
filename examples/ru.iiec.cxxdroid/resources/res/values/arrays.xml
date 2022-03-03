@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="code_analysis_convention_defaultValue">
+    </array>
+    <array name="code_analysis_convention_entries">
+    </array>
+    <array name="code_analysis_convention_entryValues">
+    </array>
+    <array name="code_analysis_disable_msgs">
+        <item>E0611 - asd</item>
+        <item>E0611 - qwe</item>
+        <item>E0611 - zxc</item>
+    </array>
+    <array name="code_analysis_disable_msgs_values">
+        <item>E0611</item>
+        <item>E0610</item>
+        <item>E0612</item>
+    </array>
+    <array name="control_keys_short_names">
+        <item>Ball</item>
+        <item>@</item>
+        <item>Left-Alt</item>
+        <item>Right-Alt</item>
+        <item>Vol-Up</item>
+        <item>Vol-Dn</item>
+        <item>Camera</item>
+        <item>None</item>
+    </array>
+    <array name="entries_actionbar_preference">
+        <item>Always show action bar</item>
+        <item>Hide action bar (touch top of screen or Menu key to show)</item>
+    </array>
+    <array name="entries_backaction_preference">
+        <item>Closes all terminal windows</item>
+        <item>Closes this terminal window only</item>
+        <item>Closes activity, leaving sessions running</item>
+        <item>Sends ESC to terminal</item>
+        <item>Sends TAB to terminal</item>
+    </array>
+    <array name="entries_color_preference">
+        <item>Black text on white</item>
+        <item>White text on black</item>
+        <item>White text on blue</item>
+        <item>Green text on black</item>
+        <item>Amber text on black</item>
+        <item>Red text on black</item>
+        <item>Holo blue text on black</item>
+        <item>Solarized Light</item>
+        <item>Solarized Dark</item>
+        <item>Linux Console</item>
+    </array>
+    <array name="entries_controlkey_preference">
+        <item>Jog ball</item>
+        <item>@ key</item>
+        <item>Left Alt key</item>
+        <item>Right Alt key</item>
+        <item>Vol Up key</item>
+        <item>Vol Down key</item>
+        <item>Camera key</item>
+        <item>None</item>
+    </array>
+    <array name="entries_cursorblink_preference">
+        <item>Non-blinking cursor</item>
+        <item>Blinking cursor</item>
+    </array>
+    <array name="entries_cursorstyle_preference">
+        <item>Rectangle</item>
+        <item>Underline</item>
+        <item>Vertical bar</item>
+    </array>
+    <array name="entries_fnkey_preference">
+        <item>Jog ball</item>
+        <item>@ key</item>
+        <item>Left Alt key</item>
+        <item>Right Alt key</item>
+        <item>Vol Up key</item>
+        <item>Vol Down key</item>
+        <item>Camera key</item>
+        <item>None</item>
+    </array>
+    <array name="entries_fontsize_preference">
+        <item>4 x 8 pixels</item>
+        <item>6 pt</item>
+        <item>7 pt</item>
+        <item>8 pt</item>
+        <item>9 pt</item>
+        <item>10 pt</item>
+        <item>12 pt</item>
+        <item>14 pt</item>
+        <item>16 pt</item>
+        <item>20 pt</item>
+        <item>24 pt</item>
+        <item>28 pt</item>
+        <item>32 pt</item>
+        <item>36 pt</item>
+        <item>42 pt</item>
+        <item>48 pt</item>
+        <item>64 pt</item>
+        <item>72 pt</item>
+        <item>96 pt</item>
+        <item>144 pt</item>
+        <item>288 pt</item>
+    </array>
+    <array name="entries_ime_preference">
+        <item>Character-based</item>
+        <item>Word-based</item>
+    </array>
+    <array name="entries_orientation_preference">
+        <item>Automatic</item>
+        <item>Landscape</item>
+        <item>Portrait</item>
+    </array>
+    <array name="entries_statusbar_preference">
+        <item>Show status bar</item>
+        <item>Hide status bar</item>
+    </array>
+    <array name="entries_termtype_preference">
+        <item>vt100</item>
+        <item>screen</item>
+        <item>linux</item>
+        <item>screen-256color</item>
+        <item>xterm</item>
+    </array>
+    <array name="entryvalues_actionbar_preference">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="entryvalues_backaction_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="entryvalues_color_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </array>
+    <array name="entryvalues_controlkey_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="entryvalues_cursorblink_preference">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="entryvalues_cursorstyle_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="entryvalues_fnkey_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="entryvalues_fontsize_preference">
+        <item>@null</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>42</item>
+        <item>48</item>
+        <item>64</item>
+        <item>72</item>
+        <item>96</item>
+        <item>144</item>
+        <item>288</item>
+    </array>
+    <array name="entryvalues_ime_preference">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="entryvalues_orientation_preference">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="entryvalues_statusbar_preference">
+        <item>1</item>
+        <item>@null</item>
+    </array>
+    <array name="fn_keys_short_names">
+        <item>Ball</item>
+        <item>@</item>
+        <item>Left-Alt</item>
+        <item>Right-Alt</item>
+        <item>Vol-Up</item>
+        <item>Vol-Dn</item>
+        <item>Camera</item>
+        <item>None</item>
+    </array>
+    <array name="pref_appearance_app_theme_titles">
+        <item>Light</item>
+        <item>Dark</item>
+    </array>
+    <array name="pref_appearance_app_theme_values">
+        <item>Light</item>
+        <item>Dark</item>
+    </array>
+    <array name="pref_appearance_editor_theme_titles">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Monokai</item>
+        <item>Obsidian</item>
+        <item>Solarized light</item>
+        <item>Solarized dark</item>
+    </array>
+    <array name="pref_appearance_editor_theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>monokai</item>
+        <item>obsidian</item>
+        <item>solarized_light</item>
+        <item>solarized_dark</item>
+    </array>
+    <array name="pref_appearance_theme_titles">
+    </array>
+    <array name="pref_appearance_theme_values">
+    </array>
+    <array name="pref_editor_font_size_titles">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+    </array>
+    <array name="pref_editor_font_size_values">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+    </array>
+    <array name="pref_editor_font_titles">
+        <item>Sans-serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+        <item>Default</item>
+        <item>Default bold</item>
+    </array>
+    <array name="pref_editor_font_values">
+        <item>sans-serif</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>default</item>
+        <item>default-bold</item>
+    </array>
+    <array name="pref_editor_tab_length_titles">
+        <item>1 spaces</item>
+        <item>2 spaces</item>
+        <item>3 spaces</item>
+        <item>4 spaces</item>
+        <item>5 spaces</item>
+        <item>6 spaces</item>
+    </array>
+    <array name="pref_editor_tab_length_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </array>
+    <array name="pref_example_list_values">
+        <item>1</item>
+        <item>@null</item>
+        <item>-1</item>
+    </array>
+    <array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </array>
+    <array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </array>
+    <array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </array>
+    <array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </array>
+    <array name="testtest">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="tkinter_dpi_titles">
+        <item>Auto</item>
+        <item>120</item>
+        <item>160</item>
+        <item>240</item>
+        <item>320</item>
+        <item>400</item>
+    </array>
+    <array name="tkinter_dpi_values">
+        <item>-1</item>
+        <item>120</item>
+        <item>160</item>
+        <item>240</item>
+        <item>320</item>
+        <item>400</item>
+    </array>
+</resources>

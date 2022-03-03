@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/pref_editor_dark" android:key="dark_theme" android:summary="@string/pref_editor_dark_summary" android:defaultValue="false"/>
+    <ListPreference android:entries="@array/pref_editor_font_titles" android:title="@string/pref_editor_font" android:key="editor_font" android:defaultValue="sans-serif" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_editor_font_values"/>
+    <ListPreference android:entries="@array/pref_editor_font_size_titles" android:title="@string/pref_editor_font_size" android:key="editor_font_size" android:defaultValue="16" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_editor_font_size_values"/>
+    <ListPreference android:entries="@array/pref_appearance_editor_theme_titles" android:title="@string/pref_appearance_editor_theme" android:key="appearance_editor_theme" android:defaultValue="light" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_appearance_editor_theme_values"/>
+    <ListPreference android:entries="@array/pref_appearance_editor_theme_titles" android:title="@string/pref_appearance_editor_theme_dark" android:key="appearance_editor_theme_dark" android:defaultValue="dark" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_appearance_editor_theme_values"/>
+</PreferenceScreen>

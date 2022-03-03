@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/OnBoardingTopLevelLayout">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/OnBoardingIconContainer.Paywall">
+                    <ImageView android:id="@+id/logo" android:src="@drawable/ic_emoji_u1f451" style="@style/OnBoardingIcon"/>
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/OnBoardingTitle"/>
+                <TextView android:gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/onboarding_paywall_desc" style="@style/OnBoardingSubTitle"/>
+                <include layout="@layout/fragment_paywall_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@+id/error_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/purchase_premium_mounthly" android:background="@drawable/purchachase_button_background" android:paddingLeft="@dimen/purchase_button_background_padding" android:paddingRight="@dimen/purchase_button_background_padding" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/purchase_button_background_height" android:layout_marginTop="10dp" android:elevation="5dp">
+            <TextView android:textColor="@color/default_white" android:gravity="center" android:id="@+id/purchase_premium_mounthly_text1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <View android:layout_gravity="center" android:background="@color/default_white" android:layout_width="1dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <TextView android:textColor="@color/default_white" android:gravity="center_vertical" android:id="@+id/purchase_premium_mounthly_text2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sub_offer_text_2" android:layout_weight="2.5"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/purchase_premium_forever" android:background="@drawable/purchachase_button_background" android:paddingLeft="@dimen/purchase_button_background_padding" android:paddingRight="@dimen/purchase_button_background_padding" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/purchase_button_background_height" android:layout_marginTop="10dp" android:elevation="5dp">
+            <TextView android:textColor="@color/default_white" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/forever_offer_text_1" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <View android:layout_gravity="center" android:background="@color/default_white" android:layout_width="1dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <TextView android:textColor="@color/default_white" android:gravity="center_vertical" android:id="@+id/purchase_premium_forever_text2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/forever_offer_text_2" android:layout_weight="2.5"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_marginTop="5dp" android:layout_marginRight="-10dp" android:layout_marginBottom="-10dp" android:text="@string/purchase_premium_text_bottom"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/close_dialog" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:src="@drawable/ic_close_black_24px"/>
+    </LinearLayout>
+</FrameLayout>

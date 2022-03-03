@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="12dp" android:textColor="#c6c6c6" android:gravity="center_vertical" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ad" android:textAllCaps="true"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/imageView" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:id="@+id/promo_text" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#689f39" android:id="@+id/not_interested" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_interested" app:backgroundTint="#ffffff" style="@style/Widget.AppCompat.Button.Borderless"/>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatButton android:textColor="#ffffff" android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="#689f39"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

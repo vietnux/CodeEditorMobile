@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Compiler-Debug-x86": {
+      "artifactName": "Compiler",
+      "buildCommandComponents": [
+        "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\Android\\CodeEditor\\app\\.cxx\\cmake\\debug\\x86",
+        "Compiler"
+      ],
+      "abi": "x86",
+      "output": "D:\\Android\\CodeEditor\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\Compiler",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,173 @@
+io/github/rosemoe/sora/graphics/BufferedDrawPoints.java
+ io.github.rosemoe.sora.graphics.BufferedDrawPoints
+io/github/rosemoe/sora/widget/KeyMetaStates.java
+ io.github.rosemoe.sora.widget.KeyMetaStates
+io/github/rosemoe/sora/widget/EditorBasePopupWindow.java
+ io.github.rosemoe.sora.widget.EditorBasePopupWindow
+io/github/rosemoe/sora/widget/schemes/SchemeEclipse.java
+ io.github.rosemoe.sora.widget.schemes.SchemeEclipse
+io/github/rosemoe/sora/widget/EditorCompletionAdapter.java
+ io.github.rosemoe.sora.widget.EditorCompletionAdapter
+io/github/rosemoe/sora/widget/DefaultCompletionItemAdapter.java
+ io.github.rosemoe.sora.widget.DefaultCompletionItemAdapter
+io/github/rosemoe/sora/widget/EditorSearcher.java
+ io.github.rosemoe.sora.widget.EditorSearcher
+ io.github.rosemoe.sora.widget.EditorSearcher$1
+io/github/rosemoe/sora/interfaces/ExternalRenderer.java
+ io.github.rosemoe.sora.interfaces.ExternalRenderer
+io/github/rosemoe/sora/interfaces/EditorTextActionPresenter.java
+ io.github.rosemoe.sora.interfaces.EditorTextActionPresenter
+io/github/rosemoe/sora/data/NavigationItem.java
+ io.github.rosemoe.sora.data.NavigationItem
+io/github/rosemoe/sora/data/Span.java
+ io.github.rosemoe.sora.data.Span
+io/github/rosemoe/sora/interfaces/AutoCompleteProvider.java
+ io.github.rosemoe.sora.interfaces.AutoCompleteProvider
+io/github/rosemoe/sora/text/SpanRecycler.java
+ io.github.rosemoe.sora.text.SpanRecycler
+ io.github.rosemoe.sora.text.SpanRecycler$RecycleThread
+io/github/rosemoe/sora/text/LineRemoveListener.java
+ io.github.rosemoe.sora.text.LineRemoveListener
+io/github/rosemoe/sora/graphics/FontCache.java
+ io.github.rosemoe.sora.graphics.FontCache
+io/github/rosemoe/sora/text/TextAnalyzeResult.java
+ io.github.rosemoe.sora.text.TextAnalyzeResult
+io/github/rosemoe/sora/widget/TextComposeBasePopup.java
+ io.github.rosemoe.sora.widget.TextComposeBasePopup
+io/github/rosemoe/sora/widget/EditorInputConnection.java
+ io.github.rosemoe.sora.widget.EditorInputConnection
+io/github/rosemoe/sora/text/Cursor.java
+ io.github.rosemoe.sora.text.Cursor
+io/github/rosemoe/sora/data/BlockLine.java
+ io.github.rosemoe.sora.data.BlockLine
+io/github/rosemoe/sora/text/CachedIndexer.java
+ io.github.rosemoe.sora.text.CachedIndexer
+io/github/rosemoe/sora/util/IntPair.java
+ io.github.rosemoe.sora.util.IntPair
+io/github/rosemoe/sora/util/LongArrayList.java
+ io.github.rosemoe.sora.util.LongArrayList
+io/github/rosemoe/sora/text/TextAnalyzer.java
+ io.github.rosemoe.sora.text.TextAnalyzer
+ io.github.rosemoe.sora.text.TextAnalyzer$AnalyzeThread
+ io.github.rosemoe.sora.text.TextAnalyzer$AnalyzeThread$Delegate
+ io.github.rosemoe.sora.text.TextAnalyzer$Callback
+ io.github.rosemoe.sora.text.TextAnalyzer$RecycleObjContainer
+io/github/rosemoe/sora/BuildConfig.java
+ io.github.rosemoe.sora.BuildConfig
+io/github/rosemoe/sora/text/LineNumberCalculator.java
+ io.github.rosemoe.sora.text.LineNumberCalculator
+io/github/rosemoe/sora/text/ContentListener.java
+ io.github.rosemoe.sora.text.ContentListener
+io/github/rosemoe/sora/text/NoCacheIndexer.java
+ io.github.rosemoe.sora.text.NoCacheIndexer
+io/github/rosemoe/sora/widget/Layout.java
+ io.github.rosemoe.sora.widget.Layout
+io/github/rosemoe/sora/widget/WordwrapLayout.java
+ io.github.rosemoe.sora.widget.WordwrapLayout
+ io.github.rosemoe.sora.widget.WordwrapLayout$RowRegion
+ io.github.rosemoe.sora.widget.WordwrapLayout$WordwrapLayoutRowItr
+io/github/rosemoe/sora/widget/schemes/SchemeNotepadXX.java
+ io.github.rosemoe.sora.widget.schemes.SchemeNotepadXX
+io/github/rosemoe/sora/widget/schemes/SchemeGitHub.java
+ io.github.rosemoe.sora.widget.schemes.SchemeGitHub
+io/github/rosemoe/sora/interfaces/EditorEventListener.java
+ io.github.rosemoe.sora.interfaces.EditorEventListener
+io/github/rosemoe/sora/annotations/Experimental.java
+ io.github.rosemoe.sora.annotations.Experimental
+io/github/rosemoe/sora/text/UndoManager.java
+ io.github.rosemoe.sora.text.UndoManager
+ io.github.rosemoe.sora.text.UndoManager$ContentAction
+ io.github.rosemoe.sora.text.UndoManager$DeleteAction
+ io.github.rosemoe.sora.text.UndoManager$InsertAction
+ io.github.rosemoe.sora.text.UndoManager$MultiAction
+ io.github.rosemoe.sora.text.UndoManager$ReplaceAction
+io/github/rosemoe/sora/langs/EmptyLanguage.java
+ io.github.rosemoe.sora.langs.EmptyLanguage
+ io.github.rosemoe.sora.langs.EmptyLanguage$EmptyAutoCompleteProvider
+ io.github.rosemoe.sora.langs.EmptyLanguage$EmptyCodeAnalyzer
+io/github/rosemoe/sora/data/CompletionItem.java
+ io.github.rosemoe.sora.data.CompletionItem
+io/github/rosemoe/sora/widget/SymbolPairMatch.java
+ io.github.rosemoe.sora.widget.SymbolPairMatch
+ io.github.rosemoe.sora.widget.SymbolPairMatch$DefaultSymbolPairs
+ io.github.rosemoe.sora.widget.SymbolPairMatch$Replacement
+io/github/rosemoe/sora/text/FormatThread.java
+ io.github.rosemoe.sora.text.FormatThread
+ io.github.rosemoe.sora.text.FormatThread$FormatResultReceiver
+io/github/rosemoe/sora/widget/TextActionPopupWindow.java
+ io.github.rosemoe.sora.widget.TextActionPopupWindow
+io/github/rosemoe/sora/interfaces/CodeAnalyzer.java
+ io.github.rosemoe.sora.interfaces.CodeAnalyzer
+io/github/rosemoe/sora/interfaces/EditorLanguage.java
+ io.github.rosemoe.sora.interfaces.EditorLanguage
+io/github/rosemoe/sora/widget/SymbolChannel.java
+ io.github.rosemoe.sora.widget.SymbolChannel
+io/github/rosemoe/sora/interfaces/NewlineHandler.java
+ io.github.rosemoe.sora.interfaces.NewlineHandler
+ io.github.rosemoe.sora.interfaces.NewlineHandler$HandleResult
+io/github/rosemoe/sora/widget/CodeEditor.java
+ io.github.rosemoe.sora.widget.CodeEditor
+ io.github.rosemoe.sora.widget.CodeEditor$1
+ io.github.rosemoe.sora.widget.CodeEditor$1SearchActionMode
+ io.github.rosemoe.sora.widget.CodeEditor$1SearchActionMode$1
+ io.github.rosemoe.sora.widget.CodeEditor$CursorPaintAction
+ io.github.rosemoe.sora.widget.CodeEditor$TextActionMode
+io/github/rosemoe/sora/widget/Row.java
+ io.github.rosemoe.sora.widget.Row
+io/github/rosemoe/sora/widget/MaterialEdgeEffect.java
+ io.github.rosemoe.sora.widget.MaterialEdgeEffect
+io/github/rosemoe/sora/util/ArrayList.java
+ io.github.rosemoe.sora.util.ArrayList
+io/github/rosemoe/sora/text/Indexer.java
+ io.github.rosemoe.sora.text.Indexer
+io/github/rosemoe/sora/text/TextUtils.java
+ io.github.rosemoe.sora.text.TextUtils
+io/github/rosemoe/sora/widget/EditorTextActionWindow.java
+ io.github.rosemoe.sora.widget.EditorTextActionWindow
+io/github/rosemoe/sora/widget/CursorBlink.java
+ io.github.rosemoe.sora.widget.CursorBlink
+io/github/rosemoe/sora/widget/HwAcceleratedRenderer.java
+ io.github.rosemoe.sora.widget.HwAcceleratedRenderer
+ io.github.rosemoe.sora.widget.HwAcceleratedRenderer$TextRenderNode
+io/github/rosemoe/sora/text/SpanMapUpdater.java
+ io.github.rosemoe.sora.text.SpanMapUpdater
+io/github/rosemoe/sora/widget/EditorTextActionModeStarter.java
+ io.github.rosemoe.sora.widget.EditorTextActionModeStarter
+ io.github.rosemoe.sora.widget.EditorTextActionModeStarter$1
+io/github/rosemoe/sora/widget/AbstractLayout.java
+ io.github.rosemoe.sora.widget.AbstractLayout
+io/github/rosemoe/sora/text/Content.java
+ io.github.rosemoe.sora.text.Content
+io/github/rosemoe/sora/widget/RowIterator.java
+ io.github.rosemoe.sora.widget.RowIterator
+io/github/rosemoe/sora/widget/EditorTouchEventHandler.java
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$1InvalidateNotifier
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$1ScrollNotifier
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$2InvalidateNotifier
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$3InvalidateNotifier
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$EdgeScrollRunnable
+ io.github.rosemoe.sora.widget.EditorTouchEventHandler$SelectionHandle
+io/github/rosemoe/sora/text/CharPosition.java
+ io.github.rosemoe.sora.text.CharPosition
+io/github/rosemoe/sora/widget/LineBreakLayout.java
+ io.github.rosemoe.sora.widget.LineBreakLayout
+ io.github.rosemoe.sora.widget.LineBreakLayout$LineBreakLayoutRowItr
+io/github/rosemoe/sora/widget/schemes/SchemeVS2019.java
+ io.github.rosemoe.sora.widget.schemes.SchemeVS2019
+io/github/rosemoe/sora/widget/schemes/SchemeDarcula.java
+ io.github.rosemoe.sora.widget.schemes.SchemeDarcula
+io/github/rosemoe/sora/widget/EditorColorScheme.java
+ io.github.rosemoe.sora.widget.EditorColorScheme
+io/github/rosemoe/sora/widget/schemes/HTMLScheme.java
+ io.github.rosemoe.sora.widget.schemes.HTMLScheme
+io/github/rosemoe/sora/widget/EditorAutoCompleteWindow.java
+ io.github.rosemoe.sora.widget.EditorAutoCompleteWindow
+ io.github.rosemoe.sora.widget.EditorAutoCompleteWindow$MatchThread
+io/github/rosemoe/sora/text/ContentLine.java
+ io.github.rosemoe.sora.text.ContentLine
+io/github/rosemoe/sora/util/BinaryHeap.java
+ io.github.rosemoe.sora.util.BinaryHeap
+ io.github.rosemoe.sora.util.BinaryHeap$Node
+io/github/rosemoe/sora/data/ObjectAllocator.java
+ io.github.rosemoe.sora.data.ObjectAllocator

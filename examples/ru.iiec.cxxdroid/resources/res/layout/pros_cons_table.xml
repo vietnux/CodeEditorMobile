@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="" android:layout_weight="5"/>
+        <TextView android:textSize="16sp" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_premiumtitle" android:layout_weight="2"/>
+        <TextView android:textSize="16sp" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_freetitle" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p1" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p2" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p2_1" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_minus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p_proj" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_minus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p3" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_minus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p4" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_minus" android:layout_weight="2"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_width="0dp" android:text="@string/purchase_p5" android:layout_weight="5"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_green_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_plus" android:layout_weight="2"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="0dp" android:text="@string/purchase_minus" android:layout_weight="2"/>
+    </TableRow>
+</TableLayout>

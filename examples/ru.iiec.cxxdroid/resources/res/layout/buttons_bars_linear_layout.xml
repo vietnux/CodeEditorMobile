@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <HorizontalScrollView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/scrollAnalysisBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp" android:adjustViewBounds="true" android:divider="@drawable/buttons_vertical_separator" android:showDividers="middle" android:dividerPadding="6dp"/>
+    </HorizontalScrollView>
+    <HorizontalScrollView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/scrollAutocompleBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp" android:adjustViewBounds="true" android:divider="@drawable/buttons_vertical_separator" android:showDividers="middle" android:dividerPadding="6dp"/>
+    </HorizontalScrollView>
+    <HorizontalScrollView android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/scrollButtonBar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp" android:adjustViewBounds="true" android:divider="@drawable/buttons_vertical_separator" android:showDividers="middle" android:dividerPadding="6dp"/>
+    </HorizontalScrollView>
+</LinearLayout>

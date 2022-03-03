@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/consent_status_title" android:key="pref_consent" android:summary="@string/consent_status_summary" android:order="1"/>
+    <Preference android:title="Version" android:key="pref_version" android:order="2"/>
+    <Preference android:title="Open Source Licenses" android:key="pref_licenses" android:order="3"/>
+</PreferenceScreen>

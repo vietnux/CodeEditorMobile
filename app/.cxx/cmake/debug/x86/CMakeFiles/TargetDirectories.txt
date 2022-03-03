@@ -1,0 +1,3 @@
+D:/Android/CodeEditor/app/.cxx/cmake/debug/x86/CMakeFiles/Compiler.dir
+D:/Android/CodeEditor/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+D:/Android/CodeEditor/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

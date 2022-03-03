@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+        <TextView android:id="@+id/pdb_text" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pdb_text"/>
+    </ScrollView>
+    <View android:background="@color/primary" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.5">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@+id/watchesListLayout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/pdb_add_watch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_add_watch" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="@color/primary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/pdb_detach" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_detach" android:layout_weight="0.2" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/pdb_return" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_return" android:layout_weight="0.2" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/pdb_next" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_next" android:layout_weight="0.2" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/pdb_continue" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_continue" android:layout_weight="0.2" style="?android:attr/buttonStyleSmall"/>
+        <Button android:id="@+id/pdb_step" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pdb_step" android:layout_weight="0.2" style="?android:attr/buttonStyleSmall"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/tab_layout" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="32dp" android:minHeight="?attr/actionBarSize" android:layout_below="@+id/toolbar" android:textAllCaps="false" android:elevation="6dp" app:tabMode="0" app:tabTextAppearance="@style/TabCapsFalse"/>
+        <FrameLayout android:id="@+id/my_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <include layout="@layout/editor_buttons_bars_linear_layout"/>
+    </LinearLayout>
+</RelativeLayout>

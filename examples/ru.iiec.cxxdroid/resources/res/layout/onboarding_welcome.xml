@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/OnBoardingTopLevelLayout">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/OnBoardingIconContainer">
+                <ImageView android:src="@drawable/ic_emoji_u1f44b" style="@style/OnBoardingIcon"/>
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="@style/OnBoardingTitle"/>
+            <TextView android:gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/OnBoardingSubTitle"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Let&apos;s start" style="@style/OnBoardingButton"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+io/github/rosemoe/sora/langs/IdentifierAutoComplete.java
+ io.github.rosemoe.sora.langs.IdentifierAutoComplete
+ io.github.rosemoe.sora.langs.IdentifierAutoComplete$Identifiers
+io/github/rosemoe/sora/langs/internal/Pinyin.java
+ io.github.rosemoe.sora.langs.internal.Pinyin
+io/github/rosemoe/sora/langs/base/BuildConfig.java
+ io.github.rosemoe.sora.langs.base.BuildConfig
+io/github/rosemoe/sora/langs/internal/MyCharacter.java
+ io.github.rosemoe.sora.langs.internal.MyCharacter
+io/github/rosemoe/sora/langs/internal/TrieTree.java
+ io.github.rosemoe.sora.langs.internal.TrieTree
+ io.github.rosemoe.sora.langs.internal.TrieTree$HashCharMap
+ io.github.rosemoe.sora.langs.internal.TrieTree$LinkedPair
+ io.github.rosemoe.sora.langs.internal.TrieTree$Node

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#eceff1</color>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="menu_icon">#ffffff</color>
+    <color name="onboarding_button_text">@color/abc_primary_text_material_light</color>
+    <color name="onboarding_icon_bg">#eceff1</color>
+    <color name="onboarding_purchase_text">#64dd17</color>
+    <color name="onboarding_radiobutton_text">@color/abc_primary_text_material_dark</color>
+    <color name="onboarding_radiobutton_text_selected">@color/abc_primary_text_material_light</color>
+    <color name="side_folder_add_folder_color">@color/menu_icon</color>
+    <color name="side_folder_arrow_color">@color/menu_icon</color>
+    <color name="side_folder_icon_color">@color/menu_icon</color>
+</resources>

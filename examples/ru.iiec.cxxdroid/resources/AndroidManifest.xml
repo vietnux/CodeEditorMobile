@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="ru.iiec.cxxdroid.uid.shared" android:versionCode="1044" android:versionName="4.0_arm64" android:sharedUserLabel="@string/sharedUserLabel" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="ru.iiec.cxxdroid" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="ru.iiec.cxxdroid.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ru.iiec.cxxdroid.permission.C2D_MESSAGE"/>
+    <application android:theme="@style/AppTheme" android:label="Cxxdroid" android:icon="@mipmap/ic_launcher" android:name="ru.iiec.cxxdroid.CxxApplication" android:allowBackup="true" android:supportsRtl="false" android:extractNativeLibs="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false" android:preserveLegacyExternalStorage="true">
+        <activity android:theme="@style/AppTheme" android:label="@string/app_name" android:name="ru.iiec.cxxdroid.CxxActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.c"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.cpp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.cxx"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeWithAB" android:label="@string/title_activity_settings" android:name="ru.iiec.cxxdroid.settings.CXXSettingsActivity"/>
+        <activity android:theme="@style/AppTheme" android:label="@string/title_activity_cxx_package_manager" android:name="ru.iiec.cxxdroid.manager.CxxPackageManagerActivity"/>
+        <service android:name="ru.iiec.cxxdroid.fcmservices.MyFirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="ru.iiec.cxxdroid.fcmservices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="qwe.qweqwe.texteditor.ui.onboarding.OnBoardingActivity"/>
+        <activity android:theme="@style/AppTheme.NoAccent" android:label="@string/preferences" android:name="iiec.androidterm.TermPreferences"/>
+        <activity android:label="@string/title_activity_samples" android:name="qwe.qweqwe.texteditor.samples.SamplesActivity"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <activity android:theme="@style/Theme1" android:name="iiec.androidterm.Term" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustResize"/>
+        <activity-alias android:name="iiec.androidterm.TermInternal" android:exported="false" android:targetActivity="iiec.androidterm.Term"/>
+        <activity android:name="iiec.androidterm.RemoteInterface" android:excludeFromRecents="true"/>
+        <activity android:name="iiec.androidterm.RunScript" android:excludeFromRecents="true"/>
+        <activity android:name="iiec.androidterm.RunShortcut" android:excludeFromRecents="true"/>
+        <activity android:label="@string/window_list" android:name="iiec.androidterm.WindowList"/>
+        <service android:name="iiec.androidterm.TermService"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity"/>
+        <activity android:theme="@style/JumpTheme" android:label="Cxxdroid" android:name="ru.iiec.cxxdroid.gui.JumpActivity" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:label="SDL2" android:name="ru.iiec.cxxdroid.gui.SDLActivity" android:process=":cxxguiapp" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:label="NativeActivity" android:name="ru.iiec.cxxdroid.gui.NativeActivity" android:process=":cxxguiapp" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <meta-data android:name="android.app.lib_name" android:value="naproxy"/>
+        </activity>
+        <activity android:label="Allegro" android:name="ru.iiec.cxxdroid.gui.AllegroActivity" android:process=":cxxguiapp" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="ru.iiec.cxxdroid.crashlyticsinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/AppThemeGetFile" android:label="@string/app_name" android:name="com.getdirectory.GetFileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="ru.iiec.cxxdroid"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="ru.iiec.cxxdroid.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="net.grandcentrix.tray.provider.TrayContentProvider" android:exported="false" android:multiprocess="false" android:authorities="ru.iiec.cxxdroid.tray"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="4.0.0"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="ru.iiec.cxxdroid.com.squareup.picasso"/>
+    </application>
+</manifest>

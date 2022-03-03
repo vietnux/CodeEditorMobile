@@ -1,0 +1,49 @@
+[
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\main.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\main.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\main.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\lexer.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\lexer.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\lexer.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\symbol.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\symbol.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\symbol.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\parser.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\parser.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\parser.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\var.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\var.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\var.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\functions.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\functions.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\functions.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\ast.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\ast.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\ast.cpp"
+},
+
+{
+  "directory": "D:/Android/CodeEditor/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "C:\\Users\\vietn\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/vietn/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIE   \"SHELL:--param ggc-min-expand=1\" \"SHELL:--param ggc-min-heapsize=32768\" -std=gnu++14 -o CMakeFiles\\Compiler.dir\\read_ast.cpp.o -c D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\read_ast.cpp",
+  "file": "D:\\Android\\CodeEditor\\examples\\Simple_Compiler_with_cpp\\read_ast.cpp"
+}
+]

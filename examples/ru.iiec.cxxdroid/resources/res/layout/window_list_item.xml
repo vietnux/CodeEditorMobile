@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/window_list_label" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+    <View android:id="@+id/window_list_separator" android:background="#ff313431" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+    <view android:id="@+id/window_list_close" android:background="@drawable/close_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_close_window" android:scaleType="center" class="iiec.androidterm.WindowList$CloseButton"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_pro_info_title" android:key="pref_pro_info" android:summary="@string/pref_pro_info_summary" android:order="3"/>
+    <Preference android:title="@string/pref_pro_support_title" android:key="pref_pro_support" android:summary="@string/pref_pro_support_summary" android:order="4"/>
+</PreferenceScreen>

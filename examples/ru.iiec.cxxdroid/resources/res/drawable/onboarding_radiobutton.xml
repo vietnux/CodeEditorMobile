@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <color android:color="#ffffff"/>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@integer/custom_radiobutton_animation_time" android:exitFadeDuration="@integer/custom_radiobutton_animation_time">
+            <item android:state_checked="true">
+                <shape android:shape="rectangle">
+                    <stroke android:width="1dp" android:color="@color/onboarding_radiobutton"/>
+                    <corners android:radius="8dp"/>
+                    <solid android:color="@color/onboarding_radiobutton"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="1dp" android:color="@color/onboarding_radiobutton"/>
+                    <corners android:radius="8dp"/>
+                    <solid android:color="?android:attr/colorBackground"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

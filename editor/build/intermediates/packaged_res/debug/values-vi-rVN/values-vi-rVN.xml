@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="copy">Sao chép</string>
+    <string name="cut">Cắt</string>
+    <string name="last">Sau</string>
+    <string name="next">Trước</string>
+    <string name="paste">Dán</string>
+    <string name="replace">Thay thế</string>
+    <string name="replaceAll">Thay thế tất</string>
+    <string name="replacement">"Sự thay thế "</string>
+    <string name="selectAll">Chọn tất</string>
+    <string name="text_to_search">Văn bản tìm kiếm</string>
+</resources>

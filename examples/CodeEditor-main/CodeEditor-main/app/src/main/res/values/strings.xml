@@ -1,0 +1,60 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~    CodeEditor - the awesome code editor for Android
+  ~    Copyright (C) 2020-2021  Rosemoe
+  ~
+  ~     This library is free software; you can redistribute it and/or
+  ~     modify it under the terms of the GNU Lesser General Public
+  ~     License as published by the Free Software Foundation; either
+  ~     version 2.1 of the License, or (at your option) any later version.
+  ~
+  ~     This library is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  ~     Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public
+  ~     License along with this library; if not, write to the Free Software
+  ~     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+  ~     USA
+  ~
+  ~     Please contact Rosemoe by email 2073412493@qq.com if you need
+  ~     additional information or have any questions
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<resources>
+    <string name="app_name">CodeEditorSample</string>
+    <string name="open_debug_logs">Open Debug Logs</string>
+    <string name="layout_tv_last">Last</string>
+    <string name="layout_tv_next">Next</string>
+    <string name="layout_tv_replace">Replace</string>
+    <string name="layout_tv_replaceAll">Replace All</string>
+    <string name="text_to_search">Text to search</string>
+    <string name="replacement">Replacement</string>
+    <string name="cursor_actions">Cursor Actions</string>
+    <string name="go_to_end">Go To End</string>
+    <string name="move_up">Move Up</string>
+    <string name="move_down">Move Down</string>
+    <string name="move_left">Move Left</string>
+    <string name="move_right">Move Right</string>
+    <string name="home">Home</string>
+    <string name="end">End</string>
+    <string name="text_actions">Text Actions</string>
+    <string name="switch_color_scheme">Switch Color Scheme</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="search_text">Search Text</string>
+    <string name="action_mode">Action Mode</string>
+    <string name="search_panel">Search Panel</string>
+    <string name="code_navigation">Code Navigation</string>
+    <string name="switch_language">Switch Language</string>
+    <string name="format">Format</string>
+    <string name="code_navi">Code Navigation</string>
+    <string name="navi_err_msg">Code navigation not prepared or unsupported</string>
+    <string name="color_scheme">Color Scheme</string>
+    <string name="err_crash_loop">"Exception in a thread with looper. Crash log is saved to crash-journal.log in private files directory. "</string>
+    <string name="wordwrap">Wordwrap</string>
+    <string name="show_crash_log">Open crash log</string>
+    <string name="clear_crash_log">Clear crash log</string>
+    <string name="line_number_visibility">Show line number</string>
+    <string name="pin_line_number">Pin LineNumber</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:orderInCategory="1" android:title="@string/run_group_title">
+        <menu>
+            <item android:icon="@drawable/ic_slideshow_black_24dp" android:id="@+id/nav_interpreter" android:title="@string/nav_interpreter"/>
+            <item android:icon="@drawable/ic_slideshow_black_24dp" android:id="@+id/nav_run_terminal" android:title="@string/nav_run_terminal"/>
+            <item android:icon="@drawable/ic_bug_report_black_24dp" android:id="@+id/nav_run_logs" android:title="@string/nav_run_logs"/>
+            <item android:icon="@drawable/ic_bug_report_black_24dp" android:id="@+id/nav_show_compiler_output" android:title="@string/show_compiler_output"/>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_library_books_black_24px" android:id="@+id/nav_run_package_manager" android:orderInCategory="11" android:title="@string/nav_run_package_manager"/>
+</menu>

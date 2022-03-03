@@ -1,0 +1,9 @@
+io/github/rosemoe/sora/utils/CrashHandler.java
+ io.github.rosemoe.sora.utils.CrashHandler
+io/github/rosemoe/sora/app/BuildConfig.java
+ io.github.rosemoe.sora.app.BuildConfig
+io/github/rosemoe/sora/app/MainActivity.java
+ io.github.rosemoe.sora.app.MainActivity
+ io.github.rosemoe.sora.app.MainActivity$1
+io/github/rosemoe/sora/widget/SymbolInputView.java
+ io.github.rosemoe.sora.widget.SymbolInputView
