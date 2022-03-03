@@ -38,7 +38,7 @@ Note: Language issues may not be handled.
   ⭐ Plugin System  
   ⭐ Access files from FTP, FTPS, SFTP and WebDAV.  
 ## Language Supported  
-* Java, JavaScript, C, C++, HTML, Python (Basic Support:highlight, code block line,identifier and keyword auto-completion). Code block line isn't available for HTML Language
+* PHP, Java, JavaScript, CSS, Dart, C, C++, HTML, Python (Basic Support:highlight, code block line, identifier and keyword auto-completion). Code block line isn't available for HTML Language.
 ## Screenshots
 <img src="images/Screenshot_20210905-163425.png" width="360" height="675"><img src="images/Screenshot_20210905-163425.png" width="360" height="675">
 <img src="images/Screenshot_20210905-164058.png" width="360" height="675"><img src="images/Screenshot_20210905-164058.png" width="360" height="675">
