@@ -20,23 +20,23 @@ Download newest sources from [Releases](https://github.com/vietnux/CodeEditorMob
 **Issues and pull requests are welcome.**   
 Note: Language issues may not be handled.   
 ## Features
-- [x] Smooth syntax highlighting for multiple languages (C++, Java, JavaScript, HTML, Markdown, PHP, Perl, Python, Lua, Dart, etc)
-  ⭐ Preview HTML and Markdown files.
-  ⭐ Code Editor is an engine that can compile and run Java code
-  ⭐ Auto completion
-  ⭐ Auto indent
-  ⭐ Code block lines
-  ⭐ Scale text
-  ⭐ Select text
-  ⭐ Scroll, Scrollbars, EdgeEffect, OverScroll
-  ⭐ Undo/redo changes without limit
-  ⭐ Search and replace
-  ⭐ Shortcuts
-  ⭐ Auto wordwrap
-  ⭐ Show non-printable characters
-  ⭐ Incremental highlight Analysis
-  ⭐ Plugin System
-  ⭐ Access files from FTP, FTPS, SFTP and WebDAV.
+- [x] Smooth syntax highlighting for multiple languages (C++, Java, JavaScript, HTML, Markdown, PHP, Perl, Python, Lua, Dart, etc) 
+  ⭐ Preview HTML and Markdown files. 
+  ⭐ Code Editor is an engine that can compile and run Java code 
+  ⭐ Auto completion 
+  ⭐ Auto indent 
+  ⭐ Code block lines 
+  ⭐ Scale text 
+  ⭐ Select text 
+  ⭐ Scroll, Scrollbars, EdgeEffect, OverScroll 
+  ⭐ Undo/redo changes without limit 
+  ⭐ Search and replace 
+  ⭐ Shortcuts 
+  ⭐ Auto wordwrap 
+  ⭐ Show non-printable characters 
+  ⭐ Incremental highlight Analysis 
+  ⭐ Plugin System 
+  ⭐ Access files from FTP, FTPS, SFTP and WebDAV. 
 ## Language Supported  
 * Java, JavaScript, C, C++, HTML, Python (Basic Support:highlight, code block line,identifier and keyword auto-completion). Code block line isn't available for HTML Language
 ## Screenshots
