@@ -22,15 +22,13 @@
 <!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" android:minSdkVersion="30"-->
 <!--        tools:ignore="ScopedStorage"/>-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"
-        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
 
-    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+<!--    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>-->
 
     <application
         android:allowBackup="true"
@@ -94,6 +92,7 @@
         <activity 
             android:name=".app.MainActivity"
             android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -101,14 +100,14 @@
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.ClientActivity" android:exported="true"/>
-        <activity android:name=".app.ClientFilesActivity" android:exported="true"/>
-        <activity android:name=".app.WebviewRunHtml" android:exported="true"/>
-        <activity android:name=".app.AboutActivity" android:exported="true"/>
-        <activity android:name=".app.LicenseActivity"  android:theme="@style/AppTheme.NoActionBar" android:exported="true"/>
-        <activity android:name=".app.ConsoleActivity" android:exported="true"/>
-        <activity android:name=".app.PythonConsoleActivity" android:exported="true"/>
-        <activity android:name=".app.RunActivity" android:exported="true"/>
+        <activity android:name=".app.ClientActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.ClientFilesActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.WebviewRunHtml" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.AboutActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.LicenseActivity"  android:theme="@style/AppTheme.NoActionBar" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.ConsoleActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.PythonConsoleActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
+        <activity android:name=".app.RunActivity" android:exported="true" android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"/>
 <!--        <activity android:name=".client.HttpClientActivity"/>-->
         <provider
             android:name="androidx.core.content.FileProvider"

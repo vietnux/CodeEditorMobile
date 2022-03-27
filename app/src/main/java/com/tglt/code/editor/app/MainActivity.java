@@ -328,6 +328,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     try {
                         // open the user-picked file for reading:
                         InputStream in = UtilsFiles.clients.get( client_id ).inputFile(this, remoteFile);
+                        if( in == null ) { return;  }
                         BufferedReader br = new BufferedReader(new InputStreamReader(in));
                         String line;
                         StringBuilder text = new StringBuilder();
@@ -818,6 +819,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     public boolean onLongClick(View v) {
                         PopupMenu popupMenu = new PopupMenu(context, tabStrip.getChildAt(position));
                         popupMenu.inflate(R.menu.popupmenu);
+                        if( pagerAdapter.getItemCount() <  position) {
+                            return false;
+                        }
                         fragmentSave = pagerAdapter.createFragment(position);
                         //0,1,2,4,5 ==>fragmentSave.getLangId();
                         int[] lang_debug = new int[]{0,1,2,4,5};

@@ -4,7 +4,7 @@
             "outputFile": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/tuantt/.gradle/caches/transforms-3/ff5ed78b574731131ce558df3fbbdeb0/transformed/appcompat-1.3.1/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/tuantt/.gradle/caches/transforms-3/43a07d8beb5ef44ad0d7a52a45aadf04/transformed/appcompat-1.3.1/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

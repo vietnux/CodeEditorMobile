@@ -4,26 +4,7 @@
             "outputFile": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/tuantt/.gradle/caches/transforms-3/e1dd5e7b99291c9f9780fec85482e6b0/transformed/material-1.5.0-alpha02/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,320",
-                        "endLines": "5,9",
-                        "endColumns": "10,10",
-                        "endOffsets": "315,588"
-                    },
-                    "to": {
-                        "startLines": "55,59",
-                        "startColumns": "4,4",
-                        "startOffsets": "3803,4068",
-                        "endLines": "58,62",
-                        "endColumns": "10,10",
-                        "endOffsets": "4063,4336"
-                    }
-                },
-                {
-                    "source": "/Users/tuantt/.gradle/caches/transforms-3/9b66d6aa0bb949ef156d8fc8527cd1f5/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/tuantt/.gradle/caches/transforms-3/1b52606e0d8c56ecec746d41a9979c8f/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/Users/tuantt/.gradle/caches/transforms-3/ff5ed78b574731131ce558df3fbbdeb0/transformed/appcompat-1.3.1/res/values-v23/values-v23.xml",
+                    "source": "/Users/tuantt/.gradle/caches/transforms-3/611fd754d6c3afe42d8a4fbd5040d430/transformed/material-1.5.0-alpha02/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "55,59",
+                        "startColumns": "4,4",
+                        "startOffsets": "3803,4068",
+                        "endLines": "58,62",
+                        "endColumns": "10,10",
+                        "endOffsets": "4063,4336"
+                    }
+                },
+                {
+                    "source": "/Users/tuantt/.gradle/caches/transforms-3/43a07d8beb5ef44ad0d7a52a45aadf04/transformed/appcompat-1.3.1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -61,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tuantt/.gradle/caches/transforms-3/ad17d13c6d625e4f08134ffa3dcefe72/transformed/work-runtime-2.1.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
