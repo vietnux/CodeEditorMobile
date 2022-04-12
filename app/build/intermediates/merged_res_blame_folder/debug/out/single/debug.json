@@ -8,6 +8,10 @@
         "source": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/res/drawable/file_type_xcode.xml"
     },
     {
+        "merged": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/build/intermediates/merged_res/debug/drawable_galaxy.png.flat",
+        "source": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/res/drawable/galaxy.png"
+    },
+    {
         "merged": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_debug_5aa96a.png.flat",
         "source": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/res/mipmap-hdpi/ic_debug_5aa96a.png"
     },

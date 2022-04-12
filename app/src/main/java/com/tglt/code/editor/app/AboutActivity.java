@@ -48,8 +48,22 @@ public class AboutActivity extends AppCompatActivity {
         TextView header = (TextView) findViewById(R.id.header);
         TextView appNameVersion = (TextView) findViewById(R.id.app_name);
         CardView about_googleplay = (CardView) findViewById(R.id.about_googleplay);
+        CardView about_galaxy = (CardView) findViewById(R.id.about_galaxy);
         appNameVersion.setText(getResources().getString(R.string.app_name) + " "+BuildConfig.VERSION_NAME );
+        if( UtilsFiles.is_galaxy_samsung ) {
+            about_googleplay.setVisibility(View.GONE);
+            about_galaxy.setVisibility(View.VISIBLE);
+        } else {
+            about_galaxy.setVisibility(View.GONE);
+            about_googleplay.setVisibility(View.VISIBLE);
+        }
         about_googleplay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                UtilsFiles.goToGooglePlay(context);
+            }
+        });
+        about_galaxy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 UtilsFiles.goToGooglePlay(context);

@@ -1,6 +1,7 @@
 {
     "data":{"banner":"admob", "interstitial": "admob", "native":"admob",
 	"begin":0,"end":0,"save": 0, "newEditor":0,
+        "is_galaxy_samsung": 0,
         "ad_units" :{
             "ios" : {
                 "banner":"",

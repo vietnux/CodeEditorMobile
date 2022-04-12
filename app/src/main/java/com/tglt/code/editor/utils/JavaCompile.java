@@ -80,6 +80,7 @@ public class JavaCompile  {
         FileIOUtils.writeFileFromString(javaFilePath, fragmentSave.getTabEditor().getText().toString() );
 //        FileIOUtils.writeFileFromString(javaFilePath, setInputSample() );
 //        String javaFilePath = fragmentSave.getTabPath();
+//        Log.e("W Tab", fragmentSave.getTabEditor().getText().toString() );
 
         // 保存 Class文件 的文件夹
         String saveClassFolder = MainActivity.getContext().getExternalCacheDir() + "/Class";
@@ -151,7 +152,12 @@ public class JavaCompile  {
                 // 转换失败
 //                printView.setText(Html.fromHtml("<font color=\"#F00\">" + error.toString() + "</font>"));
                 error.printStackTrace();
-//                Log.e("compileDex", "error: "+error.getMessage() );
+//                Log.e("compileDex", "error: == "+error.getMessage() );
+
+                ThreadUtils.runOnUiThread(() -> {
+                    fragmentSave.showErrorInfo( error.getMessage() );
+                    fragmentSave.showLogDismissListener("");
+                });
             }
             @Override
             public void onProgress(String task, int progress) {

@@ -1571,6 +1571,7 @@ Language Supported\n
     <string name="search_text">Search Text</string>
     <item formatted="true" name="selectAll" type="string">Select All</item>
     <string name="settings_about" translatable="false">Have Fun</string>
+    <string name="settings_galaxy" translatable="false">Rate on Samsung Galaxy</string>
     <string name="settings_googleplay" translatable="false">Rate on Google Play</string>
     <string name="settings_license" translatable="false">Open Source licenses</string>
     <string name="show_crash_log">Open crash log</string>

@@ -73,6 +73,7 @@ import com.tglt.code.editor.language.PhpDescription;
 import com.tglt.code.editor.language.SwiftDescription;
 
 public class UtilsFiles {
+    public static boolean is_galaxy_samsung = true;
     private static final int MY_PERMISSIONS_REQUEST_WRITE_READ = 47;
     public static int OPEN_REQUEST_CODE = 1;
     public static int OPEN_SAVE_AS_CODE = 2;
@@ -188,12 +189,22 @@ public class UtilsFiles {
      * @param context Context
      */
     public static void goToGooglePlay(Context context) {
-        final String appPackageName = context.getPackageName();
-        try {
-            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-        } catch (ActivityNotFoundException e) {
-            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+        if( is_galaxy_samsung ) {
+            goToSamsungGalaxy(context);
+        } else {
+            final String appPackageName = context.getPackageName();
+            try {
+                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+            } catch (ActivityNotFoundException e) {
+                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+            }
         }
+
+    }
+    public static void goToSamsungGalaxy(Context context) {
+        final String appPackageName = context.getPackageName();
+        context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://galaxystore.samsung.com/detail/" + appPackageName)));
+
     }
     public static void shared(Context context) {
         final String appPackageName = context.getPackageName();
@@ -205,7 +216,11 @@ public class UtilsFiles {
 ////            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
 //            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.about_description) + Uri.parse( "market://details?id=" + appPackageName ) );
 //        } catch (ActivityNotFoundException e) {
-            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.about_description) + Uri.parse( "http://play.google.com/store/apps/details?id=" + appPackageName ) );
+        if( is_galaxy_samsung ) {
+            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.about_description) + Uri.parse( "https://galaxystore.samsung.com/detail/" + appPackageName ) );
+        } else {
+            intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.about_description) + Uri.parse( "https://play.google.com/store/apps/details?id=" + appPackageName ) );
+        }
 //        }
 
         context.startActivity(Intent.createChooser(intent,"Share using"));

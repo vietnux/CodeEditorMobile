@@ -16,7 +16,13 @@
         <entry key="..\:/Android/CodeEditor/app/src/main/res/menu/menu_main.xml" value="0.1" />
         <entry key="..\:/Android/CodeEditor/editor/src/main/res/layout/default_completion_result_item.xml" value="0.1" />
         <entry key="..\:/Android/CodeEditor/editor/src/main/res/layout/text_compose_popup_window.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.1140625" />
         <entry key="app/src/main/res/layout/activity_console.xml" value="0.11510416666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1140625" />
+        <entry key="app/src/main/res/layout/fab_multiple.xml" value="0.12056737588652482" />
+        <entry key="app/src/main/res/layout/navigation.xml" value="0.1140625" />
+        <entry key="app/src/main/res/menu/activity_drawer.xml" value="0.1140625" />
+        <entry key="app/src/main/res/menu/popupmenu.xml" value="0.24791666666666667" />
       </map>
     </option>
   </component>

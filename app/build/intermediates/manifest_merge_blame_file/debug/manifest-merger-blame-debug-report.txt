@@ -20,7 +20,7 @@
 20    package="com.tglt.code.editor"
 21    android:hardwareAccelerated="true"
 22    android:installLocation="auto"
-23    android:versionCode="8"
+23    android:versionCode="10"
 24    android:versionName="1.3" >
 25
 26    <uses-sdk
@@ -55,552 +55,564 @@
 40    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
 40-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:29:5-74
 40-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:29:22-72
-41    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
-41-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:31:5-116
-41-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:31:22-114
-42
-43    <!-- Android package visibility setting -->
-44    <queries>
-44-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:27:5-43:15
-45
-46        <!-- For browser content -->
-47        <intent>
-47-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:30:9-36:18
-48            <action android:name="android.intent.action.VIEW" />
-48-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-69
-48-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:25-66
-49
-50            <category android:name="android.intent.category.BROWSABLE" />
-50-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-78
-50-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:27-75
-51
-52            <data android:scheme="https" />
-52-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-52-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-44
-53        </intent>
-54        <!-- End of browser content -->
-55        <!-- For CustomTabsService -->
-56        <intent>
-56-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:39:9-41:18
-57            <action android:name="android.support.customtabs.action.CustomTabsService" />
-57-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:40:13-90
-57-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:40:21-87
-58        </intent>
-59        <!-- End of CustomTabsService -->
-60    </queries>
-61
-62    <uses-permission android:name="android.permission.WAKE_LOCK" />
-62-->[com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /Users/tuantt/.gradle/caches/transforms-3/74710ab0552a00643d83df9bb7ee0027/transformed/jetified-play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:5-68
-62-->[com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /Users/tuantt/.gradle/caches/transforms-3/74710ab0552a00643d83df9bb7ee0027/transformed/jetified-play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:22-65
-63    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-63-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:27:5-81
-63-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:27:22-78
-64
-65    <application
-65-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:33:5-127:19
-66        android:name="com.tglt.code.editor.CodeEditorApplication"
-66-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:37:9-46
-67        android:allowBackup="true"
-67-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:34:9-35
-68        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-68-->[androidx.core:core:1.5.0] /Users/tuantt/.gradle/caches/transforms-3/c2af483e4923a669456f4e94a7c8565c/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
-69        android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
-69-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:45:9-92
-70        android:debuggable="true"
-71        android:extractNativeLibs="true"
-71-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:46:9-41
-72        android:hardwareAccelerated="true"
-72-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:42:9-43
-73        android:icon="@mipmap/ic_launcher"
-73-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:35:9-43
-74        android:label="@string/app_name"
-74-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:36:9-41
-75        android:networkSecurityConfig="@xml/network_security_config"
-75-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:47:9-69
-76        android:requestLegacyExternalStorage="true"
-76-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:43:9-52
-77        android:requiredForAllUsers="true"
-77-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:44:9-43
-78        android:roundIcon="@mipmap/ic_launcher_round"
-78-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:38:9-54
-79        android:supportsRtl="true"
-79-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:39:9-35
-80        android:testOnly="true"
-81        android:theme="@style/AppTheme"
-81-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:40:9-40
-82        android:usesCleartextTraffic="true" >
-82-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:41:9-44
-83        <uses-library
-83-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:49:9-51:40
-84            android:name="org.apache.http.legacy"
-84-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:50:13-50
-85            android:required="false" />
-85-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:51:13-37
-86
-87        <activity
-87-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:52:9-92:20
-88            android:name="com.tglt.code.editor.app.SplashScreen"
-88-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:53:13-45
-89            android:exported="true"
-89-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:55:13-36
-90            android:theme="@style/screen" >
-90-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:54:13-42
-91            <intent-filter>
-91-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:56:13-61:29
-92                <action android:name="android.intent.action.MAIN" />
-92-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:17-69
-92-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:25-66
-93                <action android:name="android.intent.action.ACTION_VIEW" />
-93-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:58:17-75
-93-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:58:25-73
-94
-95                <category android:name="android.intent.category.LAUNCHER" />
-95-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:60:17-77
-95-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:60:27-74
-96            </intent-filter>
-97            <intent-filter>
-97-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:13-70:29
-98                <action android:name="android.intent.action.VIEW" />
-98-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-69
-98-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:25-66
+41
+42    <!-- Android package visibility setting -->
+43    <queries>
+43-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:27:5-43:15
+44
+45        <!-- For browser content -->
+46        <intent>
+46-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:30:9-36:18
+47            <action android:name="android.intent.action.VIEW" />
+47-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:17-69
+47-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:25-66
+48
+49            <category android:name="android.intent.category.BROWSABLE" />
+49-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-78
+49-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-75
+50
+51            <data android:scheme="https" />
+51-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+51-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:23-44
+52        </intent>
+53        <!-- End of browser content -->
+54        <!-- For CustomTabsService -->
+55        <intent>
+55-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:39:9-41:18
+56            <action android:name="android.support.customtabs.action.CustomTabsService" />
+56-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:40:13-90
+56-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:40:21-87
+57        </intent>
+58        <!-- End of CustomTabsService -->
+59    </queries>
+60
+61    <uses-permission android:name="android.permission.WAKE_LOCK" />
+61-->[com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /Users/tuantt/.gradle/caches/transforms-3/3f16a56a11d842ea177cc67a2bcd23af/transformed/jetified-play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:5-68
+61-->[com.google.android.gms:play-services-measurement-sdk-api:18.0.0] /Users/tuantt/.gradle/caches/transforms-3/3f16a56a11d842ea177cc67a2bcd23af/transformed/jetified-play-services-measurement-sdk-api-18.0.0/AndroidManifest.xml:25:22-65
+62    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/> -->
+62-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:27:5-81
+62-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:27:22-78
+63    <application
+63-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:33:5-126:19
+64        android:name="com.tglt.code.editor.CodeEditorApplication"
+64-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:37:9-46
+65        android:allowBackup="true"
+65-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:34:9-35
+66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+66-->[androidx.core:core:1.5.0] /Users/tuantt/.gradle/caches/transforms-3/695de94d7a37cf429f3938d5de7e1502/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+67        android:debuggable="true"
+68        android:extractNativeLibs="true"
+68-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:45:9-41
+69        android:hardwareAccelerated="true"
+69-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:42:9-43
+70        android:icon="@mipmap/ic_launcher"
+70-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:35:9-43
+71        android:label="@string/app_name"
+71-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:36:9-41
+72        android:networkSecurityConfig="@xml/network_security_config"
+72-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:46:9-69
+73        android:requestLegacyExternalStorage="true"
+73-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:43:9-52
+74        android:requiredForAllUsers="true"
+74-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:44:9-43
+75        android:roundIcon="@mipmap/ic_launcher_round"
+75-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:38:9-54
+76        android:supportsRtl="true"
+76-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:39:9-35
+77        android:testOnly="true"
+78        android:theme="@style/AppTheme"
+78-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:40:9-40
+79        android:usesCleartextTraffic="true" >
+79-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:41:9-44
+80        <uses-library
+80-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:48:9-50:40
+81            android:name="org.apache.http.legacy"
+81-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:49:13-50
+82            android:required="false" />
+82-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:50:13-37
+83
+84        <activity
+84-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:51:9-91:20
+85            android:name="com.tglt.code.editor.app.SplashScreen"
+85-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:52:13-45
+86            android:exported="true"
+86-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:54:13-36
+87            android:theme="@style/screen" >
+87-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:53:13-42
+88            <intent-filter>
+88-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:55:13-60:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:56:17-69
+89-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:56:25-66
+90                <action android:name="android.intent.action.ACTION_VIEW" />
+90-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:17-75
+90-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:25-73
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:59:17-77
+92-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:59:27-74
+93            </intent-filter>
+94            <intent-filter>
+94-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:61:13-69:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:17-69
+95-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-76
+97-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-78
+98-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-75
 99
-100                <category android:name="android.intent.category.DEFAULT" />
-100-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-76
-100-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-73
-101                <category android:name="android.intent.category.BROWSABLE" />
-101-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-78
-101-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:27-75
-102
-103                <data android:scheme="file" />
-103-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-103-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-44
-104                <data android:mimeType="*/*" />
-104-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-104-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-45
-105                <data android:host="*" />
-105-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-105-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-39
-106                <data android:pathPattern=".*\.c" />
-106-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-106-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:69:23-50
-107            </intent-filter>
-108            <intent-filter>
-108-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:72:13-80:29
-109                <action android:name="android.intent.action.VIEW" />
-109-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-69
-109-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:25-66
+100                <data android:scheme="file" />
+100-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+100-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:23-44
+101                <data android:mimeType="*/*" />
+101-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+101-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-45
+102                <data android:host="*" />
+102-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+102-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-39
+103                <data android:pathPattern=".*\.c" />
+103-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+103-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-50
+104            </intent-filter>
+105            <intent-filter>
+105-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:71:13-79:29
+106                <action android:name="android.intent.action.VIEW" />
+106-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:17-69
+106-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:25-66
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-76
+108-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:27-73
+109                <category android:name="android.intent.category.BROWSABLE" />
+109-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-78
+109-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-75
 110
-111                <category android:name="android.intent.category.DEFAULT" />
-111-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-76
-111-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-73
-112                <category android:name="android.intent.category.BROWSABLE" />
-112-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-78
-112-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:27-75
-113
-114                <data android:scheme="file" />
-114-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-114-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-44
-115                <data android:mimeType="*/*" />
-115-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-115-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-45
-116                <data android:host="*" />
-116-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-116-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-39
-117                <data android:pathPattern=".*\.cpp" />
-117-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-117-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:69:23-50
-118            </intent-filter>
-119            <intent-filter>
-119-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:82:13-90:29
-120                <action android:name="android.intent.action.VIEW" />
-120-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-69
-120-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:25-66
+111                <data android:scheme="file" />
+111-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+111-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:23-44
+112                <data android:mimeType="*/*" />
+112-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+112-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-45
+113                <data android:host="*" />
+113-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+113-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-39
+114                <data android:pathPattern=".*\.cpp" />
+114-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+114-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-50
+115            </intent-filter>
+116            <intent-filter>
+116-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:81:13-89:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:17-69
+117-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:62:25-66
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:17-76
+119-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:63:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-78
+120-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-75
 121
-122                <category android:name="android.intent.category.DEFAULT" />
-122-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:17-76
-122-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:64:27-73
-123                <category android:name="android.intent.category.BROWSABLE" />
-123-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-78
-123-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:27-75
-124
-125                <data android:scheme="file" />
-125-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-125-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-44
-126                <data android:mimeType="*/*" />
-126-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-126-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-45
-127                <data android:host="*" />
-127-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-127-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-39
-128                <data android:pathPattern=".*\.cxx" />
-128-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:17-47
-128-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:69:23-50
-129            </intent-filter>
-130        </activity>
-131        <activity
-131-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:93:9-103:20
-132            android:name="com.tglt.code.editor.app.MainActivity"
-132-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:94:13-45
-133            android:exported="true"
-133-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:97:13-36
-134            android:windowSoftInputMode="adjustResize" >
-134-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:95:13-55
-135            <intent-filter>
-135-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:98:13-102:29
-136                <action android:name="android.intent.action.MAIN" />
-136-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:17-69
-136-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:25-66
-137                <action android:name="android.intent.action.ACTION_VIEW" />
-137-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:58:17-75
-137-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:58:25-73
-138
-139                <category android:name="android.intent.category.HOME" />
-139-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:101:17-73
-139-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:101:27-70
-140            </intent-filter>
-141        </activity>
-142        <activity
-142-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:9-79
-143            android:name="com.tglt.code.editor.app.ClientActivity"
-143-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:19-53
-144            android:exported="true" />
-144-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:54-77
-145        <activity
-145-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:9-84
-146            android:name="com.tglt.code.editor.app.ClientFilesActivity"
-146-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:19-58
+122                <data android:scheme="file" />
+122-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+122-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:23-44
+123                <data android:mimeType="*/*" />
+123-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+123-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:66:23-45
+124                <data android:host="*" />
+124-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+124-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:67:23-39
+125                <data android:pathPattern=".*\.cxx" />
+125-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:65:17-47
+125-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:68:23-50
+126            </intent-filter>
+127        </activity>
+128        <activity
+128-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:92:9-102:20
+129            android:name="com.tglt.code.editor.app.MainActivity"
+129-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:93:13-45
+130            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+130-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:95:13-96
+131            android:exported="true"
+131-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:96:13-36
+132            android:windowSoftInputMode="adjustResize" >
+132-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:94:13-55
+133            <intent-filter>
+133-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:97:13-101:29
+134                <action android:name="android.intent.action.MAIN" />
+134-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:56:17-69
+134-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:56:25-66
+135                <action android:name="android.intent.action.ACTION_VIEW" />
+135-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:17-75
+135-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:57:25-73
+136
+137                <category android:name="android.intent.category.HOME" />
+137-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:100:17-73
+137-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:100:27-70
+138            </intent-filter>
+139        </activity>
+140        <activity
+140-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:103:9-163
+141            android:name="com.tglt.code.editor.app.ClientActivity"
+141-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:103:19-53
+142            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+142-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:103:78-161
+143            android:exported="true" />
+143-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:103:54-77
+144        <activity
+144-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:9-168
+145            android:name="com.tglt.code.editor.app.ClientFilesActivity"
+145-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:19-58
+146            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+146-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:83-166
 147            android:exported="true" />
-147-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:59-82
+147-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:104:59-82
 148        <activity
-148-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:9-79
+148-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:9-163
 149            android:name="com.tglt.code.editor.app.WebviewRunHtml"
-149-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:19-53
-150            android:exported="true" />
-150-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:54-77
-151        <activity
-151-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:9-78
-152            android:name="com.tglt.code.editor.app.AboutActivity"
-152-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:19-52
-153            android:exported="true" />
-153-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:53-76
-154        <activity
-154-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:9-125
-155            android:name="com.tglt.code.editor.app.LicenseActivity"
-155-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:19-54
-156            android:exported="true"
-156-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:100-123
-157            android:theme="@style/AppTheme.NoActionBar" />
-157-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:56-99
-158        <activity
-158-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:9-80
-159            android:name="com.tglt.code.editor.app.ConsoleActivity"
-159-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:19-54
-160            android:exported="true" />
-160-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:55-78
+149-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:19-53
+150            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+150-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:78-161
+151            android:exported="true" />
+151-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:105:54-77
+152        <activity
+152-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:9-162
+153            android:name="com.tglt.code.editor.app.AboutActivity"
+153-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:19-52
+154            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+154-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:77-160
+155            android:exported="true" />
+155-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:106:53-76
+156        <activity
+156-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:9-209
+157            android:name="com.tglt.code.editor.app.LicenseActivity"
+157-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:19-54
+158            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+158-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:124-207
+159            android:exported="true"
+159-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:100-123
+160            android:theme="@style/AppTheme.NoActionBar" />
+160-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:107:56-99
 161        <activity
-161-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:9-86
-162            android:name="com.tglt.code.editor.app.PythonConsoleActivity"
-162-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:19-60
-163            android:exported="true" />
-163-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:61-84
-164        <activity
-164-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:111:9-76
-165            android:name="com.tglt.code.editor.app.RunActivity"
-165-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:111:19-50
-166            android:exported="true" />
-166-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:111:51-74
-167        <!-- <activity android:name=".client.HttpClientActivity"/> -->
-168        <provider
-169            android:name="androidx.core.content.FileProvider"
-169-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:114:13-62
-170            android:authorities="com.tglt.code.editor.provider"
-170-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:115:13-60
-171            android:exported="false"
-171-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:116:13-37
-172            android:grantUriPermissions="true" >
-172-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:117:13-47
-173            <meta-data
-173-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:118:13-120:58
-174                android:name="android.support.FILE_PROVIDER_PATHS"
-174-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:119:17-67
-175                android:resource="@xml/provider_paths" />
-175-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:120:17-55
-176        </provider>
-177
-178        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
-179        <meta-data
-179-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:124:9-126:47
-180            android:name="com.google.android.gms.ads.APPLICATION_ID"
-180-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:125:13-69
-181            android:value="@string/admob_id" />
-181-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:126:13-45
-182
-183        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
-183-->[com.mikepenz:aboutlibraries:8.9.0] /Users/tuantt/.gradle/caches/transforms-3/b6be5b25ad443882b468ca997f29ac15/transformed/jetified-aboutlibraries-8.9.0/AndroidManifest.xml:10:9-80
-183-->[com.mikepenz:aboutlibraries:8.9.0] /Users/tuantt/.gradle/caches/transforms-3/b6be5b25ad443882b468ca997f29ac15/transformed/jetified-aboutlibraries-8.9.0/AndroidManifest.xml:10:19-77
-184        <activity
-184-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:10:9-15:75
-185            android:name="com.blankj.utilcode.util.UtilsTransActivity"
-185-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:11:13-71
-186            android:configChanges="orientation|keyboardHidden|screenSize"
-186-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:12:13-74
-187            android:multiprocess="true"
-187-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:13:13-40
-188            android:theme="@style/ActivityTranslucent"
-188-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:14:13-55
-189            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
-189-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:15:13-72
-190
-191        <provider
-191-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:17:9-25:20
-192            android:name="com.blankj.utilcode.util.UtilsFileProvider"
-192-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:18:13-70
-193            android:authorities="com.tglt.code.editor.utilcode.provider"
-193-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:19:13-69
-194            android:exported="false"
-194-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:20:13-37
-195            android:grantUriPermissions="true" >
-195-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:21:13-47
-196            <meta-data
-196-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:118:13-120:58
-197                android:name="android.support.FILE_PROVIDER_PATHS"
-197-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:119:17-67
-198                android:resource="@xml/util_code_provider_paths" />
-198-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:120:17-55
-199        </provider>
-200
-201        <service
-201-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:27:9-33:19
-202            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
-202-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:28:13-81
-203            android:exported="false" >
-203-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:29:13-37
-204            <intent-filter>
-204-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:30:13-32:29
-205                <action android:name="com.tglt.code.editor.messenger" />
-205-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:31:17-69
-205-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/3ef24f2491c6575c405394adb39c98d4/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:31:25-66
-206            </intent-filter>
-207        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-208        <activity
-208-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:48:9-52:64
-209            android:name="com.google.android.gms.ads.AdActivity"
-209-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:49:13-65
-210            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-210-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:50:13-122
-211            android:exported="false"
-211-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:51:13-37
-212            android:theme="@android:style/Theme.Translucent" />
-212-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:52:13-61
-213
-214        <provider
-214-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:54:9-58:39
-215            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-215-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:55:13-76
-216            android:authorities="com.tglt.code.editor.mobileadsinitprovider"
-216-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:56:13-73
+161-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:9-164
+162            android:name="com.tglt.code.editor.app.ConsoleActivity"
+162-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:19-54
+163            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+163-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:79-162
+164            android:exported="true" />
+164-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:108:55-78
+165        <activity
+165-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:9-170
+166            android:name="com.tglt.code.editor.app.PythonConsoleActivity"
+166-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:19-60
+167            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+167-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:85-168
+168            android:exported="true" />
+168-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:109:61-84
+169        <activity
+169-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:9-160
+170            android:name="com.tglt.code.editor.app.RunActivity"
+170-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:19-50
+171            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+171-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:75-158
+172            android:exported="true" />
+172-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:110:51-74
+173        <!-- <activity android:name=".client.HttpClientActivity"/> -->
+174        <provider
+175            android:name="androidx.core.content.FileProvider"
+175-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:113:13-62
+176            android:authorities="com.tglt.code.editor.provider"
+176-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:114:13-60
+177            android:exported="false"
+177-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:115:13-37
+178            android:grantUriPermissions="true" >
+178-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:116:13-47
+179            <meta-data
+179-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:117:13-119:58
+180                android:name="android.support.FILE_PROVIDER_PATHS"
+180-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:118:17-67
+181                android:resource="@xml/provider_paths" />
+181-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:119:17-55
+182        </provider>
+183
+184        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+185        <meta-data
+185-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:123:9-125:47
+186            android:name="com.google.android.gms.ads.APPLICATION_ID"
+186-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:124:13-69
+187            android:value="@string/admob_id" />
+187-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:125:13-45
+188
+189        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+189-->[com.mikepenz:aboutlibraries:8.9.0] /Users/tuantt/.gradle/caches/transforms-3/41a77f556ebe770f372b8630de660afd/transformed/jetified-aboutlibraries-8.9.0/AndroidManifest.xml:10:9-80
+189-->[com.mikepenz:aboutlibraries:8.9.0] /Users/tuantt/.gradle/caches/transforms-3/41a77f556ebe770f372b8630de660afd/transformed/jetified-aboutlibraries-8.9.0/AndroidManifest.xml:10:19-77
+190        <activity
+190-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:10:9-15:75
+191            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+191-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:11:13-71
+192            android:configChanges="orientation|keyboardHidden|screenSize"
+192-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:12:13-74
+193            android:multiprocess="true"
+193-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:13:13-40
+194            android:theme="@style/ActivityTranslucent"
+194-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:14:13-55
+195            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+195-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:15:13-72
+196
+197        <provider
+197-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:17:9-25:20
+198            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+198-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:18:13-70
+199            android:authorities="com.tglt.code.editor.utilcode.provider"
+199-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:19:13-69
+200            android:exported="false"
+200-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:20:13-37
+201            android:grantUriPermissions="true" >
+201-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:21:13-47
+202            <meta-data
+202-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:117:13-119:58
+203                android:name="android.support.FILE_PROVIDER_PATHS"
+203-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:118:17-67
+204                android:resource="@xml/util_code_provider_paths" />
+204-->/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/AndroidManifest.xml:119:17-55
+205        </provider>
+206
+207        <service
+207-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:27:9-33:19
+208            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+208-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:28:13-81
+209            android:exported="false" >
+209-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:29:13-37
+210            <intent-filter>
+210-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:30:13-32:29
+211                <action android:name="com.tglt.code.editor.messenger" />
+211-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:31:17-69
+211-->[com.blankj:utilcodex:1.28.4] /Users/tuantt/.gradle/caches/transforms-3/96d58e49f2922384cfdd9a78d7384a04/transformed/jetified-utilcodex-1.28.4/AndroidManifest.xml:31:25-66
+212            </intent-filter>
+213        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+214        <activity
+214-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:48:9-52:64
+215            android:name="com.google.android.gms.ads.AdActivity"
+215-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:49:13-65
+216            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+216-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:50:13-122
 217            android:exported="false"
-217-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:57:13-37
-218            android:initOrder="100" />
-218-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:58:13-36
+217-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:51:13-37
+218            android:theme="@android:style/Theme.Translucent" />
+218-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:52:13-61
 219
-220        <service
-220-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:60:9-63:40
-221            android:name="com.google.android.gms.ads.AdService"
-221-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:61:13-64
-222            android:enabled="true"
-222-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:62:13-35
-223            android:exported="false" />
-223-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/6c0428fa15f960df4931a59cd64b0374/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:63:13-37
-224
-225        <meta-data
-225-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/4a3a3bf3b3301c0158f770bbbb1f4552/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
-226            android:name="com.google.android.gms.version"
-226-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/4a3a3bf3b3301c0158f770bbbb1f4552/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
-227            android:value="@integer/google_play_services_version" />
-227-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/4a3a3bf3b3301c0158f770bbbb1f4552/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
-228
-229        <provider
-229-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:30:9-36:35
-230            android:name="androidx.work.impl.WorkManagerInitializer"
-230-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:31:13-69
-231            android:authorities="com.tglt.code.editor.workmanager-init"
-231-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:32:13-68
-232            android:directBootAware="false"
-232-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:33:13-44
-233            android:exported="false"
-233-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:34:13-37
-234            android:multiprocess="true" />
-234-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:35:13-40
-235
-236        <service
-236-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:38:9-43:35
-237            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-237-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:39:13-88
+220        <provider
+220-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:54:9-58:39
+221            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+221-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:55:13-76
+222            android:authorities="com.tglt.code.editor.mobileadsinitprovider"
+222-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:56:13-73
+223            android:exported="false"
+223-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:57:13-37
+224            android:initOrder="100" />
+224-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:58:13-36
+225
+226        <service
+226-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:60:9-63:40
+227            android:name="com.google.android.gms.ads.AdService"
+227-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:61:13-64
+228            android:enabled="true"
+228-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:62:13-35
+229            android:exported="false" />
+229-->[com.google.android.gms:play-services-ads-lite:20.3.0] /Users/tuantt/.gradle/caches/transforms-3/40c99aff0b0b289160ad0763e3acc84e/transformed/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml:63:13-37
+230
+231        <meta-data
+231-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/91155ab9d5aecc05bdd712ce97b3d850/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+232            android:name="com.google.android.gms.version"
+232-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/91155ab9d5aecc05bdd712ce97b3d850/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+233            android:value="@integer/google_play_services_version" />
+233-->[com.google.android.gms:play-services-basement:17.6.0] /Users/tuantt/.gradle/caches/transforms-3/91155ab9d5aecc05bdd712ce97b3d850/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+234
+235        <provider
+235-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:30:9-36:35
+236            android:name="androidx.work.impl.WorkManagerInitializer"
+236-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:31:13-69
+237            android:authorities="com.tglt.code.editor.workmanager-init"
+237-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:32:13-68
 238            android:directBootAware="false"
-238-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:40:13-44
-239            android:enabled="@bool/enable_system_alarm_service_default"
-239-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:41:13-72
-240            android:exported="false" />
-240-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:42:13-37
-241        <service
-241-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:44:9-50:35
-242            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-242-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:45:13-84
-243            android:directBootAware="false"
-243-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:46:13-44
-244            android:enabled="@bool/enable_system_job_service_default"
-244-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:47:13-70
-245            android:exported="true"
-245-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:48:13-36
-246            android:permission="android.permission.BIND_JOB_SERVICE" />
-246-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:49:13-69
-247
-248        <receiver
-248-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:52:9-57:35
-249            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-249-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:53:13-88
-250            android:directBootAware="false"
-250-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:54:13-44
-251            android:enabled="true"
-251-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:55:13-35
-252            android:exported="false" />
-252-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:56:13-37
-253        <receiver
-253-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:58:9-68:20
-254            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-254-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:59:13-106
-255            android:directBootAware="false"
-255-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:60:13-44
-256            android:enabled="false"
-256-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:61:13-36
-257            android:exported="false" >
-257-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:62:13-37
-258            <intent-filter>
-258-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:64:13-67:29
-259                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-259-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:65:17-87
-259-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:65:25-84
-260                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-260-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:66:17-90
-260-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:66:25-87
-261            </intent-filter>
-262        </receiver>
-263        <receiver
-263-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:69:9-79:20
-264            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-264-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:70:13-104
-265            android:directBootAware="false"
-265-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:71:13-44
-266            android:enabled="false"
-266-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:72:13-36
-267            android:exported="false" >
-267-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:73:13-37
-268            <intent-filter>
-268-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:75:13-78:29
-269                <action android:name="android.intent.action.BATTERY_OKAY" />
-269-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:76:17-77
-269-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:76:25-74
-270                <action android:name="android.intent.action.BATTERY_LOW" />
-270-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:77:17-76
-270-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:77:25-73
-271            </intent-filter>
-272        </receiver>
-273        <receiver
-273-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:80:9-90:20
-274            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-274-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:81:13-104
-275            android:directBootAware="false"
-275-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:82:13-44
-276            android:enabled="false"
-276-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:83:13-36
-277            android:exported="false" >
-277-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:84:13-37
-278            <intent-filter>
-278-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:86:13-89:29
-279                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-279-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:87:17-83
-279-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:87:25-80
-280                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-280-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:88:17-82
-280-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:88:25-79
-281            </intent-filter>
-282        </receiver>
-283        <receiver
-283-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:91:9-100:20
-284            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-284-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:92:13-103
-285            android:directBootAware="false"
-285-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:93:13-44
-286            android:enabled="false"
-286-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:94:13-36
-287            android:exported="false" >
-287-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:95:13-37
-288            <intent-filter>
-288-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:97:13-99:29
-289                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-289-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:98:17-79
-289-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:98:25-76
-290            </intent-filter>
-291        </receiver>
-292        <receiver
-292-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:101:9-112:20
-293            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-293-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:102:13-88
-294            android:directBootAware="false"
-294-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:103:13-44
-295            android:enabled="false"
-295-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:104:13-36
-296            android:exported="false" >
-296-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:105:13-37
-297            <intent-filter>
-297-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:107:13-111:29
-298                <action android:name="android.intent.action.BOOT_COMPLETED" />
-298-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:108:17-79
-298-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:108:25-76
-299                <action android:name="android.intent.action.TIME_SET" />
-299-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:109:17-73
-299-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:109:25-70
-300                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-300-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:110:17-81
-300-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:110:25-78
-301            </intent-filter>
-302        </receiver>
-303        <receiver
-303-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:113:9-122:20
-304            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-304-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:114:13-99
-305            android:directBootAware="false"
-305-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:115:13-44
-306            android:enabled="@bool/enable_system_alarm_service_default"
-306-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:116:13-72
-307            android:exported="false" >
-307-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:117:13-37
-308            <intent-filter>
-308-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:119:13-121:29
-309                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-309-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:120:17-98
-309-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/dee7074c698f86bdc3758e72d54abf5d/transformed/work-runtime-2.1.0/AndroidManifest.xml:120:25-95
-310            </intent-filter>
-311        </receiver>
-312
-313        <service
-313-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/e862ce4523f4265e64a7f5a42a349a80/transformed/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-314            android:name="androidx.room.MultiInstanceInvalidationService"
-314-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/e862ce4523f4265e64a7f5a42a349a80/transformed/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-315            android:exported="false" />
-315-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/e862ce4523f4265e64a7f5a42a349a80/transformed/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
-316
-317        <provider
-317-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/5de53b534e1e61af752d662b9b9da7db/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
-318            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-318-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/5de53b534e1e61af752d662b9b9da7db/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
-319            android:authorities="com.tglt.code.editor.lifecycle-process"
-319-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/5de53b534e1e61af752d662b9b9da7db/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
-320            android:exported="false"
-320-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/5de53b534e1e61af752d662b9b9da7db/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
-321            android:multiprocess="true" />
-321-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/5de53b534e1e61af752d662b9b9da7db/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
-322    </application>
-323
-324</manifest>
+238-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:33:13-44
+239            android:exported="false"
+239-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:34:13-37
+240            android:multiprocess="true" />
+240-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:35:13-40
+241
+242        <service
+242-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:38:9-43:35
+243            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+243-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:39:13-88
+244            android:directBootAware="false"
+244-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:40:13-44
+245            android:enabled="@bool/enable_system_alarm_service_default"
+245-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:41:13-72
+246            android:exported="false" />
+246-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:42:13-37
+247        <service
+247-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:44:9-50:35
+248            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+248-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:45:13-84
+249            android:directBootAware="false"
+249-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:46:13-44
+250            android:enabled="@bool/enable_system_job_service_default"
+250-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:47:13-70
+251            android:exported="true"
+251-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:48:13-36
+252            android:permission="android.permission.BIND_JOB_SERVICE" />
+252-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:49:13-69
+253
+254        <receiver
+254-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:52:9-57:35
+255            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+255-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:53:13-88
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:54:13-44
+257            android:enabled="true"
+257-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:55:13-35
+258            android:exported="false" />
+258-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:56:13-37
+259        <receiver
+259-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:58:9-68:20
+260            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+260-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:59:13-106
+261            android:directBootAware="false"
+261-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:60:13-44
+262            android:enabled="false"
+262-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:61:13-36
+263            android:exported="false" >
+263-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:62:13-37
+264            <intent-filter>
+264-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:64:13-67:29
+265                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+265-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:65:17-87
+265-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:65:25-84
+266                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+266-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:66:17-90
+266-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:66:25-87
+267            </intent-filter>
+268        </receiver>
+269        <receiver
+269-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:69:9-79:20
+270            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+270-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:70:13-104
+271            android:directBootAware="false"
+271-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:71:13-44
+272            android:enabled="false"
+272-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:72:13-36
+273            android:exported="false" >
+273-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:73:13-37
+274            <intent-filter>
+274-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:75:13-78:29
+275                <action android:name="android.intent.action.BATTERY_OKAY" />
+275-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:76:17-77
+275-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:76:25-74
+276                <action android:name="android.intent.action.BATTERY_LOW" />
+276-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:77:17-76
+276-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:77:25-73
+277            </intent-filter>
+278        </receiver>
+279        <receiver
+279-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:80:9-90:20
+280            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+280-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:81:13-104
+281            android:directBootAware="false"
+281-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:82:13-44
+282            android:enabled="false"
+282-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:83:13-36
+283            android:exported="false" >
+283-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:84:13-37
+284            <intent-filter>
+284-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:86:13-89:29
+285                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+285-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:87:17-83
+285-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:87:25-80
+286                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+286-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:88:17-82
+286-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:88:25-79
+287            </intent-filter>
+288        </receiver>
+289        <receiver
+289-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:91:9-100:20
+290            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+290-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:92:13-103
+291            android:directBootAware="false"
+291-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:93:13-44
+292            android:enabled="false"
+292-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:94:13-36
+293            android:exported="false" >
+293-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:95:13-37
+294            <intent-filter>
+294-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:97:13-99:29
+295                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+295-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:98:17-79
+295-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:98:25-76
+296            </intent-filter>
+297        </receiver>
+298        <receiver
+298-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:101:9-112:20
+299            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+299-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:102:13-88
+300            android:directBootAware="false"
+300-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:103:13-44
+301            android:enabled="false"
+301-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:104:13-36
+302            android:exported="false" >
+302-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:105:13-37
+303            <intent-filter>
+303-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:107:13-111:29
+304                <action android:name="android.intent.action.BOOT_COMPLETED" />
+304-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:108:17-79
+304-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:108:25-76
+305                <action android:name="android.intent.action.TIME_SET" />
+305-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:109:17-73
+305-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:109:25-70
+306                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+306-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:110:17-81
+306-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:110:25-78
+307            </intent-filter>
+308        </receiver>
+309        <receiver
+309-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:113:9-122:20
+310            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+310-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:114:13-99
+311            android:directBootAware="false"
+311-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:115:13-44
+312            android:enabled="@bool/enable_system_alarm_service_default"
+312-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:116:13-72
+313            android:exported="false" >
+313-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:117:13-37
+314            <intent-filter>
+314-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:119:13-121:29
+315                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+315-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:120:17-98
+315-->[androidx.work:work-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/8ff57c744d74048756e5e4d85bbcae63/transformed/work-runtime-2.1.0/AndroidManifest.xml:120:25-95
+316            </intent-filter>
+317        </receiver>
+318
+319        <service
+319-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/a582fedefd39c0a0f4e9d591d0a67cfa/transformed/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+320            android:name="androidx.room.MultiInstanceInvalidationService"
+320-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/a582fedefd39c0a0f4e9d591d0a67cfa/transformed/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+321            android:exported="false" />
+321-->[androidx.room:room-runtime:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/a582fedefd39c0a0f4e9d591d0a67cfa/transformed/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+322
+323        <provider
+323-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/0cca7129c1eefef8714d8a031bc38844/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+324            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+324-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/0cca7129c1eefef8714d8a031bc38844/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+325            android:authorities="com.tglt.code.editor.lifecycle-process"
+325-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/0cca7129c1eefef8714d8a031bc38844/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+326            android:exported="false"
+326-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/0cca7129c1eefef8714d8a031bc38844/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+327            android:multiprocess="true" />
+327-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/tuantt/.gradle/caches/transforms-3/0cca7129c1eefef8714d8a031bc38844/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+328    </application>
+329
+330</manifest>

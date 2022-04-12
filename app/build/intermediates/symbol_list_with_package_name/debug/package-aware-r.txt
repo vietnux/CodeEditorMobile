@@ -2066,6 +2066,7 @@ drawable file_type_xsl
 drawable file_type_zip
 drawable ftp
 drawable ftp_disconnect
+drawable galaxy
 drawable gnt_outline_shape
 drawable gnt_rounded_corners_shape
 drawable ic_action_help
@@ -2153,6 +2154,7 @@ id aboutSpecial2
 id aboutSpecial3
 id aboutSpecialContainer
 id aboutVersion
+id about_galaxy
 id about_googleplay
 id about_libraries
 id about_libraries_dest
@@ -3186,6 +3188,7 @@ string search_panel
 string search_text
 string selectAll
 string settings_about
+string settings_galaxy
 string settings_googleplay
 string settings_license
 string show_crash_log

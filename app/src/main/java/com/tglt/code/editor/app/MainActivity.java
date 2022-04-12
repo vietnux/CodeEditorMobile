@@ -47,6 +47,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.blankj.utilcode.util.ArrayUtils;
 import com.github.clans.fab.FloatingActionMenu;
 import com.github.clans.fab.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -179,12 +180,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onMenuToggle(boolean opened) {
                 hideKeyboard();
                 fragmentSave = pagerAdapter.createFragment(mViewPager.getCurrentItem());
-//                Log.e("FAB", fragmentSave.getTabPath());
-                if( !UtilsFiles.is_debug(fragmentSave.getTabPath()) ) {
+//                Log.e("FAB", fragmentSave.toString() );
+                if( fragmentSave==null ) {
+//                    fab.close(true);
+                    fab_run.setEnabled(false);
+                    fab_save.setEnabled(false);
+                    fab_save_as.setEnabled(false);
+                } else if( !UtilsFiles.is_debug(fragmentSave.getTabPath()) ) {
 //                    fab_run.setVisibility(View.GONE);
                     fab_run.setEnabled(false);
+                    fab_save.setEnabled(true);
+                    fab_save_as.setEnabled(true);
                 } else {
                     fab_run.setEnabled(true);
+                    fab_save.setEnabled(true);
+                    fab_save_as.setEnabled(true);
                 }
             }
         });
@@ -217,6 +227,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 saveas( mViewPager.getCurrentItem() );
             }
         });
+
+        if( UtilsFiles.is_galaxy_samsung && JsonParams.getParamInt("is_galaxy_samsung") == 0 ) {
+            fab_run.setVisibility(View.GONE);
+        }
     }
 
     private void checkAndAddPermissions(Activity activity) {
@@ -420,7 +434,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             }
             case R.id.nav_send: {
-                String message = context.getString(R.string.about_description) + Uri.parse( "http://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID );
+                String message = "";
+                if( !UtilsFiles.is_galaxy_samsung ) {
+                    message = context.getString(R.string.about_description) + Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID);
+                } else {
+                    message = context.getString(R.string.about_description) + Uri.parse("https://galaxystore.samsung.com/detail/" + BuildConfig.APPLICATION_ID);
+                }
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:"));
                 intent.putExtra("sms_body", message);
                 startActivity(intent);
@@ -825,10 +844,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         fragmentSave = pagerAdapter.createFragment(position);
                         //0,1,2,4,5 ==>fragmentSave.getLangId();
                         int[] lang_debug = new int[]{0,1,2,4,5};
-                        if( !UtilsFiles.is_debug(fragmentSave.getTabPath() ) && lang_debug[fragmentSave.getLangId()] >= 0 ) {
+                        if( !UtilsFiles.is_debug(fragmentSave.getTabPath() )
+                                && ArrayUtils.contains( lang_debug, fragmentSave.getLangId() )
+                                && lang_debug[fragmentSave.getLangId()] >= 0 ) {
                             //int lang_id = fragmentSave.getLangId();
                             popupMenu.getMenu().findItem(R.id.action_run).setVisible(false);
                             fab_run.setLabelVisibility(View.GONE);
+                        }
+                        if( UtilsFiles.is_galaxy_samsung && JsonParams.getParamInt("is_galaxy_samsung") == 0 ) {
+                            popupMenu.getMenu().findItem(R.id.action_run).setVisible(false);
                         }
                         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                             @Override

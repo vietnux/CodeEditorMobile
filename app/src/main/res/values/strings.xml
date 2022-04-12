@@ -74,6 +74,7 @@
     <string name="settings_license" translatable="false">Open Source licenses</string>
     <string name="settings_about" translatable="false">Have Fun</string>
     <string name="settings_googleplay" translatable="false">Rate on Google Play</string>
+    <string name="settings_galaxy" translatable="false">Rate on Samsung Galaxy</string>
 
     <string name="about_description" translatable="false">
         Code Editor is the free app to code the PHP, C, C++, CSS, JavaScript, Python and HTML Codes, .... and run HTML, HTML5, ... It is very faster and gives us accurate results. It has very clean User-Interface and can to change for a editor. User can work with this app even in night times if user choosed theme dark.
