@@ -72,3 +72,24 @@ Available modules:
 ### Some more information
 Go to [Wiki](https://github.com/vietnux/CodeEditorMobile/wiki)
 
+## Donate
+If you like DreamsTube we'd be happy about a donation. You can either send bitcoin or donate via Bountysource or Liberapay. For further info on donating to DreamsTube, please visit our [website](http://thegioilaptrinh.net/app/appru/DreamsTube.htmldonate).
+
+<table>
+  <tr>
+    <td><img src="https://bitcoin.org/img/icons/logotop.svg" alt="Bitcoin"></td>
+    <td><img src="assets/bitcoin_qr_code.png" alt="Bitcoin QR code" width="100px"></td>
+    <td><samp>16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh</samp></td>
+  </tr>
+  <tr>
+    <td><a href="https://liberapay.com/TeamDreamsTube/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Liberapay_logo_v2_white-on-yellow.svg" alt="Liberapay" width="80px" ></a></td>
+    <td><a href="https://liberapay.com/TeamDreamsTube/"><img src="assets/liberapay_qr_code.png" alt="Visit DreamsTube at liberapay.com" width="100px"></a></td>
+    <td><a href="https://liberapay.com/TeamDreamsTube/donate"><img src="assets/liberapay_donate_button.svg" alt="Donate via Liberapay" height="35px"></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.bountysource.com/teams/dreamstube"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bountysource.png/320px-Bountysource.png" alt="Bountysource" width="190px"></a></td>
+    <td><a href="https://www.bountysource.com/teams/dreamstube"><img src="assets/bountysource_qr_code.png" alt="Visit DreamsTube at bountysource.com" width="100px"></a></td>
+    <td><a href="https://www.bountysource.com/teams/dreamstube/issues"><img src="https://img.shields.io/bountysource/team/dreamstube/activity.svg?colorB=cd201f" height="30px" alt="Check out how many bounties you can earn."></a></td>
+  </tr>
+</table>
+
