@@ -78,18 +78,13 @@ If you like DreamsTube we'd be happy about a donation. You can either send bitco
 <table>
   <tr>
     <td><img src="https://bitcoin.org/img/icons/logotop.svg" alt="Bitcoin"></td>
-    <td><img src="assets/bitcoin_qr_code.png" alt="Bitcoin QR code" width="100px"></td>
-    <td><samp>16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh</samp></td>
+    <td><img src="https://camo.githubusercontent.com/8077787649f17a88405bdd9d29db569e3f0cb70364297623ced31221ca293ae8/687474703a2f2f74686567696f696c61707472696e682e6e65742f646f6e6174652f626974636f696e642e706e67" alt="Bitcoin QR code" width="100px"></td>
+    <td><samp>bc1q8z8ec9m29revsvpe9wtyvnlnave3jjz8w47snd</samp></td>
   </tr>
   <tr>
-    <td><a href="https://liberapay.com/TeamDreamsTube/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Liberapay_logo_v2_white-on-yellow.svg" alt="Liberapay" width="80px" ></a></td>
-    <td><a href="https://liberapay.com/TeamDreamsTube/"><img src="assets/liberapay_qr_code.png" alt="Visit DreamsTube at liberapay.com" width="100px"></a></td>
-    <td><a href="https://liberapay.com/TeamDreamsTube/donate"><img src="assets/liberapay_donate_button.svg" alt="Donate via Liberapay" height="35px"></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.bountysource.com/teams/dreamstube"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bountysource.png/320px-Bountysource.png" alt="Bountysource" width="190px"></a></td>
-    <td><a href="https://www.bountysource.com/teams/dreamstube"><img src="assets/bountysource_qr_code.png" alt="Visit DreamsTube at bountysource.com" width="100px"></a></td>
-    <td><a href="https://www.bountysource.com/teams/dreamstube/issues"><img src="https://img.shields.io/bountysource/team/dreamstube/activity.svg?colorB=cd201f" height="30px" alt="Check out how many bounties you can earn."></a></td>
+    <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://camo.githubusercontent.com/15b09c935fc866626ffc0824ac5ff05197c19ca0406553d3b311f09acfde5b93/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f6469676974616c6173736574732f632f776562736974652f6c6f676f2f66756c6c2d746578742f70705f66635f686c2e737667" alt="Bountysource" width="190px"></a></td>
+    <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://github.com/vietnux/Stability-and-Faster-Launcher/raw/master/gui/paypal.svg" alt="Paypal" width="100px"></a></td>
+    <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://github.com/vietnux/Stability-and-Faster-Launcher/raw/master/gui/paypal.svg" height="30px" alt="Paypal"></a></td>
   </tr>
 </table>
 
