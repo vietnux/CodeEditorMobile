@@ -84,7 +84,7 @@ If you like DreamsTube we'd be happy about a donation. You can either send bitco
   <tr>
     <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://camo.githubusercontent.com/15b09c935fc866626ffc0824ac5ff05197c19ca0406553d3b311f09acfde5b93/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f6469676974616c6173736574732f632f776562736974652f6c6f676f2f66756c6c2d746578742f70705f66635f686c2e737667" alt="Bountysource" width="190px"></a></td>
     <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://github.com/vietnux/Stability-and-Faster-Launcher/raw/master/gui/paypal.svg" alt="Paypal" width="100px"></a></td>
-    <td><a href="https://www.paypal.com/paypalme/vietnux"><img src="https://github.com/vietnux/Stability-and-Faster-Launcher/raw/master/gui/paypal.svg" height="30px" alt="Paypal"></a></td>
+    <td><a href="https://www.paypal.com/paypalme/vietnux">https://www.paypal.com/paypalme/vietnux</a></td>
   </tr>
 </table>
 
