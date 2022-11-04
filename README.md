@@ -7,7 +7,7 @@
 
 [![](https://img.shields.io/github/v/release/vietnux/CodeEditorMobile?label=Latest%20release&style=plastic)](https://github.com/vietnux/CodeEditorMobile/releases)
 [<img src="https://d3unf4s5rp9dfh.cloudfront.net/SDP/GalaxyStore_English.png" height="18" wwidth="118">](http://galaxystore.samsung.com/detail/com.tglt.code.editor)
-[![](https://img.shields.io/endpoint?style=plastic&color=blue&label=Google%20Play%20release&url=https://playshields.herokuapp.com/play?i=com.tglt.code.editor&m=$version)](https://play.google.com/store/apps/details?id=com.tglt.code.editor)  
+[![](https://img.shields.io/endpoint?style=plastic&color=blue&label=Google%20Play%20release&url=https://play.cuzi.workers.dev/play?i=com.tglt.code.editor&m=$version)](https://play.google.com/store/apps/details?id=com.tglt.code.editor)  
 A cool and optimized code editor on Android platform with good performance and nice features.
 
 ***Work In Progress*** This project is still developing slowly. Bugs may be inside.
