@@ -28,8 +28,8 @@
 28
 29    <uses-sdk
 30        android:minSdkVersion="21"
-30-->/Users/tuantt/AndroidStudioProjects/CodeEditor/language-css3/src/main/AndroidManifest.xml
-31        android:targetSdkVersion="31" />
-31-->/Users/tuantt/AndroidStudioProjects/CodeEditor/language-css3/src/main/AndroidManifest.xml
+30-->D:\Android\CodeEditorMobile\language-css3\src\main\AndroidManifest.xml
+31        android:targetSdkVersion="33" />
+31-->D:\Android\CodeEditorMobile\language-css3\src\main\AndroidManifest.xml
 32
 33</manifest>

@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">Karakteret e futura: %1$d nga %2$d</string>
     <string name="character_counter_overflowed_content_description">Kufiri i karaktereve është kaluar: %1$d nga %2$d</string>
     <string name="clear_text_end_icon_content_description">Pastro tekstin</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> ka probleme me shërbimet e Google Play. Provo sërish."</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivizo</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s nuk do të funksionojë nëse nuk aktivizon shërbimet e \"Luaj me Google\".</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktivizo shërbimet e \"Luaj me Google\"</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalo</string>
+    <string name="common_google_play_services_install_text">%1$s nuk do të funksionojë pa shërbimet e Google Play, të cilat mungojnë në pajisjen tënde.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Merr shërbimet e \"Luaj me Google\"</string>
+    <string name="common_google_play_services_notification_channel_name">Disponueshmëria e shërbimeve të Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Gabim në shërbimet e \"Luaj me Google\"</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ka probleme me shërbimet e Google Play. Provo sërish.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s nuk do të funksionojë pa shërbimet e Google Play, të cilat nuk mbështeten nga pajisja jote.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Përditëso</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s nuk do të funksionojë nëse nuk përditëson shërbimet e \"Luaj me Google\".</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Përditëso shërbimet e \"Luaj me Google\"</string>
+    <string name="common_google_play_services_updating_text">%1$s nuk do të funksionojë pa shërbimet e Google Play, të cilat po përditësohen aktualisht.</string>
+    <string name="common_google_play_services_wear_update_text">Nevojitet një version i ri i shërbimeve të \"Luaj me Google\". Ai do të përditësohet automatikisht së shpejti.</string>
+    <string name="common_open_on_phone">Hape në telefon</string>
+    <string name="common_signin_button_text">Identifikohu</string>
+    <string name="common_signin_button_text_long">Identifikohu me Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Lidhja u kopjua në kujtesën e fragmenteve"</string>
     <string name="error_icon_content_description">Gabim</string>
     <string name="exposed_dropdown_menu_content_description">Shfaq menynë me lëshim poshtë</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopjo lidhjen"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Hape në shfletues"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Ndaj lidhjen"</string>
     <string name="icon_content_description">Ikona e dialogut</string>
     <string name="item_view_role_description">Tab</string>
     <string name="material_clock_toggle_content_description">Zgjidh paradite ose pasdite</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">Trokit për të kaluar te zgjedhja e një dite</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Kalo te modaliteti i \"Hyrjes së tekstit\"</string>
     <string name="mtrl_picker_toggle_to_year_selection">Trokit për të kaluar te zgjedhja e një viti</string>
+    <string name="native_body">Teksti</string>
+    <string name="native_headline">Titulli</string>
+    <string name="native_media_view">Pamja e medias</string>
     <string name="offline_notification_text">Trokit për të hapur reklamën</string>
     <string name="offline_notification_title">Shiko reklamën që ruajte kur ishe jashtë linje</string>
     <string name="offline_opt_in_confirm">Në rregull</string>

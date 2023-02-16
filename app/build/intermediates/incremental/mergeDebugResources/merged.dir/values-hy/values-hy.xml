@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">Մուտքագրված նիշեր՝ %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">Նիշերի առավելագույն քանակը գերազանցվել է (%1$d/%2$d)</string>
     <string name="clear_text_end_icon_content_description">Ջնջել տեքստը</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> հավելվածը Google Play ծառայությունների հետ կապված խնդիր ունի: Փորձեք նորից:"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Միացնել</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s հավելվածը չի աշխատի մինչև չմիացնեք Google Play ծառայությունները:</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Միացնել Google Play ծառայությունները</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Տեղադրել</string>
+    <string name="common_google_play_services_install_text">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք չկան ձեր սարքում:</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Տեղադրել Google Play ծառայությունները</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play ծառայությունների հասանելիություն</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ծառայությունների սխալ կա</string>
+    <string name="common_google_play_services_unknown_issue">%1$s հավելվածը Google Play ծառայությունների հետ կապված խնդիր ունի: Փորձեք նորից:</string>
+    <string name="common_google_play_services_unsupported_text">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք ձեր սարքում չեն աջակցվում:</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Թարմացնել</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s հավելվածը չի աշխատի մինչև չթարմացնեք Google Play ծառայությունները:</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Թարմացնել Google Play ծառայությունները</string>
+    <string name="common_google_play_services_updating_text">%1$s հավելվածը չի աշխատի առանց Google Play ծառայությունների, որոնք այս պահին թարմացվում են:</string>
+    <string name="common_google_play_services_wear_update_text">Անհրաժեշտ է Google Play ծառայությունների նոր տարբերակը: Այն շուտով կթարմացվի ավտոմատ կերպով:</string>
+    <string name="common_open_on_phone">Բացել հեռախոսով</string>
+    <string name="common_signin_button_text">Մուտք գործել</string>
+    <string name="common_signin_button_text_long">Մուտք գործել Google-ով</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Հղումը պատճենվեց սեղմատախտակին"</string>
     <string name="error_icon_content_description">Սխալ</string>
     <string name="exposed_dropdown_menu_content_description">Ցույց տալ իջնող ընտրացանկը</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Պատճենել հղումը"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Բացել դիտարկիչում"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Կիսվել հղումով"</string>
     <string name="icon_content_description">Երկխոսության պատուհանի պատկերակ</string>
     <string name="item_view_role_description">Ներդիր</string>
     <string name="material_clock_toggle_content_description">Ընտրել AM կամ PM</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">Հպեք՝ օրվա ընտությանն անցնելու համար</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Անցնել տեքստի մուտքագրման ռեժիմին</string>
     <string name="mtrl_picker_toggle_to_year_selection">Հպեք՝ տարեթվի ընտությանն անցնելու համար</string>
+    <string name="native_body">Հիմնական տեքստ</string>
+    <string name="native_headline">Վերնագիր</string>
+    <string name="native_media_view">Մեդիա տեսք</string>
     <string name="offline_notification_text">Հպեք՝ հայտարարությունը բացելու համար</string>
     <string name="offline_notification_title">Դիտեք հայտարարությունը, որը պահել եք անցանց ռեժիմում</string>
     <string name="offline_opt_in_confirm">Եղավ</string>

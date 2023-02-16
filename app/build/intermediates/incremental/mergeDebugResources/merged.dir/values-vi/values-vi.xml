@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">Đã nhập %1$d trong số %2$d ký tự</string>
     <string name="character_counter_overflowed_content_description">Đã vượt quá giới hạn ký tự %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Xóa văn bản</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> đang gặp sự cố với các dịch vụ của Google Play. Hãy thử lại."</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Bật</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s sẽ không hoạt động nếu bạn không bật dịch vụ của Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Bật dịch vụ của Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Cài đặt</string>
+    <string name="common_google_play_services_install_text">%1$s sẽ không chạy nếu không có dịch vụ của Google Play. Thiết bị của bạn bị thiếu dịch vụ này.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Cài đặt dịch vụ của Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Phạm vi cung cấp Dịch vụ Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Lỗi dịch vụ của Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s đang gặp sự cố với Dịch vụ Google Play. Hãy thử lại.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s sẽ không chạy nếu không có Dịch vụ Google Play. Thiết bị của bạn không hỗ trợ các dịch vụ này.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Cập nhật</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s sẽ không chạy trừ khi bạn cập nhật Dịch vụ Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Cập nhật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s sẽ không chạy nếu không có dịch vụ của Google Play. Dịch vụ này hiện đang cập nhật.</string>
+    <string name="common_google_play_services_wear_update_text">Cần phiên bản mới của dịch vụ Google Play. Dịch vụ sẽ sớm tự động cập nhật.</string>
+    <string name="common_open_on_phone">Mở trên điện thoại</string>
+    <string name="common_signin_button_text">Đăng nhập</string>
+    <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Đã sao chép đường liên kết vào bảng nhớ tạm"</string>
     <string name="error_icon_content_description">Lỗi</string>
     <string name="exposed_dropdown_menu_content_description">Hiển thị menu thả xuống</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Sao chép đường liên kết"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Mở trong trình duyệt"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Chia sẻ liên kết"</string>
     <string name="icon_content_description">Biểu tượng hộp thoại</string>
     <string name="item_view_role_description">Thẻ</string>
     <string name="material_clock_toggle_content_description">Chọn SA hoặc CH</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">Nhấn để chuyển sang chế độ chọn một ngày</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Chuyển sang chế độ nhập văn bản</string>
     <string name="mtrl_picker_toggle_to_year_selection">Nhấn để chuyển sang chế độ chọn một năm</string>
+    <string name="native_body">Nội dung</string>
+    <string name="native_headline">Tiêu đề</string>
+    <string name="native_media_view">Nội dung nghe nhìn</string>
     <string name="offline_notification_text">Nhấn để mở quảng cáo</string>
     <string name="offline_notification_title">Xem quảng cáo đã lưu khi bạn không có kết nối mạng</string>
     <string name="offline_opt_in_confirm">OK</string>

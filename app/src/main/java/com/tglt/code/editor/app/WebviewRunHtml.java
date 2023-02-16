@@ -41,6 +41,7 @@ import android.view.View;
 import android.webkit.ConsoleMessage;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.PopupMenu;
@@ -96,7 +97,8 @@ public class WebviewRunHtml extends AppCompatActivity
 //        webView.getContext().getPackageName() + "/databases/";
 //        String cache_path = getApplicationContext().getFilesDir().getAbsolutePath() + "/cache";
 
-        webView.getSettings().setAppCacheEnabled(true);
+//        webView.getSettings().setAppCacheEnabled(true);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         webView.getSettings().setSaveFormData(true);
         webView.getSettings().setAllowFileAccessFromFileURLs(true);
         webView.getSettings().setAllowContentAccess(true);

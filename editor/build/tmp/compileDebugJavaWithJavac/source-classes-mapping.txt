@@ -38,10 +38,10 @@ io/github/rosemoe/sora/widget/EditorInputConnection.java
  io.github.rosemoe.sora.widget.EditorInputConnection
 io/github/rosemoe/sora/text/Cursor.java
  io.github.rosemoe.sora.text.Cursor
-io/github/rosemoe/sora/data/BlockLine.java
- io.github.rosemoe.sora.data.BlockLine
 io/github/rosemoe/sora/text/CachedIndexer.java
  io.github.rosemoe.sora.text.CachedIndexer
+io/github/rosemoe/sora/data/BlockLine.java
+ io.github.rosemoe.sora.data.BlockLine
 io/github/rosemoe/sora/util/IntPair.java
  io.github.rosemoe.sora.util.IntPair
 io/github/rosemoe/sora/util/LongArrayList.java
@@ -85,12 +85,12 @@ io/github/rosemoe/sora/langs/EmptyLanguage.java
  io.github.rosemoe.sora.langs.EmptyLanguage
  io.github.rosemoe.sora.langs.EmptyLanguage$EmptyAutoCompleteProvider
  io.github.rosemoe.sora.langs.EmptyLanguage$EmptyCodeAnalyzer
-io/github/rosemoe/sora/data/CompletionItem.java
- io.github.rosemoe.sora.data.CompletionItem
 io/github/rosemoe/sora/widget/SymbolPairMatch.java
  io.github.rosemoe.sora.widget.SymbolPairMatch
  io.github.rosemoe.sora.widget.SymbolPairMatch$DefaultSymbolPairs
  io.github.rosemoe.sora.widget.SymbolPairMatch$Replacement
+io/github/rosemoe/sora/data/CompletionItem.java
+ io.github.rosemoe.sora.data.CompletionItem
 io/github/rosemoe/sora/text/FormatThread.java
  io.github.rosemoe.sora.text.FormatThread
  io.github.rosemoe.sora.text.FormatThread$FormatResultReceiver
@@ -100,11 +100,11 @@ io/github/rosemoe/sora/interfaces/CodeAnalyzer.java
  io.github.rosemoe.sora.interfaces.CodeAnalyzer
 io/github/rosemoe/sora/interfaces/EditorLanguage.java
  io.github.rosemoe.sora.interfaces.EditorLanguage
-io/github/rosemoe/sora/widget/SymbolChannel.java
- io.github.rosemoe.sora.widget.SymbolChannel
 io/github/rosemoe/sora/interfaces/NewlineHandler.java
  io.github.rosemoe.sora.interfaces.NewlineHandler
  io.github.rosemoe.sora.interfaces.NewlineHandler$HandleResult
+io/github/rosemoe/sora/widget/SymbolChannel.java
+ io.github.rosemoe.sora.widget.SymbolChannel
 io/github/rosemoe/sora/widget/CodeEditor.java
  io.github.rosemoe.sora.widget.CodeEditor
  io.github.rosemoe.sora.widget.CodeEditor$1
@@ -114,26 +114,26 @@ io/github/rosemoe/sora/widget/CodeEditor.java
  io.github.rosemoe.sora.widget.CodeEditor$TextActionMode
 io/github/rosemoe/sora/widget/Row.java
  io.github.rosemoe.sora.widget.Row
-io/github/rosemoe/sora/widget/MaterialEdgeEffect.java
- io.github.rosemoe.sora.widget.MaterialEdgeEffect
 io/github/rosemoe/sora/util/ArrayList.java
  io.github.rosemoe.sora.util.ArrayList
+io/github/rosemoe/sora/widget/MaterialEdgeEffect.java
+ io.github.rosemoe.sora.widget.MaterialEdgeEffect
 io/github/rosemoe/sora/text/Indexer.java
  io.github.rosemoe.sora.text.Indexer
 io/github/rosemoe/sora/text/TextUtils.java
  io.github.rosemoe.sora.text.TextUtils
 io/github/rosemoe/sora/widget/EditorTextActionWindow.java
  io.github.rosemoe.sora.widget.EditorTextActionWindow
-io/github/rosemoe/sora/widget/CursorBlink.java
- io.github.rosemoe.sora.widget.CursorBlink
 io/github/rosemoe/sora/widget/HwAcceleratedRenderer.java
  io.github.rosemoe.sora.widget.HwAcceleratedRenderer
  io.github.rosemoe.sora.widget.HwAcceleratedRenderer$TextRenderNode
-io/github/rosemoe/sora/text/SpanMapUpdater.java
- io.github.rosemoe.sora.text.SpanMapUpdater
+io/github/rosemoe/sora/widget/CursorBlink.java
+ io.github.rosemoe.sora.widget.CursorBlink
 io/github/rosemoe/sora/widget/EditorTextActionModeStarter.java
  io.github.rosemoe.sora.widget.EditorTextActionModeStarter
  io.github.rosemoe.sora.widget.EditorTextActionModeStarter$1
+io/github/rosemoe/sora/text/SpanMapUpdater.java
+ io.github.rosemoe.sora.text.SpanMapUpdater
 io/github/rosemoe/sora/widget/AbstractLayout.java
  io.github.rosemoe.sora.widget.AbstractLayout
 io/github/rosemoe/sora/text/Content.java
@@ -150,22 +150,22 @@ io/github/rosemoe/sora/widget/EditorTouchEventHandler.java
  io.github.rosemoe.sora.widget.EditorTouchEventHandler$SelectionHandle
 io/github/rosemoe/sora/text/CharPosition.java
  io.github.rosemoe.sora.text.CharPosition
+io/github/rosemoe/sora/widget/schemes/SchemeVS2019.java
+ io.github.rosemoe.sora.widget.schemes.SchemeVS2019
 io/github/rosemoe/sora/widget/LineBreakLayout.java
  io.github.rosemoe.sora.widget.LineBreakLayout
  io.github.rosemoe.sora.widget.LineBreakLayout$LineBreakLayoutRowItr
-io/github/rosemoe/sora/widget/schemes/SchemeVS2019.java
- io.github.rosemoe.sora.widget.schemes.SchemeVS2019
 io/github/rosemoe/sora/widget/schemes/SchemeDarcula.java
  io.github.rosemoe.sora.widget.schemes.SchemeDarcula
 io/github/rosemoe/sora/widget/EditorColorScheme.java
  io.github.rosemoe.sora.widget.EditorColorScheme
 io/github/rosemoe/sora/widget/schemes/HTMLScheme.java
  io.github.rosemoe.sora.widget.schemes.HTMLScheme
+io/github/rosemoe/sora/text/ContentLine.java
+ io.github.rosemoe.sora.text.ContentLine
 io/github/rosemoe/sora/widget/EditorAutoCompleteWindow.java
  io.github.rosemoe.sora.widget.EditorAutoCompleteWindow
  io.github.rosemoe.sora.widget.EditorAutoCompleteWindow$MatchThread
-io/github/rosemoe/sora/text/ContentLine.java
- io.github.rosemoe.sora.text.ContentLine
 io/github/rosemoe/sora/util/BinaryHeap.java
  io.github.rosemoe.sora.util.BinaryHeap
  io.github.rosemoe.sora.util.BinaryHeap$Node

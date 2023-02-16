@@ -851,7 +851,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             popupMenu.getMenu().findItem(R.id.action_run).setVisible(false);
                             fab_run.setLabelVisibility(View.GONE);
                         }
-                        if( UtilsFiles.is_galaxy_samsung && JsonParams.getParamInt("is_galaxy_samsung") == 0 ) {
+                        if( UtilsFiles.is_galaxy_samsung && JsonParams.getParamInt("is_galaxy_samsung") == 0 && !UtilsFiles.is_debug(fragmentSave.getTabPath() ) ) {
                             popupMenu.getMenu().findItem(R.id.action_run).setVisible(false);
                         }
                         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {

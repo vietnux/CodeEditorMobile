@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">តួ​អក្សរ​បាន​បញ្ចូល​ %1$d នៃ %2$d</string>
     <string name="character_counter_overflowed_content_description">ដែនកំណត់តួអក្សរបានលើស %1$d នៃ %2$d</string>
     <string name="clear_text_end_icon_content_description">សម្អាតអក្សរ</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> កំពុងមានបញ្ហាជាមួយសេវាកម្មរបស់ Google Play ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">បើក</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកបើកសេវាកម្ម Google Play។</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">បើកសេវាកម្ម Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ដំឡើង</string>
+    <string name="common_google_play_services_install_text">%1$s នឹងមិនដំណើរការទេ ប្រសិនបើមិនមានសេវាកម្មនានារបស់ Google Play ដែលបានបាត់ពីឧបករណ៍របស់អ្នក។</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">ទាញយកសេវាកម្ម Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">លទ្ធភាព​ប្រើប្រាស់សេវាកម្ម Google Play</string>
+    <string name="common_google_play_services_notification_ticker">កំហុស​​សេវាកម្ម​ Google កម្សាន្ត</string>
+    <string name="common_google_play_services_unknown_issue">%1$s កំពុងមានបញ្ហាជាមួយសេវាកម្មរបស់ Google Play ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។</string>
+    <string name="common_google_play_services_unsupported_text">%1$s នឹងមិនដំណើរការដោយគ្មានសេវាកម្មរបស់ Google Play ដែលឧបករណ៍របស់អ្នកមិនគាំទ្រនោះទេ។</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">ធ្វើបច្ចុប្បន្នភាព</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកធ្វើបច្ចុប្បន្នភាពសេវាកម្ម Google Play។</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">អាប់ដេតសេវាកម្ម Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s នឹងមិនដំណើរការទេ បើមិនមានសេវាកម្ម Google Play ដោយសារតែវាកំពុងអាប់ដេត។</string>
+    <string name="common_google_play_services_wear_update_text">តម្រូវឲ្យមានកំណែថ្មីនៃសេវាកម្ម Google Play។ វានឹងអាប់ដេតដោយខ្លួនវានៅពេលបន្តិចទៀតនេះ។</string>
+    <string name="common_open_on_phone">បើកតាមទូរស័ព្ទ</string>
+    <string name="common_signin_button_text">ចូល</string>
+    <string name="common_signin_button_text_long">ចូលដោយប្រើ Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"បាន​ចម្លង​តំណ​ទៅឃ្លីបបត"</string>
     <string name="error_icon_content_description">បញ្ហា</string>
     <string name="exposed_dropdown_menu_content_description">បង្ហាញ​ម៉ឺនុយ​ធ្លាក់ចុះ</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"ចម្លង​តំណ"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"បើក​នៅក្នុង​កម្មវិធី​រុករកតាម​អ៊ីនធឺណិត"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"តំណចែករំលែក"</string>
     <string name="icon_content_description">រូប​ប្រអប់បញ្ចូល</string>
     <string name="item_view_role_description">ផ្ទាំង</string>
     <string name="material_clock_toggle_content_description">ជ្រើសរើស AM ឬ PM</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">ចុច​ដើម្បីប្ដូរទៅ​ការជ្រើសរើសថ្ងៃ</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">ប្ដូរទៅ​របៀប​បញ្ចូល​អក្សរ</string>
     <string name="mtrl_picker_toggle_to_year_selection">ចុច​ដើម្បីប្ដូរទៅ​ការជ្រើសរើសឆ្នាំ</string>
+    <string name="native_body">តួ​អត្ថបទ</string>
+    <string name="native_headline">ចំណង​ជើង</string>
+    <string name="native_media_view">ទិដ្ឋភាពមេឌៀ</string>
     <string name="offline_notification_text">ចុចដើម្បីបើក​ការផ្សាយពាណិជ្ជកម្ម</string>
     <string name="offline_notification_title">មើល​ការផ្សាយពាណិជ្ជកម្ម​ដែលអ្នកបានរក្សាទុក នៅពេលអ្នកគ្មានអ៊ីនធឺណិត</string>
     <string name="offline_opt_in_confirm">យល់ព្រម</string>

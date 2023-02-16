@@ -74,7 +74,7 @@ public class AdmobLib implements Application.ActivityLifecycleCallbacks {
         TAG = activity.getClass().getSimpleName();
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
         if (DEBUG) {
-            List<String> testDeviceIds = Arrays.asList("91A65ED1BD26BD6DB92FAE29B6463A6C", "1601656296F82C8161C266B113767843");
+            List<String> testDeviceIds = Arrays.asList("91A65ED1BD26BD6DB92FAE29B6463A6C", "1601656296F82C8161C266B113767843", "0E438B0148057C6266A85FEAE45CABB0");
             RequestConfiguration configuration = new RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build();
             MobileAds.setRequestConfiguration(configuration);
         }

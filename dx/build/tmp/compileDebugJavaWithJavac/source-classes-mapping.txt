@@ -49,11 +49,11 @@ com/xiaoyv/dx/dex/code/form/Form31i.java
  com.xiaoyv.dx.dex.code.form.Form31i
 com/xiaoyv/dx/rop/code/AccessFlags.java
  com.xiaoyv.dx.rop.code.AccessFlags
-com/xiaoyv/dx/dex/file/MemberIdItem.java
- com.xiaoyv.dx.dex.file.MemberIdItem
 com/xiaoyv/dx/ssa/Optimizer.java
  com.xiaoyv.dx.ssa.Optimizer
  com.xiaoyv.dx.ssa.Optimizer$OptionalStep
+com/xiaoyv/dx/dex/file/MemberIdItem.java
+ com.xiaoyv.dx.dex.file.MemberIdItem
 com/xiaoyv/dx/cf/code/BaseMachine.java
  com.xiaoyv.dx.cf.code.BaseMachine
 com/xiaoyv/dx/cf/code/SwitchList.java
@@ -83,11 +83,11 @@ com/xiaoyv/dx/ssa/PhiInsn.java
  com.xiaoyv.dx.ssa.PhiInsn$Visitor
 com/xiaoyv/dx/dex/cf/AttributeTranslator.java
  com.xiaoyv.dx.dex.cf.AttributeTranslator
+com/xiaoyv/dx/cf/direct/StdAttributeFactory.java
+ com.xiaoyv.dx.cf.direct.StdAttributeFactory
 com/xiaoyv/dx/cf/code/LocalVariableList.java
  com.xiaoyv.dx.cf.code.LocalVariableList
  com.xiaoyv.dx.cf.code.LocalVariableList$Item
-com/xiaoyv/dx/cf/direct/StdAttributeFactory.java
- com.xiaoyv.dx.cf.direct.StdAttributeFactory
 com/xiaoyv/dx/cf/attrib/AttSignature.java
  com.xiaoyv.dx.cf.attrib.AttSignature
 com/xiaoyv/dx/dex/file/EncodedArrayItem.java
@@ -146,23 +146,23 @@ com/xiaoyv/dx/dex/code/RopTranslator.java
  com.xiaoyv.dx.dex.code.RopTranslator$TranslationVisitor
 com/xiaoyv/dx/ssa/SsaConverter.java
  com.xiaoyv.dx.ssa.SsaConverter
-com/xiaoyv/dx/command/annotool/Main.java
- com.xiaoyv.dx.command.annotool.Main
- com.xiaoyv.dx.command.annotool.Main$Arguments
- com.xiaoyv.dx.command.annotool.Main$InvalidArgumentException
- com.xiaoyv.dx.command.annotool.Main$PrintType
 com/xiaoyv/dx/io/instructions/BaseCodeCursor.java
  com.xiaoyv.dx.io.instructions.BaseCodeCursor
 com/xiaoyv/dx/dex/code/TargetInsn.java
  com.xiaoyv.dx.dex.code.TargetInsn
 com/xiaoyv/dx/dex/code/DalvInsnList.java
  com.xiaoyv.dx.dex.code.DalvInsnList
+com/xiaoyv/dx/command/annotool/Main.java
+ com.xiaoyv.dx.command.annotool.Main
+ com.xiaoyv.dx.command.annotool.Main$Arguments
+ com.xiaoyv.dx.command.annotool.Main$InvalidArgumentException
+ com.xiaoyv.dx.command.annotool.Main$PrintType
 com/xiaoyv/dx/dex/code/form/Form3rc.java
  com.xiaoyv.dx.dex.code.form.Form3rc
-com/xiaoyv/dx/rop/code/SourcePosition.java
- com.xiaoyv.dx.rop.code.SourcePosition
 com/xiaoyv/dx/rop/code/Rop.java
  com.xiaoyv.dx.rop.code.Rop
+com/xiaoyv/dx/rop/code/SourcePosition.java
+ com.xiaoyv.dx.rop.code.SourcePosition
 com/xiaoyv/dx/dex/code/form/Form11n.java
  com.xiaoyv.dx.dex.code.form.Form11n
 com/xiaoyv/dx/cf/attrib/InnerClassList.java
@@ -189,10 +189,10 @@ com/xiaoyv/dx/dex/file/TypeListItem.java
  com.xiaoyv.dx.dex.file.TypeListItem
 com/xiaoyv/dx/cf/attrib/AttSynthetic.java
  com.xiaoyv.dx.cf.attrib.AttSynthetic
-com/xiaoyv/dx/cf/attrib/AttAnnotationDefault.java
- com.xiaoyv.dx.cf.attrib.AttAnnotationDefault
 com/xiaoyv/multidex/ClassReferenceListBuilder.java
  com.xiaoyv.multidex.ClassReferenceListBuilder
+com/xiaoyv/dx/cf/attrib/AttAnnotationDefault.java
+ com.xiaoyv.dx.cf.attrib.AttAnnotationDefault
 com/xiaoyv/dx/dex/file/MethodHandleItem.java
  com.xiaoyv.dx.dex.file.MethodHandleItem
 com/xiaoyv/dex/MethodId.java
@@ -251,11 +251,11 @@ com/xiaoyv/dx/cf/direct/MethodListParser.java
  com.xiaoyv.dx.cf.direct.MethodListParser
 com/xiaoyv/dx/dex/code/RopToDop.java
  com.xiaoyv.dx.dex.code.RopToDop
-com/xiaoyv/dx/dex/code/CstInsn.java
- com.xiaoyv.dx.dex.code.CstInsn
 com/xiaoyv/dx/util/BitIntSet.java
  com.xiaoyv.dx.util.BitIntSet
  com.xiaoyv.dx.util.BitIntSet$1
+com/xiaoyv/dx/dex/code/CstInsn.java
+ com.xiaoyv.dx.dex.code.CstInsn
 com/xiaoyv/dx/util/MutabilityControl.java
  com.xiaoyv.dx.util.MutabilityControl
 com/xiaoyv/dx/rop/cst/CstLong.java
@@ -299,10 +299,10 @@ com/xiaoyv/dx/rop/cst/StdConstantPool.java
  com.xiaoyv.dx.rop.cst.StdConstantPool
 com/xiaoyv/dex/Mutf8.java
  com.xiaoyv.dex.Mutf8
-com/xiaoyv/dex/DexIndexOverflowException.java
- com.xiaoyv.dex.DexIndexOverflowException
 com/xiaoyv/dx/ssa/back/NullRegisterAllocator.java
  com.xiaoyv.dx.ssa.back.NullRegisterAllocator
+com/xiaoyv/dex/DexIndexOverflowException.java
+ com.xiaoyv.dex.DexIndexOverflowException
 com/xiaoyv/dx/dex/file/CodeItem.java
  com.xiaoyv.dx.dex.file.CodeItem
  com.xiaoyv.dx.dex.file.CodeItem$1
@@ -311,10 +311,10 @@ com/xiaoyv/dx/rop/cst/CstLiteralBits.java
 com/xiaoyv/dx/ssa/DeadCodeRemover.java
  com.xiaoyv.dx.ssa.DeadCodeRemover
  com.xiaoyv.dx.ssa.DeadCodeRemover$NoSideEffectVisitor
-com/xiaoyv/dx/cf/attrib/AttInnerClasses.java
- com.xiaoyv.dx.cf.attrib.AttInnerClasses
 com/xiaoyv/dx/cf/iface/StdField.java
  com.xiaoyv.dx.cf.iface.StdField
+com/xiaoyv/dx/cf/attrib/AttInnerClasses.java
+ com.xiaoyv.dx.cf.attrib.AttInnerClasses
 com/xiaoyv/dx/rop/cst/CstDouble.java
  com.xiaoyv.dx.rop.cst.CstDouble
 com/xiaoyv/dx/rop/annotation/AnnotationsList.java
@@ -323,11 +323,11 @@ com/xiaoyv/dx/io/instructions/InvokePolymorphicRangeDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.InvokePolymorphicRangeDecodedInstruction
 com/xiaoyv/dx/cf/code/ExecutionStack.java
  com.xiaoyv.dx.cf.code.ExecutionStack
-com/xiaoyv/dex/ClassDef.java
- com.xiaoyv.dex.ClassDef
 com/xiaoyv/dx/util/ListIntSet.java
  com.xiaoyv.dx.util.ListIntSet
  com.xiaoyv.dx.util.ListIntSet$1
+com/xiaoyv/dex/ClassDef.java
+ com.xiaoyv.dex.ClassDef
 com/xiaoyv/dx/dex/file/StringDataItem.java
  com.xiaoyv.dx.dex.file.StringDataItem
 com/xiaoyv/dx/dex/code/form/Form22x.java
@@ -344,10 +344,10 @@ com/xiaoyv/dx/io/instructions/ShortArrayCodeInput.java
  com.xiaoyv.dx.io.instructions.ShortArrayCodeInput
 com/xiaoyv/dx/cf/iface/StdMethodList.java
  com.xiaoyv.dx.cf.iface.StdMethodList
-com/xiaoyv/dx/cf/cst/MethodHandleKind.java
- com.xiaoyv.dx.cf.cst.MethodHandleKind
 com/xiaoyv/dx/io/instructions/DecodedInstruction.java
  com.xiaoyv.dx.io.instructions.DecodedInstruction
+com/xiaoyv/dx/cf/cst/MethodHandleKind.java
+ com.xiaoyv.dx.cf.cst.MethodHandleKind
 com/xiaoyv/dx/dex/file/CallSiteItem.java
  com.xiaoyv.dx.dex.file.CallSiteItem
 com/xiaoyv/dx/cf/code/ConcreteMethod.java
@@ -376,10 +376,10 @@ com/xiaoyv/dex/CallSiteId.java
  com.xiaoyv.dex.CallSiteId
 com/xiaoyv/multidex/FolderPathElement.java
  com.xiaoyv.multidex.FolderPathElement
-com/xiaoyv/dx/cf/attrib/AttRuntimeInvisibleAnnotations.java
- com.xiaoyv.dx.cf.attrib.AttRuntimeInvisibleAnnotations
 com/xiaoyv/dx/cf/code/ByteBlock.java
  com.xiaoyv.dx.cf.code.ByteBlock
+com/xiaoyv/dx/cf/attrib/AttRuntimeInvisibleAnnotations.java
+ com.xiaoyv.dx.cf.attrib.AttRuntimeInvisibleAnnotations
 com/xiaoyv/dx/rop/package-info.java
  com.xiaoyv.dx.rop.package-info
 com/xiaoyv/dx/command/dump/ClassDumper.java
@@ -413,10 +413,10 @@ com/xiaoyv/dx/io/OpcodeInfo.java
  com.xiaoyv.dx.io.OpcodeInfo$Info
 com/xiaoyv/dx/io/instructions/FillArrayDataPayloadDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.FillArrayDataPayloadDecodedInstruction
-com/xiaoyv/dx/dex/code/OutputFinisher.java
- com.xiaoyv.dx.dex.code.OutputFinisher
 com/xiaoyv/dx/util/Hex.java
  com.xiaoyv.dx.util.Hex
+com/xiaoyv/dx/dex/code/OutputFinisher.java
+ com.xiaoyv.dx.dex.code.OutputFinisher
 com/xiaoyv/dx/cf/attrib/AttSourceDebugExtension.java
  com.xiaoyv.dx.cf.attrib.AttSourceDebugExtension
 com/xiaoyv/dx/cf/attrib/BaseAttribute.java
@@ -425,10 +425,10 @@ com/xiaoyv/dx/rop/cst/Constant.java
  com.xiaoyv.dx.rop.cst.Constant
 com/xiaoyv/dx/rop/cst/CstByte.java
  com.xiaoyv.dx.rop.cst.CstByte
-com/xiaoyv/dex/SizeOf.java
- com.xiaoyv.dex.SizeOf
 com/xiaoyv/dx/rop/cst/CstInterfaceMethodRef.java
  com.xiaoyv.dx.rop.cst.CstInterfaceMethodRef
+com/xiaoyv/dex/SizeOf.java
+ com.xiaoyv.dex.SizeOf
 com/xiaoyv/dx/command/findusages/FindUsages.java
  com.xiaoyv.dx.command.findusages.FindUsages
  com.xiaoyv.dx.command.findusages.FindUsages$1
@@ -439,12 +439,12 @@ com/xiaoyv/dex/FieldId.java
  com.xiaoyv.dex.FieldId
 com/xiaoyv/dx/cf/iface/MethodList.java
  com.xiaoyv.dx.cf.iface.MethodList
+com/xiaoyv/dx/io/instructions/FiveRegisterDecodedInstruction.java
+ com.xiaoyv.dx.io.instructions.FiveRegisterDecodedInstruction
 com/xiaoyv/dx/dex/code/SwitchData.java
  com.xiaoyv.dx.dex.code.SwitchData
 com/xiaoyv/dx/dex/file/AnnotationSetItem.java
  com.xiaoyv.dx.dex.file.AnnotationSetItem
-com/xiaoyv/dx/io/instructions/FiveRegisterDecodedInstruction.java
- com.xiaoyv.dx.io.instructions.FiveRegisterDecodedInstruction
 com/xiaoyv/dex/EncodedValueReader.java
  com.xiaoyv.dex.EncodedValueReader
 com/xiaoyv/dx/cf/code/BasicBlocker.java
@@ -453,10 +453,10 @@ com/xiaoyv/dx/cf/attrib/AttCode.java
  com.xiaoyv.dx.cf.attrib.AttCode
 com/xiaoyv/dx/command/dump/DotDumper.java
  com.xiaoyv.dx.command.dump.DotDumper
-com/xiaoyv/dx/dex/code/SimpleInsn.java
- com.xiaoyv.dx.dex.code.SimpleInsn
 com/xiaoyv/multidex/MainDexListBuilder.java
  com.xiaoyv.multidex.MainDexListBuilder
+com/xiaoyv/dx/dex/code/SimpleInsn.java
+ com.xiaoyv.dx.dex.code.SimpleInsn
 com/xiaoyv/dx/cf/code/ByteCatchList.java
  com.xiaoyv.dx.cf.code.ByteCatchList
  com.xiaoyv.dx.cf.code.ByteCatchList$Item
@@ -500,14 +500,14 @@ com/xiaoyv/dx/dex/code/MultiCstInsn.java
  com.xiaoyv.dx.dex.code.MultiCstInsn
 com/xiaoyv/dx/rop/code/ThrowingCstInsn.java
  com.xiaoyv.dx.rop.code.ThrowingCstInsn
-com/xiaoyv/dex/util/ByteOutput.java
- com.xiaoyv.dex.util.ByteOutput
 com/xiaoyv/dx/cf/iface/Field.java
  com.xiaoyv.dx.cf.iface.Field
-com/xiaoyv/dex/EncodedValueCodec.java
- com.xiaoyv.dex.EncodedValueCodec
+com/xiaoyv/dex/util/ByteOutput.java
+ com.xiaoyv.dex.util.ByteOutput
 com/xiaoyv/dx/cf/attrib/RawAttribute.java
  com.xiaoyv.dx.cf.attrib.RawAttribute
+com/xiaoyv/dex/EncodedValueCodec.java
+ com.xiaoyv.dex.EncodedValueCodec
 com/xiaoyv/dx/ssa/LiteralOpUpgrader.java
  com.xiaoyv.dx.ssa.LiteralOpUpgrader
  com.xiaoyv.dx.ssa.LiteralOpUpgrader$1
@@ -562,20 +562,20 @@ com/xiaoyv/dx/command/Main.java
  com.xiaoyv.dx.command.Main
 com/xiaoyv/dx/cf/direct/CodeObserver.java
  com.xiaoyv.dx.cf.direct.CodeObserver
-com/xiaoyv/dx/dex/code/form/Form32x.java
- com.xiaoyv.dx.dex.code.form.Form32x
 com/xiaoyv/dx/merge/CollisionPolicy.java
  com.xiaoyv.dx.merge.CollisionPolicy
+com/xiaoyv/dx/dex/code/form/Form32x.java
+ com.xiaoyv.dx.dex.code.form.Form32x
 com/xiaoyv/dx/dex/file/ProtoIdsSection.java
  com.xiaoyv.dx.dex.file.ProtoIdsSection
 com/xiaoyv/dx/ssa/MoveParamCombiner.java
  com.xiaoyv.dx.ssa.MoveParamCombiner
  com.xiaoyv.dx.ssa.MoveParamCombiner$1
  com.xiaoyv.dx.ssa.MoveParamCombiner$1$1
-com/xiaoyv/dx/dex/file/ClassDefsSection.java
- com.xiaoyv.dx.dex.file.ClassDefsSection
 com/xiaoyv/dx/io/instructions/AddressMap.java
  com.xiaoyv.dx.io.instructions.AddressMap
+com/xiaoyv/dx/dex/file/ClassDefsSection.java
+ com.xiaoyv.dx.dex.file.ClassDefsSection
 com/xiaoyv/dx/dex/file/MethodIdItem.java
  com.xiaoyv.dx.dex.file.MethodIdItem
 com/xiaoyv/dx/dex/code/form/Form11x.java
@@ -596,27 +596,27 @@ com/xiaoyv/dx/command/grep/Grep.java
  com.xiaoyv.dx.command.grep.Grep$1
 com/xiaoyv/dx/io/instructions/FourRegisterDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.FourRegisterDecodedInstruction
-com/xiaoyv/dex/DexException.java
- com.xiaoyv.dex.DexException
 com/xiaoyv/dx/cf/iface/ClassFile.java
  com.xiaoyv.dx.cf.iface.ClassFile
+com/xiaoyv/dex/DexException.java
+ com.xiaoyv.dex.DexException
 com/xiaoyv/dx/io/Opcodes.java
  com.xiaoyv.dx.io.Opcodes
 com/xiaoyv/dx/io/CodeReader.java
  com.xiaoyv.dx.io.CodeReader
  com.xiaoyv.dx.io.CodeReader$1
  com.xiaoyv.dx.io.CodeReader$Visitor
-com/xiaoyv/dx/dex/file/StringIdsSection.java
- com.xiaoyv.dx.dex.file.StringIdsSection
 com/xiaoyv/dx/util/TwoColumnOutput.java
  com.xiaoyv.dx.util.TwoColumnOutput
+com/xiaoyv/dx/dex/file/StringIdsSection.java
+ com.xiaoyv.dx.dex.file.StringIdsSection
+com/xiaoyv/dx/ssa/LocalVariableInfo.java
+ com.xiaoyv.dx.ssa.LocalVariableInfo
 com/xiaoyv/dx/dex/code/form/Form21c.java
  com.xiaoyv.dx.dex.code.form.Form21c
 com/xiaoyv/dx/dex/file/DexFile.java
  com.xiaoyv.dx.dex.file.DexFile
  com.xiaoyv.dx.dex.file.DexFile$Storage
-com/xiaoyv/dx/ssa/LocalVariableInfo.java
- com.xiaoyv.dx.ssa.LocalVariableInfo
 com/xiaoyv/dx/dex/file/UniformItemSection.java
  com.xiaoyv.dx.dex.file.UniformItemSection
 com/xiaoyv/dx/rop/cst/CstKnownNull.java
@@ -694,8 +694,6 @@ com/xiaoyv/dx/cf/iface/FieldList.java
  com.xiaoyv.dx.cf.iface.FieldList
 com/xiaoyv/dx/dex/file/OffsettedItem.java
  com.xiaoyv.dx.dex.file.OffsettedItem
-com/xiaoyv/dx/dex/file/CallSiteIdsSection.java
- com.xiaoyv.dx.dex.file.CallSiteIdsSection
 com/xiaoyv/dx/merge/InstructionTransformer.java
  com.xiaoyv.dx.merge.InstructionTransformer
  com.xiaoyv.dx.merge.InstructionTransformer$CallSiteVisitor
@@ -705,6 +703,8 @@ com/xiaoyv/dx/merge/InstructionTransformer.java
  com.xiaoyv.dx.merge.InstructionTransformer$MethodVisitor
  com.xiaoyv.dx.merge.InstructionTransformer$StringVisitor
  com.xiaoyv.dx.merge.InstructionTransformer$TypeVisitor
+com/xiaoyv/dx/dex/file/CallSiteIdsSection.java
+ com.xiaoyv.dx.dex.file.CallSiteIdsSection
 com/xiaoyv/dx/rop/cst/CstFieldRef.java
  com.xiaoyv.dx.rop.cst.CstFieldRef
 com/xiaoyv/dx/cf/iface/StdMethod.java
@@ -746,10 +746,10 @@ com/xiaoyv/dx/cf/code/BytecodeArray.java
  com.xiaoyv.dx.cf.code.BytecodeArray$Visitor
 com/xiaoyv/dx/command/findusages/Main.java
  com.xiaoyv.dx.command.findusages.Main
-com/xiaoyv/dx/ssa/back/FirstFitAllocator.java
- com.xiaoyv.dx.ssa.back.FirstFitAllocator
 com/xiaoyv/dx/ssa/NormalSsaInsn.java
  com.xiaoyv.dx.ssa.NormalSsaInsn
+com/xiaoyv/dx/ssa/back/FirstFitAllocator.java
+ com.xiaoyv.dx.ssa.back.FirstFitAllocator
 com/xiaoyv/dx/dex/cf/CodeStatistics.java
  com.xiaoyv.dx.dex.cf.CodeStatistics
 com/xiaoyv/dx/rop/cst/CstMethodRef.java
@@ -803,13 +803,13 @@ com/xiaoyv/dx/io/instructions/ThreeRegisterDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.ThreeRegisterDecodedInstruction
 com/xiaoyv/dx/dex/file/TypeIdItem.java
  com.xiaoyv.dx.dex.file.TypeIdItem
-com/xiaoyv/dx/cf/direct/AttributeListParser.java
- com.xiaoyv.dx.cf.direct.AttributeListParser
 com/xiaoyv/dx/dex/code/LocalList.java
  com.xiaoyv.dx.dex.code.LocalList
  com.xiaoyv.dx.dex.code.LocalList$Disposition
  com.xiaoyv.dx.dex.code.LocalList$Entry
  com.xiaoyv.dx.dex.code.LocalList$MakeState
+com/xiaoyv/dx/cf/direct/AttributeListParser.java
+ com.xiaoyv.dx.cf.direct.AttributeListParser
 com/xiaoyv/dx/rop/code/InsnList.java
  com.xiaoyv.dx.rop.code.InsnList
 com/xiaoyv/dx/dex/file/ValueEncoder.java
@@ -887,10 +887,10 @@ com/xiaoyv/dx/dex/code/FixedSizeInsn.java
  com.xiaoyv.dx.dex.code.FixedSizeInsn
 com/xiaoyv/dx/command/grep/Main.java
  com.xiaoyv.dx.command.grep.Main
-com/xiaoyv/dx/dex/file/IdItem.java
- com.xiaoyv.dx.dex.file.IdItem
 com/xiaoyv/dx/io/instructions/PackedSwitchPayloadDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.PackedSwitchPayloadDecodedInstruction
+com/xiaoyv/dx/dex/file/IdItem.java
+ com.xiaoyv.dx.dex.file.IdItem
 com/xiaoyv/dx/dex/file/AnnotationsDirectoryItem.java
  com.xiaoyv.dx.dex.file.AnnotationsDirectoryItem
 com/xiaoyv/dx/dex/code/ZeroSizeInsn.java
@@ -923,22 +923,22 @@ com/xiaoyv/dx/cf/attrib/AttRuntimeVisibleParameterAnnotations.java
  com.xiaoyv.dx.cf.attrib.AttRuntimeVisibleParameterAnnotations
 com/xiaoyv/dx/ssa/InterferenceRegisterMapper.java
  com.xiaoyv.dx.ssa.InterferenceRegisterMapper
-com/xiaoyv/dex/util/Unsigned.java
- com.xiaoyv.dex.util.Unsigned
 com/xiaoyv/dx/dex/file/MemberIdsSection.java
  com.xiaoyv.dx.dex.file.MemberIdsSection
-com/xiaoyv/dx/dex/file/Section.java
- com.xiaoyv.dx.dex.file.Section
+com/xiaoyv/dex/util/Unsigned.java
+ com.xiaoyv.dex.util.Unsigned
 com/xiaoyv/dx/rop/cst/CstBoolean.java
  com.xiaoyv.dx.rop.cst.CstBoolean
+com/xiaoyv/dx/dex/file/Section.java
+ com.xiaoyv.dx.dex.file.Section
 com/xiaoyv/dx/rop/cst/CstString.java
  com.xiaoyv.dx.rop.cst.CstString
 com/xiaoyv/dx/io/instructions/SparseSwitchPayloadDecodedInstruction.java
  com.xiaoyv.dx.io.instructions.SparseSwitchPayloadDecodedInstruction
-com/xiaoyv/dx/dex/file/StringIdItem.java
- com.xiaoyv.dx.dex.file.StringIdItem
 com/xiaoyv/dx/rop/cst/CstAnnotation.java
  com.xiaoyv.dx.rop.cst.CstAnnotation
+com/xiaoyv/dx/dex/file/StringIdItem.java
+ com.xiaoyv.dx.dex.file.StringIdItem
 com/xiaoyv/dx/rop/type/StdTypeList.java
  com.xiaoyv.dx.rop.type.StdTypeList
 com/xiaoyv/dx/ssa/ConstCollector.java
@@ -973,12 +973,12 @@ com/xiaoyv/dx/cf/code/Ropper.java
  com.xiaoyv.dx.cf.code.Ropper$LabelAllocator
  com.xiaoyv.dx.cf.code.Ropper$Subroutine
  com.xiaoyv.dx.cf.code.Ropper$SubroutineInliner
+com/xiaoyv/dx/util/IntIterator.java
+ com.xiaoyv.dx.util.IntIterator
 com/xiaoyv/dx/dex/file/AnnotationItem.java
  com.xiaoyv.dx.dex.file.AnnotationItem
  com.xiaoyv.dx.dex.file.AnnotationItem$1
  com.xiaoyv.dx.dex.file.AnnotationItem$TypeIdSorter
-com/xiaoyv/dx/util/IntIterator.java
- com.xiaoyv.dx.util.IntIterator
 com/xiaoyv/dx/dex/code/form/Form20t.java
  com.xiaoyv.dx.dex.code.form.Form20t
 com/xiaoyv/dx/cf/iface/StdFieldList.java
@@ -1008,9 +1008,9 @@ com/xiaoyv/dx/cf/iface/Attribute.java
  com.xiaoyv.dx.cf.iface.Attribute
 com/xiaoyv/dx/cf/iface/ParseException.java
  com.xiaoyv.dx.cf.iface.ParseException
-com/xiaoyv/dx/dex/file/HeaderSection.java
- com.xiaoyv.dx.dex.file.HeaderSection
 com/xiaoyv/dx/ssa/back/RegisterAllocator.java
  com.xiaoyv.dx.ssa.back.RegisterAllocator
+com/xiaoyv/dx/dex/file/HeaderSection.java
+ com.xiaoyv.dx.dex.file.HeaderSection
 com/xiaoyv/dx/cf/attrib/AttLineNumberTable.java
  com.xiaoyv.dx.cf.attrib.AttLineNumberTable

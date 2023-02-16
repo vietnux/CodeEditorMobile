@@ -21,8 +21,8 @@
 21
 22    <uses-sdk
 23        android:minSdkVersion="21"
-23-->/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-24        android:targetSdkVersion="31" />
-24-->/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
+23-->D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="33" />
+24-->D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
 25
 26</manifest>

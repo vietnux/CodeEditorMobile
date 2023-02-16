@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi-rVN/values-vi-rVN.xml",
+            "outputFile": "D:\\Android\\CodeEditorMobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi-rVN\\values-vi-rVN.xml",
             "map": [
                 {
-                    "source": "/Users/tuantt/AndroidStudioProjects/CodeEditor/editor/build/intermediates/packaged_res/debug/values-vi-rVN/values-vi-rVN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,97,139,175,212,251,289,334,441",
-                        "endColumns": "41,41,35,36,38,37,44,51,46",
-                        "endOffsets": "92,134,170,207,246,284,329,381,483"
-                    },
-                    "to": {
-                        "startLines": "9,15,17,28,42,45,49,50,60",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "388,672,778,1733,2511,2669,2850,2895,3488",
-                        "endColumns": "41,41,35,36,38,37,44,51,46",
-                        "endOffsets": "425,709,809,1765,2545,2702,2890,2942,3530"
-                    }
-                },
-                {
-                    "source": "/Users/tuantt/AndroidStudioProjects/CodeEditor/app/src/main/res/values-vi-rVN/strings.xml",
+                    "source": "D:\\Android\\CodeEditorMobile\\app\\src\\main\\res\\values-vi-rVN\\strings.xml",
                     "from": {
                         "startLines": "64,30,47,46,19,17,54,21,22,44,43,29,55,20,37,36,38,49,52,35,59,48,50,39,41,65,45,18,70,42,61,51,40,56,24,23,33,25,71,53,69,67,26,34,27,28,32,31,63,62,72,58,57,66,68,60",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "55,112,156,208,257,294,342,430,468,514,566,624,714,814,851,1006,1132,1251,1292,1332,1561,1638,1683,1770,1817,1865,1920,1982,2081,2149,2196,2244,2293,2336,2428,2472,2550,2625,2707,2768,2812,2947,2999,3036,3165,3206,3256,3314,3376,3431,3535,3633,3705,3768,3828,3866",
                         "endColumns": "56,43,51,48,36,47,45,37,45,51,57,47,63,36,154,125,118,40,39,228,76,44,49,46,47,54,61,98,67,46,47,48,42,91,43,38,74,43,60,43,37,51,36,128,40,49,57,61,54,56,97,71,62,59,37,45",
                         "endOffsets": "107,151,203,252,289,337,383,463,509,561,619,667,773,846,1001,1127,1246,1287,1327,1556,1633,1678,1728,1812,1860,1915,1977,2076,2144,2191,2239,2288,2331,2423,2467,2506,2620,2664,2763,2807,2845,2994,3031,3160,3201,3251,3309,3371,3426,3483,3628,3700,3763,3823,3861,3907"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\CodeEditorMobile\\editor\\build\\intermediates\\packaged_res\\debug\\values-vi-rVN\\values-vi-rVN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,97,139,175,212,251,289,334,441",
+                        "endColumns": "41,41,35,36,38,37,44,51,46",
+                        "endOffsets": "92,134,170,207,246,284,329,381,483"
+                    },
+                    "to": {
+                        "startLines": "9,15,17,28,42,45,49,50,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "388,672,778,1733,2511,2669,2850,2895,3488",
+                        "endColumns": "41,41,35,36,38,37,44,51,46",
+                        "endOffsets": "425,709,809,1765,2545,2702,2890,2942,3530"
                     }
                 }
             ]

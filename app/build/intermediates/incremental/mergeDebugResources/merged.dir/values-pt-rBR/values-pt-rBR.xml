@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">Caracteres inseridos: %1$d de %2$d</string>
     <string name="character_counter_overflowed_content_description">Limite de %2$d caracteres excedido em %1$d</string>
     <string name="clear_text_end_icon_content_description">Limpar texto</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> está com problemas com o Google Play Services. Tente novamente."</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Ativar</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s só funciona com o Google Play Services ativado.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Ativar o Google Play Services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">O app %1$s não funciona sem o Google Play Services, o qual não está instalado no seu dispositivo.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Instalar o Google Play Services</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilidade do Google Play Services</string>
+    <string name="common_google_play_services_notification_ticker">Erro do Google Play Services</string>
+    <string name="common_google_play_services_unknown_issue">O app %1$s está com problemas com o Google Play Services. Tente novamente.</string>
+    <string name="common_google_play_services_unsupported_text">O app %1$s não funciona sem o Google Play Services, o qual não é compatível com seu dispositivo.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Atualizar</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s só funciona com uma versão atualizada do Google Play Services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Atualizar o Google Play Services</string>
+    <string name="common_google_play_services_updating_text">%1$s não funciona sem o Google Play Services, o qual está sendo atualizado no momento.</string>
+    <string name="common_google_play_services_wear_update_text">É necessária uma nova versão do Google Play Services. Ele será atualizado em breve.</string>
+    <string name="common_open_on_phone">Abrir no smartphone</string>
+    <string name="common_signin_button_text">Fazer login</string>
+    <string name="common_signin_button_text_long">Fazer login com o Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
     <string name="error_icon_content_description">Erro</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menu suspenso</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
     <string name="icon_content_description">Ícone de caixa de diálogo</string>
     <string name="item_view_role_description">Guia</string>
     <string name="material_clock_toggle_content_description">Selecionar AM ou PM</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">Toque para alternar para a seleção de um dia</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Alternar para o modo de entrada de texto</string>
     <string name="mtrl_picker_toggle_to_year_selection">Toque para alternar para a seleção de um ano</string>
+    <string name="native_body">Corpo</string>
+    <string name="native_headline">Título</string>
+    <string name="native_media_view">Visualização de mídia</string>
     <string name="offline_notification_text">Toque para abrir o anúncio</string>
     <string name="offline_notification_title">Ver o anúncio que você salvou quando estava off-line</string>
     <string name="offline_opt_in_confirm">OK</string>

@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml:17:1-21:12
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml:17:1-21:12
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml:17:1-21:12
+ADDED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml:17:1-21:12
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml:17:1-21:12
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml:17:1-21:12
 	package
-		ADDED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml:18:5-37
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
+		ADDED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml:18:5-37
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml:17:11-69
+		ADDED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml:17:11-69
 uses-sdk
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-		ADDED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+		ADDED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-		ADDED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
-		INJECTED from /Users/tuantt/AndroidStudioProjects/CodeEditor/editor/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+		ADDED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\CodeEditorMobile\editor\src\main\AndroidManifest.xml

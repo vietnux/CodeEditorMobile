@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">%1$d/%2$d karaktere idatzi dira</string>
     <string name="character_counter_overflowed_content_description">Karaktere-muga gainditu da: %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Garbitu testua</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> aplikazioak arazoak ditu Google Play-ren zerbitzuekin. Saiatu berriro."</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Gaitu</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s aplikazioak ez du funtzionatuko Google Play Services gaitzen ez baduzu.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Gaitu Google Play Services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalatu</string>
+    <string name="common_google_play_services_install_text">%1$s ez da exekutatuko Google Play Services gabe, baina ez dago halakorik gailuan.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Lortu Google Play Services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Services-en erabilgarritasuna</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services-en errorea</string>
+    <string name="common_google_play_services_unknown_issue">%1$s aplikazioak arazoak ditu Google Play Services-ekin. Saiatu berriro.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s aplikazioa ezin da erabili Google Play Services gabe, baina zure gailua ez da harekin bateragarria.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Eguneratu</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s ez da exekutatuko Google Play Services eguneratzen ez baduzu.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Eguneratu Google Play Services</string>
+    <string name="common_google_play_services_updating_text">%1$s ez da exekutatuko Google Play Services gabe; zerbitzu hori eguneratzen ari da.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play Services-en bertsio berria behar da. Berehala eguneratuko da automatikoki.</string>
+    <string name="common_open_on_phone">Ireki telefonoan</string>
+    <string name="common_signin_button_text">Hasi saioa</string>
+    <string name="common_signin_button_text_long">Hasi saioa Google-ko kontuarekin</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Arbelean kopiatu da esteka"</string>
     <string name="error_icon_content_description">Errorea</string>
     <string name="exposed_dropdown_menu_content_description">Erakutsi goitibeherako menua</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiatu esteka"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Ireki arakatzailean"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Partekatu esteka"</string>
     <string name="icon_content_description">Leihoko ikonoa</string>
     <string name="item_view_role_description">Fitxa</string>
     <string name="material_clock_toggle_content_description">Hautatu AM edo PM</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">Sakatu eguna hautatzeko modura aldatzeko</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Aldatu testua idazteko modura</string>
     <string name="mtrl_picker_toggle_to_year_selection">Sakatu urtea hautatzeko modura aldatzeko</string>
+    <string name="native_body">Gorputza</string>
+    <string name="native_headline">Titulua</string>
+    <string name="native_media_view">Multimedia-edukiaren ikuspegia</string>
     <string name="offline_notification_text">Sakatu hau iragarkia irekitzeko</string>
     <string name="offline_notification_title">Ikusi gorde duzun iragarkia berriro konektatzen zarenean</string>
     <string name="offline_opt_in_confirm">Ados</string>

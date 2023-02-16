@@ -35,9 +35,30 @@
     <string name="character_counter_content_description">စာလုံးရေ %2$d တွင် %1$d ထည့်သွင်းထားသည်</string>
     <string name="character_counter_overflowed_content_description">စာလုံးရေအကန့်အသတ် %2$d လုံးတွင် %1$d လုံးကျော်နေသည်</string>
     <string name="clear_text_end_icon_content_description">စာသား ဖယ်ရှားရန်</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> သည် Google Play ဝန်ဆောင်မှုများနှင့် ပြဿနာအနည်းငယ် ရှိနေပါသည်။ ထပ်လုပ်ကြည့်ပါ။"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">ဖွင့်ရန်</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play ဝန်ဆောင်မှုများကို မဖွင့်သ၍ %1$s သည်အလုပ်လုပ်မည်မဟုတ်ပါ။</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play ဝန်ဆောင်မှုများ ဖွင့်ရန်</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">ထည့်သွင်းပါ</string>
+    <string name="common_google_play_services_install_text">သင့်တက်ဘလက်တွင် Google Play ဝန်ဆောင်မှုများမရှိသောကြောင့် %1$s ကိုဖွင့်၍မရပါ။</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play ဝန်ဆောင်မှုများရယူရန်</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play ဝန်ဆောင်မှုများ ရရှိနိုင်သည်</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ဝန်ဆောင်မှုများ အမှား</string>
+    <string name="common_google_play_services_unknown_issue">%1$s သည် Google Play ဝန်ဆောင်မှုများနှင့် ပြဿနာအနည်းငယ် ရှိနေပါသည်။ ထပ်လုပ်ကြည့်ပါ။</string>
+    <string name="common_google_play_services_unsupported_text">Google Play ဝန်ဆောင်မှုများကို သင့်စက်ပစ္စည်းတွင် ပံ့ပိုးမထားသည့်အတွက် ၎င်းမရှိဘဲ %1$s ကို ဖွင့်၍မရပါ။</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">အပ်ဒိတ်</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play ဝန်ဆောင်မှုများအား အပ်ဒိတ်မလုပ်ပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play ဝန်ဆောင်မှုများကို အပ်ဒိတ်လုပ်ရန်</string>
+    <string name="common_google_play_services_updating_text">Google Play ဝန်ဆောင်မှုများကို လက်ရှိအပ်ဒိတ်လုပ်နေသောကြောင့် %1$s ကိုဖွင့်၍ရမည်မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_wear_update_text">Google Play ဝန်ဆောင်မှုဗားရှင်းအသစ်များ လိုအပ်နေသည်။ အချိန်အနည်းငယ်အကြာတွင် ၎င်းကိုယ်တိုင်အပ်ဒိတ်လုပ်ပါ လိမ့်မည်။</string>
+    <string name="common_open_on_phone">ဖုန်းပေါ်မှာ ဖွင့်ပါ</string>
+    <string name="common_signin_button_text">လက်မှတ်ထိုး ဝင်ရန်</string>
+    <string name="common_signin_button_text_long">Google ဖြင့် လက်မှတ်ထိုးဝင်ရေ</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"လင့်ခ်ကို ကလစ်ဘုတ်သို့ ကူးပြီးပါပြီ"</string>
     <string name="error_icon_content_description">အမှား</string>
     <string name="exposed_dropdown_menu_content_description">ဆွဲချမီနူးကို ပြရန်</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"လင့်ခ်ကို ကူးယူရန်"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ဘရောင်ဇာတွင် ဖွင့်ရန်"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"လင့်ခ်ကို မျှဝေရန်"</string>
     <string name="icon_content_description">ဒိုင်ယာလော့ခ် သင်္ကေတ</string>
     <string name="item_view_role_description">တဘ်</string>
     <string name="material_clock_toggle_content_description">AM (သို့) PM ရွေးရန်</string>
@@ -85,6 +106,9 @@
     <string name="mtrl_picker_toggle_to_day_selection">ရက်ရွေးချယ်ခြင်းသို့ ပြောင်းရန် တို့ပါ</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">စာသား ထည့်သွင်းမှုမုဒ်သို့ ပြောင်းရန်</string>
     <string name="mtrl_picker_toggle_to_year_selection">နှစ်ရွေးချယ်ခြင်းသို့ ပြောင်းရန် တို့ပါ</string>
+    <string name="native_body">စာကိုယ်</string>
+    <string name="native_headline">ခေါင်းစဉ်</string>
+    <string name="native_media_view">မီဒီယာမြင်ကွင်း</string>
     <string name="offline_notification_text">ကြော်ငြာဖွင့်ရန် တို့ပါ</string>
     <string name="offline_notification_title">သင်အော့ဖ်လိုင်းရှိနေစဉ်တွင် သိမ်းထားခဲ့သော ကြော်ငြာကို ကြည့်ရှုပါ</string>
     <string name="offline_opt_in_confirm">OK</string>

@@ -4,13 +4,13 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Users/tuantt/AndroidStudioProjects/CodeEditor/googleads-mobile-android-native-templates-master/googleads-mobile-android-native-templates-master/nativetemplates/src/main/AndroidManifest.xml
+6-->D:\Android\CodeEditorMobile\googleads-mobile-android-native-templates-master\googleads-mobile-android-native-templates-master\nativetemplates\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="30" />
-7-->/Users/tuantt/AndroidStudioProjects/CodeEditor/googleads-mobile-android-native-templates-master/googleads-mobile-android-native-templates-master/nativetemplates/src/main/AndroidManifest.xml
+7-->D:\Android\CodeEditorMobile\googleads-mobile-android-native-templates-master\googleads-mobile-android-native-templates-master\nativetemplates\src\main\AndroidManifest.xml
 8
 9    <application android:supportsRtl="true" >
-9-->/Users/tuantt/AndroidStudioProjects/CodeEditor/googleads-mobile-android-native-templates-master/googleads-mobile-android-native-templates-master/nativetemplates/src/main/AndroidManifest.xml:3:3-5:17
-9-->/Users/tuantt/AndroidStudioProjects/CodeEditor/googleads-mobile-android-native-templates-master/googleads-mobile-android-native-templates-master/nativetemplates/src/main/AndroidManifest.xml:3:16-42
+9-->D:\Android\CodeEditorMobile\googleads-mobile-android-native-templates-master\googleads-mobile-android-native-templates-master\nativetemplates\src\main\AndroidManifest.xml:3:3-5:17
+9-->D:\Android\CodeEditorMobile\googleads-mobile-android-native-templates-master\googleads-mobile-android-native-templates-master\nativetemplates\src\main\AndroidManifest.xml:3:16-42
 10    </application>
 11
 12</manifest>

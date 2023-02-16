@@ -1,10 +1,15 @@
 com/tglt/code/editor/project/Project.java
  com.tglt.code.editor.project.Project
-com/tglt/code/editor/BuildConfig.java
- com.tglt.code.editor.BuildConfig
-com/tglt/code/editor/utils/BufferedLiveEvent.java
- com.tglt.code.editor.utils.BufferedLiveEvent
- com.tglt.code.editor.utils.BufferedLiveEvent$1
+com/tglt/code/editor/app/FragmentEditor.java
+ com.tglt.code.editor.app.FragmentEditor
+ com.tglt.code.editor.app.FragmentEditor$1
+com/tglt/code/editor/adapter/ClientAdapter.java
+ com.tglt.code.editor.adapter.ClientAdapter
+ com.tglt.code.editor.adapter.ClientAdapter$1
+ com.tglt.code.editor.adapter.ClientAdapter$2
+ com.tglt.code.editor.adapter.ClientAdapter$3
+ com.tglt.code.editor.adapter.ClientAdapter$4
+ com.tglt.code.editor.adapter.ClientAdapter$AppViewHolder
 com/tglt/code/editor/client/FTPClient1.java
  com.tglt.code.editor.client.FTPClient1
  com.tglt.code.editor.client.FTPClient1$1
@@ -13,20 +18,30 @@ com/tglt/code/editor/CodeEditorApplication.java
  com.tglt.code.editor.CodeEditorApplication
 com/tglt/code/editor/task/Task.java
  com.tglt.code.editor.task.Task
-com/tglt/code/editor/client/SFTPClient.java
- com.tglt.code.editor.client.SFTPClient
- com.tglt.code.editor.client.SFTPClient$1
- com.tglt.code.editor.client.SFTPClient$2
 com/tglt/code/editor/utils/UtilsDialog.java
  com.tglt.code.editor.utils.UtilsDialog
  com.tglt.code.editor.utils.UtilsDialog$1
  com.tglt.code.editor.utils.UtilsDialog$2
+com/tglt/code/editor/client/SFTPClient.java
+ com.tglt.code.editor.client.SFTPClient
+ com.tglt.code.editor.client.SFTPClient$1
+ com.tglt.code.editor.client.SFTPClient$2
 com/tglt/code/editor/client/ClientInfo.java
  com.tglt.code.editor.client.ClientInfo
 com/tglt/code/editor/utils/cCompile/GccRun.java
  com.tglt.code.editor.utils.cCompile.GccRun
-com/tglt/code/editor/project/ProjectFile.java
- com.tglt.code.editor.project.ProjectFile
+com/tglt/code/editor/app/MainActivity.java
+ com.tglt.code.editor.app.MainActivity
+ com.tglt.code.editor.app.MainActivity$1
+ com.tglt.code.editor.app.MainActivity$2
+ com.tglt.code.editor.app.MainActivity$3
+ com.tglt.code.editor.app.MainActivity$4
+ com.tglt.code.editor.app.MainActivity$5
+ com.tglt.code.editor.app.MainActivity$6
+ com.tglt.code.editor.app.MainActivity$7
+ com.tglt.code.editor.app.MainActivity$7$1
+ com.tglt.code.editor.app.MainActivity$8
+ com.tglt.code.editor.app.MainActivity$PagerAdapter
 com/tglt/code/editor/app/ConsoleActivity.java
  com.tglt.code.editor.app.ConsoleActivity
  com.tglt.code.editor.app.ConsoleActivity$1
@@ -70,11 +85,12 @@ com/tglt/code/editor/task/BackgroundTask.java
  com.tglt.code.editor.task.BackgroundTask$OnPostTask
  com.tglt.code.editor.task.BackgroundTask$OnTaskStarted
  com.tglt.code.editor.task.BackgroundTask$OnUpdateTask
-com/tglt/code/editor/project/WriteProjectFile.java
- com.tglt.code.editor.project.WriteProjectFile
 com/tglt/code/editor/utils/SingleLiveEvent.java
  com.tglt.code.editor.utils.SingleLiveEvent
  com.tglt.code.editor.utils.SingleLiveEvent$1
+com/tglt/code/editor/app/ClientFilesActivity.java
+ com.tglt.code.editor.app.ClientFilesActivity
+ com.tglt.code.editor.app.ClientFilesActivity$1
 com/tglt/code/editor/utils/AppPreferences.java
  com.tglt.code.editor.utils.AppPreferences
 com/tglt/code/editor/utils/JavaCompile.java
@@ -86,43 +102,29 @@ com/tglt/code/editor/utils/JavaCompile.java
 com/tglt/code/editor/app/WebviewRunHtml.java
  com.tglt.code.editor.app.WebviewRunHtml
  com.tglt.code.editor.app.WebviewRunHtml$1
-com/tglt/code/editor/utils/JsonParams.java
- com.tglt.code.editor.utils.JsonParams
+com/tglt/code/editor/app/ClientActivity.java
+ com.tglt.code.editor.app.ClientActivity
+ com.tglt.code.editor.app.ClientActivity$1
 com/tglt/code/editor/language/SwiftDescription.java
  com.tglt.code.editor.language.SwiftDescription
 com/tglt/code/editor/utils/CrashHandler.java
  com.tglt.code.editor.utils.CrashHandler
 com/tglt/code/editor/language/PhpDescription.java
  com.tglt.code.editor.language.PhpDescription
+com/tglt/code/editor/utils/UtilsFiles.java
+ com.tglt.code.editor.utils.UtilsFiles
+ com.tglt.code.editor.utils.UtilsFiles$ExportFile
 com/tglt/code/editor/adapter/ClientFilesAdapter.java
  com.tglt.code.editor.adapter.ClientFilesAdapter
  com.tglt.code.editor.adapter.ClientFilesAdapter$1
  com.tglt.code.editor.adapter.ClientFilesAdapter$2
  com.tglt.code.editor.adapter.ClientFilesAdapter$AppViewHolder
-com/tglt/code/editor/project/ReadProjectFile.java
- com.tglt.code.editor.project.ReadProjectFile
 com/tglt/code/editor/client/Client.java
  com.tglt.code.editor.client.Client
 com/tglt/code/editor/language/DartDescription.java
  com.tglt.code.editor.language.DartDescription
 com/tglt/code/editor/widget/SymbolInputView.java
  com.tglt.code.editor.widget.SymbolInputView
-com/tglt/code/editor/app/FragmentEditor.java
- com.tglt.code.editor.app.FragmentEditor
- com.tglt.code.editor.app.FragmentEditor$1
-com/tglt/code/editor/adapter/ClientAdapter.java
- com.tglt.code.editor.adapter.ClientAdapter
- com.tglt.code.editor.adapter.ClientAdapter$1
- com.tglt.code.editor.adapter.ClientAdapter$2
- com.tglt.code.editor.adapter.ClientAdapter$3
- com.tglt.code.editor.adapter.ClientAdapter$4
- com.tglt.code.editor.adapter.ClientAdapter$AppViewHolder
-com/tglt/code/editor/utils/UtilsFiles.java
- com.tglt.code.editor.utils.UtilsFiles
- com.tglt.code.editor.utils.UtilsFiles$ExportFile
-com/tglt/code/editor/app/ClientFilesActivity.java
- com.tglt.code.editor.app.ClientFilesActivity
- com.tglt.code.editor.app.ClientFilesActivity$1
 com/tglt/code/editor/app/AboutActivity.java
  com.tglt.code.editor.app.AboutActivity
  com.tglt.code.editor.app.AboutActivity$1
@@ -130,18 +132,16 @@ com/tglt/code/editor/app/AboutActivity.java
 com/tglt/code/editor/utils/cCompile/GccCompiler.java
  com.tglt.code.editor.utils.cCompile.GccCompiler
  com.tglt.code.editor.utils.cCompile.GccCompiler$Task
-com/tglt/code/editor/app/MainActivity.java
- com.tglt.code.editor.app.MainActivity
- com.tglt.code.editor.app.MainActivity$1
- com.tglt.code.editor.app.MainActivity$2
- com.tglt.code.editor.app.MainActivity$3
- com.tglt.code.editor.app.MainActivity$4
- com.tglt.code.editor.app.MainActivity$5
- com.tglt.code.editor.app.MainActivity$6
- com.tglt.code.editor.app.MainActivity$7
- com.tglt.code.editor.app.MainActivity$7$1
- com.tglt.code.editor.app.MainActivity$8
- com.tglt.code.editor.app.MainActivity$PagerAdapter
-com/tglt/code/editor/app/ClientActivity.java
- com.tglt.code.editor.app.ClientActivity
- com.tglt.code.editor.app.ClientActivity$1
+com/tglt/code/editor/project/ProjectFile.java
+ com.tglt.code.editor.project.ProjectFile
+com/tglt/code/editor/utils/JsonParams.java
+ com.tglt.code.editor.utils.JsonParams
+com/tglt/code/editor/project/WriteProjectFile.java
+ com.tglt.code.editor.project.WriteProjectFile
+com/tglt/code/editor/project/ReadProjectFile.java
+ com.tglt.code.editor.project.ReadProjectFile
+com/tglt/code/editor/utils/BufferedLiveEvent.java
+ com.tglt.code.editor.utils.BufferedLiveEvent
+ com.tglt.code.editor.utils.BufferedLiveEvent$1
+com/tglt/code/editor/BuildConfig.java
+ com.tglt.code.editor.BuildConfig
