@@ -73,7 +73,7 @@ import com.tglt.code.editor.language.PhpDescription;
 import com.tglt.code.editor.language.SwiftDescription;
 
 public class UtilsFiles {
-    public static boolean is_galaxy_samsung = true;
+    public static boolean is_galaxy_samsung = false;
     private static final int MY_PERMISSIONS_REQUEST_WRITE_READ = 47;
     public static int OPEN_REQUEST_CODE = 1;
     public static int OPEN_SAVE_AS_CODE = 2;
