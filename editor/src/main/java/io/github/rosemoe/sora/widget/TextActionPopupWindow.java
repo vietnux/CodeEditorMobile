@@ -34,7 +34,7 @@ import android.widget.LinearLayout;
 
 import com.google.android.material.button.MaterialButton;
 
-import io.github.rosemoe.sora.R;
+import editor.R;
 import io.github.rosemoe.sora.interfaces.EditorTextActionPresenter;
 
 public class TextActionPopupWindow extends TextComposeBasePopup implements View.OnClickListener, EditorTextActionPresenter {

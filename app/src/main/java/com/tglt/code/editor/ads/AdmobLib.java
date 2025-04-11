@@ -29,7 +29,8 @@ import com.google.android.gms.ads.RequestConfiguration;
 import com.google.android.gms.ads.VideoController;
 import com.google.android.gms.ads.VideoOptions;
 import com.google.android.gms.ads.appopen.AppOpenAd;
-import com.google.android.gms.ads.formats.NativeAdOptions;
+//import com.google.android.gms.ads.formats.NativeAdOptions;
+import com.google.android.gms.ads.nativead.NativeAdOptions;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
@@ -412,7 +413,8 @@ public class AdmobLib implements Application.ActivityLifecycleCallbacks {
         String AD_UNIT_ID = JsonParams.getParam("admobid.android.openapp");
 
         AppOpenAd.load( activity, AD_UNIT_ID, adRequest,
-                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT, loadCallback);
+//                AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT,
+                loadCallback);
     }
 
 

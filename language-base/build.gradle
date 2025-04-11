@@ -33,6 +33,7 @@ ext {
 apply from:'../maven-publish.gradle'
 
 android {
+    namespace 'io.github.rosemoe.sora.langs.base'
     compileSdkVersion Versions.compileSdkVersion
     buildToolsVersion Versions.buildToolsVersion
 

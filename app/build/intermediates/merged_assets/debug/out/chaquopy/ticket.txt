@@ -1,2 +1,0 @@
-{"app": "com.tglt.code.editor", "time": "2023-02-16T09:14:18Z"}
-Dzglfj+wH2W02jLlKtJy77EO1qZpi2hMU150fE8ThFbwYBpztz+GxrqDjeEGkRfpeTbXfMG4g7Qw06aBavP5Lz0Ht9ssD8VhHfjg0v8r1kTEP9jPSBoVXEqOsoujJtuUd42qeoW/P/EmgOtL5wy5NiUOnj8x3Gbq968IoAuGWAHjCP5cC7M9iaePTigFjyymcHpkA/NQmH81lK6Vzf6U4kdIluzj+ZbTClVGUeLb4ZTIUPybtbXdg8tFUAZALfHqhrzkj/QSCyIt/1kE22z0A0KqtVrj0RlGScyJG2HDUbExclQJtyvLpFR/xQoujKaFaf/Sd2xFZqXPv7R3SJOOXQ==

@@ -78,7 +78,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import io.github.rosemoe.sora.R;
+//import editor.R;
+import editor.R;
 import io.github.rosemoe.sora.annotations.Experimental;
 import io.github.rosemoe.sora.graphics.BufferedDrawPoints;
 import io.github.rosemoe.sora.interfaces.EditorEventListener;

@@ -35,6 +35,7 @@ ext {
 apply from:'../maven-publish.gradle'
 
 android {
+    namespace 'io.github.rosemoe.sora.langs.python'
     compileSdkVersion Versions.compileSdkVersion
     buildToolsVersion Versions.buildToolsVersion
 
@@ -62,7 +63,7 @@ dependencies {
     implementation "org.antlr:antlr4-runtime:$Versions.antlrVersion"
     compileOnly project(path: ':editor')
     implementation project(path: ':language-base')
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }

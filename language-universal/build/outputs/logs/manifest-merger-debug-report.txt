@@ -1,25 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml:24:1-27:12
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml:24:1-27:12
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml:24:1-27:12
+ADDED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml:24:1-27:12
+INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml:24:1-27:12
 	package
-		ADDED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml:25:5-53
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
+		ADDED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml:25:5-53
+		INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml:24:11-69
+		ADDED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml:24:11-69
 uses-sdk
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
+INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml
+INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
+		INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-		ADDED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\CodeEditorMobile\language-universal\src\main\AndroidManifest.xml
+		INJECTED from D:\android\CodeEditor\language-universal\src\main\AndroidManifest.xml

@@ -17,16 +17,16 @@
 public final class Versions {
 
     // Project versions
-    public final static String versionName = "1.4";
-    public final static int versionCode = 11;
+    public final static String versionName = "1.7";
+    public final static int versionCode = 14;
 
     // Platform & Tool versions
-    public final static String buildToolsVersion = "33.0.0";
-    public final static int compileSdkVersion = 33;
-    public final static int minSdkVersion = 21;
-    public final static int targetSdkVersion = 33;
+    public final static String buildToolsVersion = "34.0.0";
+    public final static int compileSdkVersion = 35;
+    public final static int minSdkVersion = 24;
+    public final static int targetSdkVersion = 35;
 
     // Dependency versions
-    public final static String antlrVersion = "4.9.2";
+    public final static String antlrVersion = "4.13.2";
 
 }
